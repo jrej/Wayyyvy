@@ -5,26 +5,27 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine.SceneManagement;
 
+
 public class DialogueUI : MonoBehaviour {
     public Text dialogueText;
-    public Button continueButton;
+    private Coroutine typingCoroutine;
 
-    private void Start() {
-        Hide();
-        continueButton.onClick.AddListener(() => Hide());
+    public void ShowDialogue(string line) {
+        if (typingCoroutine != null) {
+            StopCoroutine(typingCoroutine);
+        }
+        typingCoroutine = StartCoroutine(TypeLine(line));
     }
 
-    public void Show(string dialogue) {
-        dialogueText.text = dialogue;
-        gameObject.SetActive(true);
+    private IEnumerator TypeLine(string line) {
+        dialogueText.text = "This is a test";
+        foreach (char letter in line.ToCharArray()) {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(0.05f); // Adjust typing speed here
+        }
     }
 
-    public void Hide() {
-        gameObject.SetActive(false);
+    public void HideDialogue() {
+        dialogueText.text = "";
     }
-}
-
-[System.Serializable]
-public class Dialogue {
-    public List<string> lines;
 }

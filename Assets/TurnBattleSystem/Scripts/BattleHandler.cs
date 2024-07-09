@@ -5,9 +5,21 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine.SceneManagement;
 
+
+public class Dialogue {
+    public List<string> lines;
+
+    public Dialogue() {
+        lines = new List<string>();
+    }
+
+    public Dialogue(List<string> lines) {
+        this.lines = lines;
+    }
+}
+
 public class BattleHandler : MonoBehaviour {
-   // public DialogueUI dialogueUI;
-    public Dialogue preFightDialogue;
+
 
     private static BattleHandler instance;
     private Dictionary<string, string> config;
@@ -20,55 +32,79 @@ public class BattleHandler : MonoBehaviour {
     private CharacterBattle enemyCharacterBattle;
     private CharacterBattle activeCharacterBattle;
     private State state;
+    private Text dialogueText;
+
+    private Dialogue preFightDialogue;
+
+     // Create a new Text object and add it to the canvas
+    private   GameObject canvas ;
+     private  GameObject textObj ;
 
     public static BattleHandler GetInstance() {
         return instance;
     }
-
-    private enum State {
+     private enum State {
         WaitingForPlayer,
         Busy,
     }
 
-    private void Awake() {
+     private void Awake() {
         instance = this;
+        
+        canvas = GameObject.Find("Canvas2");
+        dialogueText = canvas.GetComponentInChildren<Text>();
 
-        // Create a fake scenario for the pre-fight dialogue
+    if (dialogueText == null) {
+        Debug.LogError("DialogueText component not found under Canvas2.");
+        return;
+    }
+
+       // textObj.transform.SetParent(canvas.transform);
+           /// textObj.transform.SetParent(canvas.transform);
+       //dialogueText = textObj.AddComponent<Text>();
+        dialogueText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        dialogueText.fontSize = 12;
+        dialogueText.color = Color.red;
+        dialogueText.rectTransform.sizeDelta = new Vector2(40, 10);
+        dialogueText.rectTransform.anchoredPosition = new Vector2(0, -10);
+        dialogueText.canvas.sortingOrder = 1; // Adjust as necessary
+        dialogueText.alignment = TextAnchor.MiddleCenter; // Example: Aligns the text to the center
+
+    // Example of changing text content
+    dialogueText.text = "Hello, world!";
+
+         // Create a fake scenario for the pre-fight dialogue
         preFightDialogue = new Dialogue {
             lines = new List<string> {
                 "Player: So, we finally meet again.",
-                "Enemy: This time, you won't get away!",
+                "Enemy: This time, you won't get away!", 
                 "Player: We'll see about that. Prepare yourself!"
             }
         };
     }
 
     private IEnumerator StartBattleWithDialogue() {
-       /* if (dialogueUI == null) {
+        if (dialogueText  == null) {
             Debug.LogError("DialogueUI is not assigned in the BattleHandler script.");
-            yield break;
+           yield break;
         }
 
-*/
         yield return StartCoroutine(ShowDialogue(preFightDialogue));
         StartNewGame();
     }
 
     private IEnumerator ShowDialogue(Dialogue dialogue) {
-    // Implement your dialogue logic here
-    // Example:
-    foreach (string line in dialogue.lines) {
-        Debug.Log(line); // Replace with your actual logic to show dialogue
-        yield return new WaitForSeconds(2f); // Example wait time
+        foreach (string line in dialogue.lines) {
+            dialogueText.text = line;
+            yield return new WaitForSeconds(2f); // Example wait time
+        }
+        dialogueText.text = ""; // Clear the dialogue after displaying
     }
-}
-
 
     public void TestBattleStart() {
         // Use BattleOverWindow to display the dialogue text
         string dialogueText = string.Join("\n", preFightDialogue.lines);
         BattleOverWindow.Show_Static(dialogueText);
-       // SleepTimeout(5);
 
         // Wait for a short time to simulate displaying the dialogue
         StartCoroutine(WaitAndStartGame(5f)); // Wait for 5 seconds before starting the game
@@ -81,9 +117,7 @@ public class BattleHandler : MonoBehaviour {
     }
 
     private void Start() {
-        
-        //StartNewGame();
-      StartCoroutine(StartBattleWithDialogue());
+        StartCoroutine(StartBattleWithDialogue());
     }
 
     private void StartNewGame() {
