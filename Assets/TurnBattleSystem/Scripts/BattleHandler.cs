@@ -24,6 +24,8 @@ public class BattleHandler : MonoBehaviour {
     private static BattleHandler instance;
     private Dictionary<string, string> config;
 
+    private CharacterCustomizationUI characterUi;
+
     [SerializeField] private Transform pfCharacterBattle;
     public Texture2D playerSpritesheet;
     public Texture2D enemySpritesheet;
@@ -36,69 +38,381 @@ public class BattleHandler : MonoBehaviour {
 
     private Dialogue preFightDialogue;
 
-     // Create a new Text object and add it to the canvas
-    private   GameObject canvas ;
-     private  GameObject textObj ;
+    private GameObject canvas;
+    private GameObject textObj;
+
+    private GameObject playerSpriteObj;
+    private GameObject enemySpriteObj;
+
+    GameObject customizationUIObject;
+
+    private GameObject backgroundObj;
+
+    private GameObject quitButtonObj;
+
+    public Button quitButton;
 
     public static BattleHandler GetInstance() {
         return instance;
     }
-     private enum State {
+
+    private enum State {
         WaitingForPlayer,
         Busy,
     }
 
-     private void Awake() {
+    private void Awake() {
         instance = this;
-        
+
+        SetupPlayer("config.txt");
+        SetupEnemy("config.txt");
+
+        customizationUIObject = new GameObject("CharacterCustomizationUI");
+        customizationUIObject.AddComponent<CharacterCustomizationUI>();
+
         canvas = GameObject.Find("Canvas2");
+
         dialogueText = canvas.GetComponentInChildren<Text>();
 
-    if (dialogueText == null) {
-        Debug.LogError("DialogueText component not found under Canvas2.");
-        return;
-    }
+        if (dialogueText == null) {
+            Debug.LogError("DialogueText component not found under Canvas2.");
+            return;
+        }
 
-       // textObj.transform.SetParent(canvas.transform);
-           /// textObj.transform.SetParent(canvas.transform);
-       //dialogueText = textObj.AddComponent<Text>();
-        dialogueText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-        dialogueText.fontSize = 12;
-        dialogueText.color = Color.red;
-        dialogueText.rectTransform.sizeDelta = new Vector2(40, 10);
-        dialogueText.rectTransform.anchoredPosition = new Vector2(0, -10);
-        dialogueText.canvas.sortingOrder = 1; // Adjust as necessary
-        dialogueText.alignment = TextAnchor.MiddleCenter; // Example: Aligns the text to the center
+        backgroundObj = new GameObject("TextBackground");
+        backgroundObj.transform.SetParent(canvas.transform);
 
-    // Example of changing text content
-    dialogueText.text = "Hello, world!";
+        Image background = backgroundObj.AddComponent<Image>();
+        Color fadedBlack = new Color(0, 0, 0, 0.5f);
+        background.color = fadedBlack;
 
-         // Create a fake scenario for the pre-fight dialogue
+        RectTransform backgroundRect = background.GetComponent<RectTransform>();
+        backgroundRect.sizeDelta = new Vector2(300, 100);
+        backgroundRect.anchoredPosition = new Vector2(0, 0);
+        backgroundRect.anchorMin = new Vector2(0.5f, 0.5f);
+        backgroundRect.anchorMax = new Vector2(0.5f, 0.5f);
+        backgroundRect.pivot = new Vector2(0.5f, 0.5f);
+
+        dialogueText.transform.SetParent(backgroundObj.transform);
+        RectTransform textRect = dialogueText.GetComponent<RectTransform>();
+        textRect.sizeDelta = backgroundRect.sizeDelta;
+        textRect.anchoredPosition = new Vector2(0, -50);
+
+        dialogueText.fontSize = 8;
+        dialogueText.color = Color.white;
+        dialogueText.alignment = TextAnchor.MiddleCenter;
+        dialogueText.canvas.sortingOrder = 1;
+
+        dialogueText.text = "Hello, world!";
+
         preFightDialogue = new Dialogue {
             lines = new List<string> {
                 "Player: So, we finally meet again.",
-                "Enemy: This time, you won't get away!", 
-                "Player: We'll see about that. Prepare yourself!"
+                "Enemy: This time, you won't get away!",
+                "Player: We'll see about that.",
+                "Prepare yourself!"
             }
         };
+
+        LoadAndDisplayCharacterSprites();
+                
+
+        
+    }
+    private void     ShowWeaponSelectionUI(){
+        CreateWeaponButtonArray(); // Call the method to create the button array
+                CreateBodyButtonArray();
     }
 
-    private IEnumerator StartBattleWithDialogue() {
-        if (dialogueText  == null) {
-            Debug.LogError("DialogueUI is not assigned in the BattleHandler script.");
-           yield break;
-        }
+           //    string weaponFolderPath = config["PlayerWeapon"]; // Path within Resources folder
+    private void CreateWeaponButtonArray() {
+    // Create a parent GameObject to hold the buttons
+    GameObject buttonArrayParent = new GameObject("WeaponButtonArray");
+    buttonArrayParent.transform.SetParent(backgroundObj.transform);
 
-        yield return StartCoroutine(ShowDialogue(preFightDialogue));
-        StartNewGame();
+    // Set the parent RectTransform to match the backgroundObj
+    RectTransform backgroundRect = backgroundObj.GetComponent<RectTransform>();
+    RectTransform buttonArrayRect = buttonArrayParent.AddComponent<RectTransform>();
+    buttonArrayRect.sizeDelta = backgroundRect.sizeDelta;
+
+    // Manually adjust the position of buttonArrayParent
+    Vector2 positionOffset = new Vector2(-100, -100); // Adjust these values as needed
+    buttonArrayRect.anchoredPosition = backgroundRect.anchoredPosition + positionOffset;
+
+    // Create a dark background box for the button array
+    GameObject backgroundBox = new GameObject("WeaponButtonBox");
+    backgroundBox.transform.SetParent(buttonArrayParent.transform);
+    RectTransform backgroundBoxRect = backgroundBox.AddComponent<RectTransform>();
+    backgroundBoxRect.sizeDelta = new Vector2(60, 200); // Match size to the buttonArrayRect
+    backgroundBoxRect.anchoredPosition = Vector2.zero;
+
+    // Add Image component to background box for visualization (optional)
+    Image backgroundImage = backgroundBox.AddComponent<Image>();
+    backgroundImage.color = Color.black; // Set to desired color
+
+    // Create a GridLayoutGroup to organize buttons in a grid
+    GridLayoutGroup gridLayout = buttonArrayParent.AddComponent<GridLayoutGroup>();
+    gridLayout.cellSize = new Vector2(50, 50); // Increase the size for better visibility
+    gridLayout.spacing = new Vector2(5, 5); // Adjust spacing as necessary
+    gridLayout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+    gridLayout.constraintCount = 6;
+
+    // Load textures from folder
+    string folderPath = "Assets/TurnBattleSystem/Textures/Weapons2";
+    Texture2D[] weaponTextures = LoadTexturesFromFolder(folderPath);
+
+    // Create buttons for up to 4 textures
+    int buttonCount = Mathf.Min(4, weaponTextures.Length);
+    for (int i = 0; i < buttonCount; i++) {
+        Texture2D texture = weaponTextures[i];
+
+        // Create a new button
+        GameObject buttonObj = new GameObject("WeaponButton_" + i);
+        buttonObj.transform.SetParent(buttonArrayParent.transform);
+
+        // Set up RectTransform for the button
+        RectTransform buttonRect = buttonObj.AddComponent<RectTransform>();
+        buttonRect.sizeDelta = new Vector2(50, 50); // Match cellSize from GridLayoutGroup
+        buttonRect.anchoredPosition = Vector2.zero;
+
+        // Add Button component
+        Button button = buttonObj.AddComponent<Button>();
+
+        // Add Image component and set sprite
+        Image buttonImage = buttonObj.AddComponent<Image>();
+        buttonImage.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+        buttonImage.raycastTarget = true;
+
+        // Add button functionality
+        int index = i; // Capture the current index for the button
+        button.onClick.AddListener(() => {
+            Debug.Log("Weapon Button " + index + " clicked");
+            OnWeaponButtonClick(index);
+        });
+
+        Debug.Log("Created button: " + buttonObj.name + " at position " + buttonRect.anchoredPosition + " with size " + buttonRect.sizeDelta);
     }
+
+    Debug.Log("Weapon buttons created");
+}
+
+
+
+
+private GameObject CreateBackgroundImage(GameObject parent, Texture2D texture, Color color) {
+    GameObject backgroundObj = new GameObject("WeaponSelectionBackground");
+    backgroundObj.transform.SetParent(parent.transform);
+
+    Image image = backgroundObj.AddComponent<Image>();
+    image.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+    image.color = color;
+
+    RectTransform rectTransform = image.GetComponent<RectTransform>();
+    rectTransform.sizeDelta = new Vector2(500, 300); // Adjust size as needed
+    rectTransform.anchoredPosition = Vector2.zero;
+    rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
+    rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
+    rectTransform.pivot = new Vector2(0.5f, 0.5f);
+
+    return backgroundObj;
+}
+
+private void CreateBodyButtonArray() {
+    // Create a parent GameObject to hold the buttons
+    GameObject buttonArrayParent = new GameObject("BodyButtonArray");
+    buttonArrayParent.transform.SetParent(backgroundObj.transform);
+
+    // Set the parent RectTransform to match the backgroundObj
+    RectTransform backgroundRect = backgroundObj.GetComponent<RectTransform>();
+    RectTransform buttonArrayRect = buttonArrayParent.AddComponent<RectTransform>();
+    buttonArrayRect.sizeDelta = backgroundRect.sizeDelta;
+    
+    // Manually adjust the position of buttonArrayParent to be below the weapon buttons
+    Vector2 positionOffset = new Vector2(-75, -130); // Adjust these values as needed
+    buttonArrayRect.anchoredPosition = backgroundRect.anchoredPosition + positionOffset;
+
+    // Create a GridLayoutGroup to organize buttons in a grid
+    GridLayoutGroup gridLayout = buttonArrayParent.AddComponent<GridLayoutGroup>();
+    gridLayout.cellSize = new Vector2(25, 25); // Adjust size as necessary
+    gridLayout.spacing = new Vector2(5, 5); // Adjust spacing as necessary
+    gridLayout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+    gridLayout.constraintCount = 6;
+
+    // Load textures from folder
+    string folderPath = "Assets/TurnBattleSystem/Textures/Bodies2";
+    Texture2D[] bodyTextures = LoadTexturesFromFolder(folderPath);
+
+    // Create buttons for up to 6 textures
+    int buttonCount = Mathf.Min(6, bodyTextures.Length);
+    for (int i = 0; i < buttonCount; i++) {
+        Texture2D texture = bodyTextures[i];
+        
+        // Create a new button
+        GameObject buttonObj = new GameObject("BodyButton_" + i);
+        buttonObj.transform.SetParent(buttonArrayParent.transform);
+
+        // Set up RectTransform for the button
+        RectTransform buttonRect = buttonObj.AddComponent<RectTransform>();
+        buttonRect.sizeDelta = new Vector2(25, 25); // Keep button size consistent
+
+        // Add Button component
+        Button button = buttonObj.AddComponent<Button>();
+
+        // Add Image component and set sprite
+        Image buttonImage = buttonObj.AddComponent<Image>();
+        buttonImage.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+
+        // Add button functionality
+        int index = i; // Capture the current index for the button
+        button.onClick.AddListener(() => {
+            Debug.Log("Body Button " + index + " clicked");
+            OnWeaponBodyClick(index);
+        });
+    }
+}
+
+
+
+
+private void OnWeaponButtonClick(int index) {
+    Debug.Log("Weapon button " + index + " clicked");
+
+    // Get the path of the selected weapon texture
+    string folderPath = "Assets/TurnBattleSystem/Textures/Weapons2";
+    string[] weaponFiles = System.IO.Directory.GetFiles(folderPath, "*.png");
+    if (index >= 0 && index < weaponFiles.Length) {
+        string selectedWeaponPath = weaponFiles[index];
+
+        // Update config with the selected weapon
+        UpdateConfigWithSelectedWeapon(selectedWeaponPath);
+    }
+
+    Debug.Log("Weapon button " + index + " clicked");
+
+    // Set the flag to true indicating the user has made a selection
+    MadeSelection = true;
+}
+
+
+private void OnWeaponBodyClick(int index) {
+    Debug.Log("Weapon button " + index + " clicked");
+
+    // Get the path of the selected weapon texture
+    string folderPath = "Assets/TurnBattleSystem/Textures/Bodies2";
+    string[] weaponFiles = System.IO.Directory.GetFiles(folderPath, "*.png");
+    if (index >= 0 && index < weaponFiles.Length) {
+        string selectedWeaponPath = weaponFiles[index];
+        
+        // Update config with the selected weapon
+        // Assuming you have a method to update your config file
+        UpdateConfigWithSelectedWeapon(selectedWeaponPath);
+    }
+
+    Debug.Log("Weapon button " + index + " clicked");
+
+    // Set the flag to true indicating the user has made a selection
+    MadeSelection = true ;
+}
+
+private void UpdateConfigWithSelectedWeapon(string weaponPath) {
+    // Example implementation for updating config
+    // This should be replaced with your actual config update logic
+    Debug.Log("Updating config with weapon: " + weaponPath);
+    // Example code to update the config file
+     config["PlayerWeapon"] = weaponPath;
+     
+}
+
+
+
+ private void QuitGame() {
+        Debug.Log("Quitting the game...");
+        
+            Application.Quit();
+        
+    }
+
+private void LoadAndDisplayCharacterSprites() {
+    // Load player sprite
+    string playerSpritePath = config["PlayerHead"]; // Assuming the config has the paths
+    Texture2D playerTexture = LoadTextureFromFile(playerSpritePath);
+    GameObject playerSpriteObj = new GameObject("PlayerSprite");
+    playerSpriteObj.transform.SetParent(canvas.transform);
+
+    // Add Image component and set sprite
+    Image playerImage = playerSpriteObj.AddComponent<Image>();
+    playerImage.sprite = Sprite.Create(playerTexture, new Rect(0, 0, playerTexture.width, playerTexture.height), new Vector2(0.5f, 0.5f));
+    
+    // Adjust position and size
+    RectTransform playerRect = playerSpriteObj.GetComponent<RectTransform>();
+    playerRect.sizeDelta = new Vector2(50, 50); // Adjust size as necessary
+    playerRect.anchoredPosition = new Vector2(-110, -10); // Adjust position as necessary
+    playerRect.anchorMin = new Vector2(0.5f, 0.5f);
+    playerRect.anchorMax = new Vector2(0.5f, 0.5f);
+    playerRect.pivot = new Vector2(0.5f, 0.5f);
+
+   
+
+    // Load enemy sprite
+    string enemySpritePath = config["EnemyHead"]; // Assuming the config has the paths
+    Texture2D enemyTexture = LoadTextureFromFile(enemySpritePath);
+    GameObject enemySpriteObj = new GameObject("EnemySprite");
+    enemySpriteObj.transform.SetParent(canvas.transform);
+
+    // Add Image component and set sprite
+    Image enemyImage = enemySpriteObj.AddComponent<Image>();
+    enemyImage.sprite = Sprite.Create(enemyTexture, new Rect(0, 0, enemyTexture.width, enemyTexture.height), new Vector2(0.5f, 0.5f));
+    
+    // Adjust position and size
+    RectTransform enemyRect = enemySpriteObj.GetComponent<RectTransform>();
+    enemyRect.sizeDelta = new Vector2(50, 50); // Adjust size as necessary
+    enemyRect.anchoredPosition = new Vector2(110, -10); // Adjust position as necessary
+    enemyRect.anchorMin = new Vector2(0.5f, 0.5f);
+    enemyRect.anchorMax = new Vector2(0.5f, 0.5f);
+    enemyRect.pivot = new Vector2(0.5f, 0.5f);
+}
+private bool MadeSelection = false ;
+private bool UserHasMadeSelection() {
+    // Implement logic to determine if the user has made a selection
+    // This could involve checking a flag or condition that gets updated when the user selects a weapon or body part
+    return MadeSelection; // Placeholder, replace with actual implementation
+}
+
+// Update the StartBattleWithDialogue method to remove sprites
+private IEnumerator StartBattleWithDialogue() {
+    if (dialogueText == null) {
+        Debug.LogError("DialogueText component not found under Canvas2.");
+        yield break;
+    }
+   // ShowWeaponSelectionUI();
+
+    // Wait for the user to make their selection
+   //yield return new WaitUntil(() => UserHasMadeSelection());
+
+    yield return StartCoroutine(ShowDialogue(preFightDialogue));
+
+    // Deactivate the background and remove sprites after the dialogue is complete
+    backgroundObj.SetActive(false);
+    Destroy(GameObject.Find("PlayerSprite"));
+    Destroy(GameObject.Find("EnemySprite"));
+
+    StartNewGame();
+}
 
     private IEnumerator ShowDialogue(Dialogue dialogue) {
         foreach (string line in dialogue.lines) {
-            dialogueText.text = line;
-            yield return new WaitForSeconds(2f); // Example wait time
+            yield return StartCoroutine(TypeSentence(line));
+            yield return new WaitForSeconds(1f); // Wait for a second before showing the next line
         }
         dialogueText.text = ""; // Clear the dialogue after displaying
+    }
+
+    private IEnumerator TypeSentence(string sentence) {
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray()) {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(0.05f); // Adjust the typing speed as necessary
+        }
     }
 
     public void TestBattleStart() {
@@ -110,13 +424,18 @@ public class BattleHandler : MonoBehaviour {
         StartCoroutine(WaitAndStartGame(5f)); // Wait for 5 seconds before starting the game
     }
 
+
     private IEnumerator WaitAndStartGame(float waitTime) {
         yield return new WaitForSeconds(waitTime);
         BattleOverWindow.Hide_Static();
         StartNewGame();
     }
 
+
+
     private void Start() {
+// Initialize Character Customization UI
+        
         StartCoroutine(StartBattleWithDialogue());
     }
 
@@ -405,6 +724,19 @@ public class BattleHandler : MonoBehaviour {
 
         return texture;
     }
+
+    private Texture2D[] LoadTexturesFromFolder(string folderPath) {
+    string[] files = System.IO.Directory.GetFiles(folderPath, "*.png");
+    List<Texture2D> textures = new List<Texture2D>();
+    foreach (string file in files) {
+        byte[] fileData = System.IO.File.ReadAllBytes(file);
+        Texture2D texture = new Texture2D(2, 2);
+        texture.LoadImage(fileData); // This will auto-resize the texture dimensions.
+        textures.Add(texture);
+    }
+    return textures.ToArray();
+}
+
 
     private void SaveTextureToFile(Texture2D texture, string filePath) {
         byte[] pngData = texture.EncodeToPNG();
