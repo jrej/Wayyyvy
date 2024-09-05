@@ -314,12 +314,13 @@ private void OnWeaponBodyClick(int index) {
     MadeSelection = true ;
 }
 
-private void UpdateConfigWithSelectedWeapon(string weaponPath) {
+public void UpdateConfigWithSelectedWeapon(string weaponPath) {
     // Example implementation for updating config
     // This should be replaced with your actual config update logic
     Debug.Log("Updating config with weapon: " + weaponPath);
     // Example code to update the config file
      config["PlayerWeapon"] = weaponPath;
+     ModifyPlayerBodySpritesheet(weaponPath);
      
 }
 
@@ -335,7 +336,7 @@ private void UpdateConfigWithSelectedWeapon(string weaponPath) {
 private void LoadAndDisplayCharacterSprites() {
     // Load player sprite
     string playerSpritePath = config["PlayerHead"]; // Assuming the config has the paths
-    Texture2D playerTexture = LoadTextureFromFile(playerSpritePath);
+    Texture2D playerTexture = LoadTextureFromFile("PlayerSprite.png");
     GameObject playerSpriteObj = new GameObject("PlayerSprite");
     playerSpriteObj.transform.SetParent(canvas.transform);
 
@@ -555,11 +556,13 @@ private IEnumerator StartBattleWithDialogue() {
         if (isPlayer) {
             ModifyPlayerBodySpritesheet(bodyFile);
             ModifyPlayerWeaponSpritesheet(weaponFile);
+            ModifyPlayerHeadSpritesheet("head.png");
         } else {
             ModifyEnemyBodySpritesheet(bodyFile);
             ModifyEnemyWeaponSpritesheet(weaponFile);
         }
     }
+    string[] nameSlots = {};
 
     private void ModifyPlayerBodySpritesheet(string bodyFile) {
         // Paths to files and folders
@@ -586,14 +589,55 @@ private IEnumerator StartBattleWithDialogue() {
         selectedBodies = ResizeTexture(selectedBodies, selectedBodies.width, selectedBodies.height);
 
         // Define coordinates for the body (adjust based on your spritesheet)
-        Rect body1Rect = new Rect(50, 260, selectedBodies.width, selectedBodies.height); // Adjusted coordinates and size based on the image
+        Rect body1Rect = new Rect(20, 300, selectedBodies.width, selectedBodies.height); // Adjusted coordinates and size based on the image
         ReplaceTextureSection(baseSpritesheet, selectedBodies, body1Rect);
 
-        Rect body2Rect = new Rect(180, 260, selectedBodies.width, selectedBodies.height); // Adjusted coordinates and size based on the image
+        Rect body2Rect = new Rect(180-30, 300, selectedBodies.width, selectedBodies.height); // Adjusted coordinates and size based on the image
         ReplaceTextureSection(baseSpritesheet, selectedBodies, body2Rect);
 
-        Rect body3Rect = new Rect(300, 260, selectedBodies.width, selectedBodies.height); // Adjusted coordinates and size based on the image
+        Rect body3Rect = new Rect(300-30, 300, selectedBodies.width, selectedBodies.height); // Adjusted coordinates and size based on the image
         ReplaceTextureSection(baseSpritesheet, selectedBodies, body3Rect);
+
+        // Save the modified spritesheet
+        SaveTextureToFile(baseSpritesheet, outputImagePath);
+        Debug.Log($"Modified spritesheet saved to {outputImagePath}");
+    }
+
+    private void ModifyPlayerHeadSpritesheet(string bodyFile) {
+        // Paths to files and folders
+        string baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+        string outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        // Load the base spritesheet
+        Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
+
+        if (baseSpritesheet == null) {
+            Debug.LogError("Failed to load base spritesheet.");
+            return;
+        }
+
+        // Load the selected body image
+        Texture2D selectedHead = LoadTextureFromFile("Assets/TurnBattleSystem/Textures/head.png");
+
+        if (selectedHead == null) {
+            Debug.LogError("Failed to load selected bodies.");
+            return;
+        }
+
+        // Resize the loaded bodies image if necessary
+        selectedHead = ResizeTexture(selectedHead, selectedHead.width, selectedHead.height);
+
+        // Define coordinates for the body (adjust based on your spritesheet)
+        Rect body1Rect = new Rect(25, 432, selectedHead.width, selectedHead.height); // Adjusted coordinates and size based on the image
+        ReplaceTextureSection(baseSpritesheet, selectedHead, body1Rect);
+
+        Rect body2Rect = new Rect(180-30, 432, selectedHead.width, selectedHead.height); // Adjusted coordinates and size based on the image
+        ReplaceTextureSection(baseSpritesheet, selectedHead, body2Rect);
+
+        Rect body3Rect = new Rect(300-30, 432, selectedHead.width, selectedHead.height); // Adjusted coordinates and size based on the image
+        ReplaceTextureSection(baseSpritesheet, selectedHead, body3Rect);
+
+        
 
         // Save the modified spritesheet
         SaveTextureToFile(baseSpritesheet, outputImagePath);
@@ -625,13 +669,13 @@ private IEnumerator StartBattleWithDialogue() {
         selectedBodies = ResizeTexture(selectedBodies, selectedBodies.width, selectedBodies.height);
 
         // Define coordinates for the body (adjust based on your spritesheet)
-        Rect body1Rect = new Rect(50, 260, selectedBodies.width, selectedBodies.height); // Adjusted coordinates and size based on the image
+        Rect body1Rect = new Rect(25, 300, selectedBodies.width, selectedBodies.height); // Adjusted coordinates and size based on the image
         ReplaceTextureSection(baseSpritesheet, selectedBodies, body1Rect);
 
-        Rect body2Rect = new Rect(180, 260, selectedBodies.width, selectedBodies.height); // Adjusted coordinates and size based on the image
+        Rect body2Rect = new Rect(180, 300, selectedBodies.width, selectedBodies.height); // Adjusted coordinates and size based on the image
         ReplaceTextureSection(baseSpritesheet, selectedBodies, body2Rect);
 
-        Rect body3Rect = new Rect(300, 260, selectedBodies.width, selectedBodies.height); // Adjusted coordinates and size based on the image
+        Rect body3Rect = new Rect(300, 300, selectedBodies.width, selectedBodies.height); // Adjusted coordinates and size based on the image
         ReplaceTextureSection(baseSpritesheet, selectedBodies, body3Rect);
 
         // Save the modified spritesheet
@@ -639,7 +683,7 @@ private IEnumerator StartBattleWithDialogue() {
         Debug.Log($"Modified spritesheet saved to {outputImagePath}");
     }
 
-    private void ModifyPlayerWeaponSpritesheet(string weaponFile) {
+    public void ModifyPlayerWeaponSpritesheet(string weaponFile) {
         // Paths to files and folders
         string baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
         string outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
@@ -663,15 +707,10 @@ private IEnumerator StartBattleWithDialogue() {
         // Resize the loaded weapon image if necessary
         selectedWeapons = ResizeTexture(selectedWeapons, selectedWeapons.width, selectedWeapons.height);
 
-        // Define coordinates for the weapons (adjust based on your spritesheet)
-        Rect weapon1Rect = new Rect(50, 50, selectedWeapons.width, selectedWeapons.height); // Adjusted coordinates and size based on the image
+        // Define coordinates for the wepons (adjust based on your spritesheet)
+        Rect weapon1Rect = new Rect(50, 180, selectedWeapons.width, selectedWeapons.height); // Adjusted coordinates and size based on the image
         ReplaceTextureSection(baseSpritesheet, selectedWeapons, weapon1Rect);
 
-        Rect weapon2Rect = new Rect(180, 50, selectedWeapons.width, selectedWeapons.height); // Adjusted coordinates and size based on the image
-        ReplaceTextureSection(baseSpritesheet, selectedWeapons, weapon2Rect);
-
-        Rect weapon3Rect = new Rect(300, 50, selectedWeapons.width, selectedWeapons.height); // Adjusted coordinates and size based on the image
-        ReplaceTextureSection(baseSpritesheet, selectedWeapons, weapon3Rect);
 
         // Save the modified spritesheet
         SaveTextureToFile(baseSpritesheet, outputImagePath);
