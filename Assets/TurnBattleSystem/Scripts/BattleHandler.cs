@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine.SceneManagement;
 
-
 public class Dialogue {
     public List<string> lines;
 
@@ -36,6 +35,8 @@ public class BattleHandler : MonoBehaviour {
     private State state;
     private Text dialogueText;
 
+
+
     private Dialogue preFightDialogue;
 
     private GameObject canvas;
@@ -64,8 +65,8 @@ public class BattleHandler : MonoBehaviour {
     private void Awake() {
         instance = this;
 
-        SetupPlayer("config.txt");
-        SetupEnemy("config.txt");
+        SetupPlayer("configPlayer.txt");
+        SetupEnemy("configPlayer.txt");
 
         customizationUIObject = new GameObject("CharacterCustomizationUI");
         customizationUIObject.AddComponent<CharacterCustomizationUI>();
@@ -335,8 +336,8 @@ public void UpdateConfigWithSelectedWeapon(string weaponPath) {
 
 private void LoadAndDisplayCharacterSprites() {
     // Load player sprite
-    string playerSpritePath = config["PlayerHead"]; // Assuming the config has the paths
-    Texture2D playerTexture = LoadTextureFromFile("PlayerSprite.png");
+   // string playerSpritePath = config["PlayerHead"]; // Assuming the config has the paths
+    Texture2D playerTexture = LoadTextureFromFile(playerConfig.playerHead.path);
     GameObject playerSpriteObj = new GameObject("PlayerSprite");
     playerSpriteObj.transform.SetParent(canvas.transform);
 
@@ -355,8 +356,8 @@ private void LoadAndDisplayCharacterSprites() {
    
 
     // Load enemy sprite
-    string enemySpritePath = config["EnemyHead"]; // Assuming the config has the paths
-    Texture2D enemyTexture = LoadTextureFromFile(enemySpritePath);
+   // string enemySpritePath = config["EnemyHead"]; // Assuming the config has the paths
+    Texture2D enemyTexture = LoadTextureFromFile(playerConfig.playerHead.path);
     GameObject enemySpriteObj = new GameObject("EnemySprite");
     enemySpriteObj.transform.SetParent(canvas.transform);
 
@@ -442,8 +443,8 @@ private IEnumerator StartBattleWithDialogue() {
 
     private void StartNewGame() {
         // Update spritesheets
-        SetupPlayer("config.txt");
-        SetupEnemy("config.txt");
+        SetupPlayer("configPlayer.txt");
+        SetupEnemy("configPlayer.txt");
 
         // Spawn player and enemy characters
         playerCharacterBattle = SpawnCharacter(true);
@@ -524,44 +525,110 @@ private IEnumerator StartBattleWithDialogue() {
 
         return false;
     }
+private void LoadCharacterConfig(string path) {
+    if (!File.Exists(path)) {
+        Debug.LogError("Config file not found: " + path);
+        return;
+    }
 
-    private void LoadCharacterConfig(string path) {
-        config = new Dictionary<string, string>();
-        using (StreamReader reader = new StreamReader(path)) {
-            string line;
-            while ((line = reader.ReadLine()) != null) {
-                string[] keyValue = line.Split('=');
-                if (keyValue.Length == 2) {
-                    config[keyValue[0].Trim()] = keyValue[1].Trim();
+    using (StreamReader reader = new StreamReader(path)) {
+        string line;
+        while ((line = reader.ReadLine()) != null) {
+            string[] keyValue = line.Split('=');
+            if (keyValue.Length == 2) {
+                string key = keyValue[0].Trim();
+                string value = keyValue[1].Trim();
+
+                // Map the config values to PlayerConfig properties
+                switch (key) {
+                    case "PlayerName":
+                        playerConfig.playerName = value;
+                        break;
+                    case "PlayerHead":
+                        playerConfig.playerHead.path = value;
+                        break;
+                    case "PlayerBody":
+                        playerConfig.playerBody.path = value;
+                        break;
+                    case "PlayerWeapon":
+                        playerConfig.playerWeapon.path = value;
+                        break;
+                    case "PlayerOffHand":
+                        playerConfig.playerOffHand.path = value;
+                        break;
+                    case "PlayerLegs":
+                        playerConfig.playerLegs.path = value;
+                        break;
+                    case "PlayerFeet":
+                        playerConfig.playerFeet.path = value;
+                        break;
+                    case "PlayerRelic":
+                        playerConfig.playerRelic.path = value;
+                        break;
+                    case "PlayerCloak":
+                        playerConfig.playerCloak.path = value;
+                        break;
+                    default:
+                        Debug.LogWarning("Unknown config key: " + key);
+                        break;
                 }
             }
         }
     }
 
+    // Optional: Log player config for debugging purposes
+    playerConfig.DisplayPlayerConfig();
+}
+
+
+public PlayerConfig playerConfig;
     public void SetupPlayer(string configPath) {
-        LoadCharacterConfig(configPath);
-        LoadCharacterSprites(true);
-    }
+    playerConfig = new PlayerConfig();  // Ensure playerConfig is initialized
+
+    // Load the player configuration from the file
+    LoadCharacterConfig(configPath);
+
+    // Apply the loaded player sprites based on the configuration
+    LoadCharacterSprites(true); 
+    Debug.Log("Player is loaded");
+
+}
 
     public void SetupEnemy(string configPath) {
-        LoadCharacterConfig(configPath);
-        LoadCharacterSprites(false);
+        playerConfig = new PlayerConfig();  // Ensure playerConfig is initialized
+
+    // Load the player configuration from the file
+    LoadCharacterConfig(configPath);
+
+    // Apply the loaded player sprites based on the configuration
+    LoadCharacterSprites(false); 
+    Debug.Log("Enemy is loaded");
     }
 
     private void LoadCharacterSprites(bool isPlayer) {
-        string headFile = isPlayer ? config["PlayerHead"] : config["EnemyHead"];
-        string bodyFile = isPlayer ? config["PlayerBody"] : config["EnemyBody"];
-        string weaponFile = isPlayer ? config["PlayerWeapon"] : config["EnemyWeapon"];
+    if (isPlayer) {
+        // Use PlayerConfig for the player character
+        string headFile = playerConfig.playerHead.path;
+        string bodyFile = playerConfig.playerBody.path;
+        string weaponFile = playerConfig.playerWeapon.path;
 
-        if (isPlayer) {
-            ModifyPlayerBodySpritesheet(bodyFile);
-            ModifyPlayerWeaponSpritesheet(weaponFile);
-            ModifyPlayerHeadSpritesheet("head.png");
-        } else {
-            ModifyEnemyBodySpritesheet(bodyFile);
-            ModifyEnemyWeaponSpritesheet(weaponFile);
-        }
+        // Apply the player-specific textures
+        ModifyPlayerBodySpritesheet(bodyFile);
+        ModifyPlayerWeaponSpritesheet(weaponFile);
+        ModifyPlayerHeadSpritesheet(headFile);
+    } else {
+       // string headFile = playerConfig.playerHead;
+        string bodyFile = playerConfig.playerBody.path;
+        string weaponFile = playerConfig.playerWeapon.path;
+
+
+        // Apply the enemy-specific textures if the paths are available
+        if (!string.IsNullOrEmpty(bodyFile)) ModifyEnemyBodySpritesheet(bodyFile);
+        if (!string.IsNullOrEmpty(weaponFile)) ModifyEnemyWeaponSpritesheet(weaponFile);
+        //if (!string.IsNullOrEmpty(headFile)) ModifyEnemyHeadSpritesheet(headFile);
     }
+}
+
     string[] nameSlots = {};
 
     private void ModifyPlayerBodySpritesheet(string bodyFile) {

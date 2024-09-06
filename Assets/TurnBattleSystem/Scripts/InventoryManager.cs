@@ -109,6 +109,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
                 {
                     string fullPath = System.IO.Path.Combine(obj.path, obj.iconFile);
                     LoadPlayerSpriteGearImage(playerSpriteHeadImage, fullPath);
+                    Debug.LogError("path  " + fullPath + "!");
                 }
                 else
                 {
@@ -133,6 +134,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
 {
     // Find the InventoryMenu object first
     Transform inventoryMenuTransform = transform.Find("InventoryMenu");
+    
 
     if (inventoryMenuTransform != null)
     {
@@ -163,7 +165,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
 
                 if (playerSpriteHeadImage != null)
                 {
-                    LoadPlayerSpriteGearImage(playerSpriteHeadImage,PlayerHeadPath);
+                    LoadPlayerSpriteGearImage(playerSpriteHeadImage,battleHandler.playerConfig.playerHead.iconFile);
                 }
                 else
                 {
@@ -178,7 +180,8 @@ void ModifyPlayerGear(UserObjects obj, string name)
 
                 if (playerSpriteWeaponHandImage != null)
                 {
-                    LoadPlayerSpriteGearImage(playerSpriteWeaponHandImage,PlayerWeaponHandPath);
+                    LoadPlayerSpriteGearImage(playerSpriteWeaponHandImage,$"{battleHandler.playerConfig.playerWeapon.path}/{battleHandler.playerConfig.playerWeapon.iconFile}");
+                    
                 }
                 else
                 {
@@ -192,7 +195,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
 
                 if (playerSpriteOffHandImage != null)
                 {
-                    LoadPlayerSpriteGearImage(playerSpriteOffHandImage,PlayerOffHandPath);
+                    LoadPlayerSpriteGearImage(playerSpriteOffHandImage,battleHandler.playerConfig.playerOffHand.path);
                 }
                 else
                 {
@@ -206,7 +209,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
 
                 if (playerSpriteRelicImage != null)
                 {
-                    LoadPlayerSpriteGearImage(playerSpriteRelicImage,PlayerRelicPath);
+                    LoadPlayerSpriteGearImage(playerSpriteRelicImage,battleHandler.playerConfig.playerRelic.path);
                 }
                 else
                 {
@@ -220,7 +223,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
 
                 if (playerSpriteFeetImage != null)
                 {
-                    LoadPlayerSpriteGearImage(playerSpriteFeetImage,PlayerFeetPath);
+                    LoadPlayerSpriteGearImage(playerSpriteFeetImage,battleHandler.playerConfig.playerFeet.path);
                 }
                 else
                 {
@@ -234,7 +237,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
 
                 if (playerSpriteCloakImage != null)
                 {
-                    LoadPlayerSpriteGearImage(playerSpriteCloakImage,PlayerCloakPath);
+                    LoadPlayerSpriteGearImage(playerSpriteCloakImage,battleHandler.playerConfig.playerCloak.path);
                 }
                 else
                 {
@@ -248,7 +251,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
 
                 if (playerSpriteBodyImage != null)
                 {
-                    LoadPlayerSpriteGearImage(playerSpriteBodyImage,PlayerBodyPath);
+                    LoadPlayerSpriteGearImage(playerSpriteBodyImage,battleHandler.playerConfig.playerBody.path);
                 }
                 else
                 {
@@ -262,7 +265,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
 
                 if (playerSpriteLegsImage != null)
                 {
-                    LoadPlayerSpriteGearImage(playerSpriteLegsImage,PlayerLegsPath);
+                    LoadPlayerSpriteGearImage(playerSpriteLegsImage,battleHandler.playerConfig.playerLegs.path);
                 }
                 else
                 {
@@ -342,6 +345,8 @@ void ModifyPlayerGear(UserObjects obj, string name)
     // Update is called once per frame
     void Update()
     {
+
+        LoadWeaponImages();
         if (Input.GetKeyDown(KeyCode.W))
         {
             if (active)
@@ -349,6 +354,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
                 Debug.Log("Deactivating inventory menu");
                 Time.timeScale = 1;
                 InventoryMenu.SetActive(false);
+                
                 active = false;
             }
             else
@@ -493,6 +499,7 @@ void LoadWeaponImages()
             Image slotImage = itemSlots[i].GetComponent<Image>();
             if (slotImage != null)
             {
+                Debug.Log($"{weaponImagesPath}/{imageFile}");
                 LoadPlayerSpriteGearImage(slotImage, $"{weaponImagesPath}/{imageFile}");
             }
 
@@ -526,7 +533,9 @@ void OnSlotClicked(string imageFileName)
 
         // Modify the UI description with the weapon's name and description
         ModifyDescription(clickedWeapon.name, clickedWeapon.description);
-        ModifyPlayerGear(clickedWeapon,"Weapon");
+        battleHandler.playerConfig.playerWeapon = clickedWeapon;
+        LoadPlayerSpriteGear();
+        //ModifyPlayerGear(clickedWeapon,"Weapon");
     }
     else
     {

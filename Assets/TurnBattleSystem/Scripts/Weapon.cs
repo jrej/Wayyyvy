@@ -12,8 +12,8 @@ public class Weapon : UserObjects
     public int maneuverability;
 
     // Constructor
-    public Weapon(string name, string iconFile, int attack, int speed, int maneuverability, string description)
-        : base(name, description, iconFile)
+    public Weapon(string name, string iconFile,string path, int attack, int speed, int maneuverability, string description)
+        : base(name, description, iconFile,path )
     {
         this.attack = attack;
         this.speed = speed;
@@ -48,7 +48,7 @@ public class Weapon : UserObjects
             {
                 case "WeaponName":
                     if (currentWeapon != null) weapons.Add(currentWeapon);
-                    currentWeapon = new Weapon(value, "", 0, 0, 0, "");
+                    currentWeapon = new Weapon(value, "","", 0, 0, 0, "");
                     break;
                 case "IconFile":
                     if (currentWeapon != null) currentWeapon.iconFile = value;
@@ -64,6 +64,10 @@ public class Weapon : UserObjects
                     break;
                 case "Description":
                     if (currentWeapon != null) currentWeapon.description = value;
+                    break;
+
+                case "Path":
+                    if (currentWeapon != null) currentWeapon.path = value;
                     break;
             }
         }
