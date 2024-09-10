@@ -16,6 +16,8 @@ public class CharacterBattle : MonoBehaviour {
     private World_Bar healthBar;
     private float dodgeChance = 0.5f; // 20% chance to dodge
     private Vector3 originalPosition;
+    private PlayerConfig playerConfig;
+
 
     private enum State {
         Idle,
@@ -35,8 +37,13 @@ public class CharacterBattle : MonoBehaviour {
     private void Start() {
     }
 
+
     public void Setup(bool isPlayerTeam) {
+         playerConfig = new PlayerConfig();
+        playerConfig.LoadPlayerConfig("configPlayer.txt");
+        playerConfig.CalculateTotalStats();
         this.isPlayerTeam = isPlayerTeam;
+        
         if (isPlayerTeam) {
             characterBase.SetAnimsSwordTwoHandedBack();
             characterBase.GetMaterial().mainTexture = BattleHandler.GetInstance().playerSpritesheet;
@@ -44,8 +51,14 @@ public class CharacterBattle : MonoBehaviour {
             characterBase.SetAnimsSwordShield();
             characterBase.GetMaterial().mainTexture = BattleHandler.GetInstance().enemySpritesheet;
         }
-        healthSystem = new HealthSystem(100);
-        healthBar = new World_Bar(transform, new Vector3(0, 10), new Vector3(12, 1.7f), Color.grey, Color.red, 1f, 100, new World_Bar.Outline { color = Color.black, size = .6f });
+playerConfig.totalLifePoints = 100 ;
+        // Use playerConfig stats for initial setup
+    healthSystem = new HealthSystem(playerConfig.totalLifePoints);
+    Debug.Log("LIFEPOINT : " + playerConfig.totalLifePoints);
+    healthBar = new World_Bar(transform, new Vector3(0, 10), new Vector3(12, 1.7f), Color.grey, Color.red, 1f, playerConfig.totalLifePoints, new World_Bar.Outline { color = Color.black, size = .6f });
+
+       // healthSystem = new HealthSystem(100);
+       // healthBar = new World_Bar(transform, new Vector3(0, 10), new Vector3(12, 1.7f), Color.grey, Color.red, 1f, 100, new World_Bar.Outline { color = Color.black, size = .6f });
         healthSystem.OnHealthChanged += HealthSystem_OnHealthChanged;
 
         PlayAnimIdle();
@@ -122,10 +135,13 @@ public class CharacterBattle : MonoBehaviour {
                 // Successfully dodged, back to idle
                 state = State.Idle;
             });
+
             return;
         }
 
         healthSystem.Damage(damageAmount);
+        healthSystem.OnHealthChanged += HealthSystem_OnHealthChanged;
+
         Vector3 dirFromAttacker = (GetPosition() - attacker.GetPosition()).normalized;
 
         DamagePopup.Create(GetPosition(), damageAmount, false);
@@ -141,6 +157,18 @@ public class CharacterBattle : MonoBehaviour {
     }
 
     private void Dodge(CharacterBattle attacker, Action onDodgeComplete) {
+
+    
+// Use agility to determine dodge
+    if (UnityEngine.Random.value < playerConfig.totalAgility * 0.01f) {
+        // Dodge the attack
+        Dodge(attacker, () => {
+            state = State.Idle;
+        });
+        return;
+    }
+
+
     Vector3 dodgeDirection = (GetPosition() - attacker.GetPosition()).normalized;
     Vector3 position = GetPosition();
     Vector3 dodgeTargetPosition = position + dodgeDirection * 10f; // Adjust the distance as needed
@@ -179,10 +207,16 @@ public class CharacterBattle : MonoBehaviour {
             // Arrived at Target, attack him
             state = State.Busy;
             Vector3 attackDir = (targetCharacterBattle.GetPosition() - GetPosition()).normalized;
+
+
+     
+
+
+
             characterBase.PlayAnimAttack(attackDir, () => {
-                // Target hit
-                int damageAmount = UnityEngine.Random.Range(20, 50);
-                targetCharacterBattle.Damage(this, damageAmount);
+                        // Use the attack stat when calculating damage
+            int damageAmount = UnityEngine.Random.Range(playerConfig.totalAttack - 10, playerConfig.totalAttack + 10);
+            targetCharacterBattle.Damage(this, damageAmount);
                 }, () => {
                 // Attack completed, slide back
                 SlideToPosition(startingPosition, () => {

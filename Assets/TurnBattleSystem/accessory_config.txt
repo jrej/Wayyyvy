@@ -1,0 +1,34 @@
+AccessoryName=MagicRing
+IconFile=IconAccessory01.png
+Path=Assets/TurnBattleSystem/Textures/Accessories/
+MagicResistance=15
+CriticalChance=5
+Description=A ring imbued with magical protection.
+
+AccessoryName=AmuletOfStrength
+IconFile=IconAccessory02.png
+Path=Assets/TurnBattleSystem/Textures/Accessories/
+MagicResistance=10
+CriticalChance=10
+Description=An amulet that boosts the wearer's strength and resilience.
+
+AccessoryName=CloakOfInvisibility
+IconFile=IconAccessory03.png
+Path=Assets/TurnBattleSystem/Textures/Accessories/
+MagicResistance=20
+CriticalChance=0
+Description=A cloak that grants temporary invisibility to its wearer.
+
+AccessoryName=SilverBracelet
+IconFile=IconAccessory04.png
+Path=Assets/TurnBattleSystem/Textures/Accessories/
+MagicResistance=5
+CriticalChance=15
+Description=A lightweight bracelet that improves critical strike chance.
+
+AccessoryName=GoldenPendant
+IconFile=IconAccessory05.png
+Path=Assets/TurnBattleSystem/Textures/Accessories/
+MagicResistance=25
+CriticalChance=8
+Description=A rare pendant that offers magical protection and boosts luck.

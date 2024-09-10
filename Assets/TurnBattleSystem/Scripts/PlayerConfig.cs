@@ -19,9 +19,48 @@ public class PlayerConfig
     public UserObjects playerRelic = new UserObjects();
     public UserObjects playerCloak = new UserObjects();
 
-    public static PlayerConfig LoadPlayerConfig(string configFilePath)
+
+    // Player's total stats
+    public int totalLifePoints;
+    public int totalAttack;
+    public int totalAgility;
+    public int totalIntelligence;
+    public int totalSpeed;
+
+
+
+    public void SavePlayerConfig(string configFilePath)
+{
+    List<string> lines = new List<string>();
+
+    lines.Add("PlayerName=" + playerName);
+    lines.Add("PlayerHead=" + playerHead.path);
+    lines.Add("PlayerBody=" + playerBody.path);
+    lines.Add("PlayerWeapon=" + playerWeapon.path);
+    lines.Add("PlayerOffHand=" + playerOffHand.path);
+    lines.Add("PlayerLegs=" + playerLegs.path);
+    lines.Add("PlayerFeet=" + playerFeet.path);
+    lines.Add("PlayerRelic=" + playerRelic.path);
+    lines.Add("PlayerCloak=" + playerCloak.path);
+
+    try
+    {
+        // Write all lines to the file
+        File.WriteAllLines(configFilePath, lines.ToArray());
+        Debug.Log("Player config saved successfully to: " + configFilePath);
+    }
+    catch (Exception e)
+    {
+        Debug.LogError("Failed to save player config: " + e.Message);
+    }
+}
+
+
+    public PlayerConfig LoadPlayerConfig(string configFilePath)
+
     {
         PlayerConfig playerConfig = new PlayerConfig();
+        Debug.Log("Srting file  : " + configFilePath);
 
         if (!File.Exists(configFilePath))
         {
@@ -40,6 +79,8 @@ public class PlayerConfig
 
             string key = split[0].Trim();
             string value = split[1].Trim();
+
+            Debug.Log(" key : " + key +  "   value : " + value);
 
             switch (key)
             {
@@ -73,6 +114,8 @@ public class PlayerConfig
             }
         }
 
+        playerConfig.CalculateTotalStats();
+
         return playerConfig;
     }
 
@@ -82,6 +125,47 @@ public class PlayerConfig
         Debug.Log($"Head: {playerHead.path}, Body: {playerBody.path}, Weapon: {playerWeapon.path}");
         Debug.Log($"OffHand: {playerOffHand.path}, Legs: {playerLegs.path}, Feet: {playerFeet.path}");
         Debug.Log($"Relic: {playerRelic.path}, Cloak: {playerCloak.path}");
+    }
+    
+    
+    private void AddGearStats(UserObjects gear)
+{
+    if (gear != null)
+    {
+        totalLifePoints += gear.lifePoints;
+        totalAgility += gear.agility;
+        totalIntelligence += gear.intelligence;
+
+        // Check if the gear is of type Weapon
+        if (gear is Weapon weapon)
+        {
+            totalAttack += weapon.attack;
+            totalSpeed += weapon.speed;
+        }
+    }
+}
+
+
+
+
+    // Method to calculate total stats based on equipped items
+    public void CalculateTotalStats()
+    {
+        totalLifePoints = 0;
+        totalAttack = 0;
+        totalAgility = 0;
+        totalIntelligence = 0;
+        totalSpeed = 0;
+
+        AddGearStats(playerHead);
+        AddGearStats(playerBody);
+        AddGearStats(playerWeapon);
+        AddGearStats(playerOffHand);
+        AddGearStats(playerLegs);
+        AddGearStats(playerFeet);
+        AddGearStats(playerRelic);
+        AddGearStats(playerCloak);
+        
     }
 }
 

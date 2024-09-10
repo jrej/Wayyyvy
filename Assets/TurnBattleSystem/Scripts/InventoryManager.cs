@@ -132,6 +132,8 @@ void ModifyPlayerGear(UserObjects obj, string name)
 
     void LoadPlayerSpriteGear()
 {
+    Debug.Log("LoadP;layerSpriteGear");
+    battleHandler.playerConfig.DisplayPlayerConfig();
     // Find the InventoryMenu object first
     Transform inventoryMenuTransform = transform.Find("InventoryMenu");
     
@@ -144,8 +146,12 @@ void ModifyPlayerGear(UserObjects obj, string name)
         // Find the PlayerSpriteGear object by name within the children
         foreach (Transform child in allChildren)
         {
+
+//                Debug.Log(child.name);
+
             if (child.name == "PlayerSpriteGear")
             {
+                
                 playerSpriteGearImage = child.GetComponent<Image>();
 
                 if (playerSpriteGearImage != null)
@@ -180,8 +186,14 @@ void ModifyPlayerGear(UserObjects obj, string name)
 
                 if (playerSpriteWeaponHandImage != null)
                 {
-                    LoadPlayerSpriteGearImage(playerSpriteWeaponHandImage,$"{battleHandler.playerConfig.playerWeapon.path}/{battleHandler.playerConfig.playerWeapon.iconFile}");
+                    LoadPlayerSpriteGearImage(playerSpriteWeaponHandImage, $"{battleHandler.playerConfig.playerWeapon.path}/{battleHandler.playerConfig.playerWeapon.iconFile}");
+                    //    System.Diagnostics.Process.Start("Assets/TurnBattleSystemTextures/PlayerSpritesheet.png");
+                    battleHandler.ModifyPlayerWeaponSpritesheet($"{battleHandler.playerConfig.playerWeapon.path}/{battleHandler.playerConfig.playerWeapon.iconFile}");
                     
+                    
+//                                        battleHandler.LoadAndDisplayCharacterSprites();
+        //                                Debug.Log("LoadAndDisplayCharacterSpritesr");
+
                 }
                 else
                 {
@@ -332,6 +344,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
         InventoryMenu.SetActive(false);
         
         battleHandler = FindObjectOfType<BattleHandler>();
+
         //itemSlots = InventoryMenu.GetComponentsInChildren<Transform>();
         LoadPlayerSprite();
         LoadPlayerSpriteGear();
@@ -442,7 +455,6 @@ void ModifyDescription(string name, string description)
 
 
 
-
 void LoadWeaponImages()
 {
     // Find the InventoryMenu object first
@@ -479,50 +491,54 @@ void LoadWeaponImages()
     Image[] itemSlots = itemSlotsTransform.GetComponentsInChildren<Image>();
 
     // Define the path to the weapon images folder
-    string weaponImagesPath = "Assets/TurnBattleSystem/Textures/Weapons";
+    string weaponImagesPath = "Assets/TurnBattleSystem/Textures/bag/";
 
-    // Iterate through each slot and load the corresponding weapon image
-    for (int i = 1; i < itemSlots.Length; i++)
+    // Get all the image files from the folder
+    string[] imageFiles = Directory.GetFiles(weaponImagesPath, "*.png");
+
+    // Iterate through the slots and assign the images
+    for (int i = 0; i < Mathf.Min(itemSlots.Length, imageFiles.Length); i++)
     {
-        // Ensure we're only modifying slot images, not the ItemSlots panel itself
-        if (itemSlots[i].transform != itemSlotsTransform) 
+        // Get the current image file
+        string imageFile = imageFiles[i];
+
+        // Load the image into a Texture2D
+        byte[] fileData = File.ReadAllBytes(imageFile);
+        Texture2D texture = new Texture2D(2, 2);
+        texture.LoadImage(fileData);
+
+        // Create a sprite from the texture
+        Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+
+        // Assign the sprite to the slot image
+        Image slotImage = itemSlots[i].GetComponent<Image>();
+        if (slotImage != null)
         {
-            string imageFile;
-
-            // Handle the case for slot index 0-9 and 10+
-            if (i < 10)
-                imageFile = $"Icon28_0{i}.png"; // For indices below 10
-            else
-                imageFile = $"Icon28_{i}.png"; // For indices 10 and above
-
-            // Load the image only for the slot images
-            Image slotImage = itemSlots[i].GetComponent<Image>();
-            if (slotImage != null)
-            {
-                Debug.Log($"{weaponImagesPath}/{imageFile}");
-                LoadPlayerSpriteGearImage(slotImage, $"{weaponImagesPath}/{imageFile}");
-            }
-
-            // Check if the slot already has a Button component, if not add it
-            Button slotButton = itemSlots[i].GetComponent<Button>();
-            if (slotButton == null)
-            {
-                // Add a Button component dynamically if it doesn't exist
-                slotButton = itemSlots[i].gameObject.AddComponent<Button>();
-            }
-
-            // Set up the button to be clickable and pass the image file name to OnSlotClicked
-            string currentImageFile = imageFile; // Capture the image file name for closure
-            slotButton.onClick.RemoveAllListeners(); // Clear any existing listeners
-            slotButton.onClick.AddListener(() => OnSlotClicked(currentImageFile));
+            slotImage.sprite = sprite;
         }
+
+        // Check if the slot already has a Button component, if not add it
+        Button slotButton = itemSlots[i].GetComponent<Button>();
+        if (slotButton == null)
+        {
+            // Add a Button component dynamically if it doesn't exist
+            slotButton = itemSlots[i].gameObject.AddComponent<Button>();
+        }
+
+        // Set up the button to be clickable and pass the image file name to OnSlotClicked
+        string currentImageFile = imageFile; // Capture the image file path for closure
+        slotButton.onClick.RemoveAllListeners(); // Clear any existing listeners
+        slotButton.onClick.AddListener(() => OnSlotClicked(currentImageFile));
     }
 }
+
 
 
 // Method to handle what happens when an ItemSlot is clicked
 void OnSlotClicked(string imageFileName)
 {
+            Debug.Log("Icon imageFileName : " + imageFileName );
+
     // Find the weapon based on the image file name
     Weapon clickedWeapon = Weapon.FindWeaponByIconFile(imageFileName, loadedWeapons);
 
@@ -530,17 +546,32 @@ void OnSlotClicked(string imageFileName)
     {
         // Display the weapon's information in the console
         clickedWeapon.DisplayWeaponInfo();
+        // Update the player's weapon configuration
+        battleHandler.playerConfig.playerWeapon = clickedWeapon;
+        Debug.Log("Icon path : " + clickedWeapon.path );
+
+        battleHandler.playerConfig.SavePlayerConfig("configPlayer.txt");
+  //      Debug.Log($"Weapon path: {battleHandler.playerConfig.playerWeapon.path}");
+//Debug.Log($"Weapon icon file: {battleHandler.playerConfig.playerWeapon.iconFile}");
+
 
         // Modify the UI description with the weapon's name and description
         ModifyDescription(clickedWeapon.name, clickedWeapon.description);
-        battleHandler.playerConfig.playerWeapon = clickedWeapon;
-        LoadPlayerSpriteGear();
+        //battleHandler.playerConfig.playerWeapon = clickedWeapon;
+       LoadPlayerSpriteGear();
+        //battleHandler.LoadAndDisplayCharacterSprites();
+        battleHandler.ModifyPlayerWeaponSpritesheet($"{battleHandler.playerConfig.playerWeapon.path}/{battleHandler.playerConfig.playerWeapon.iconFile}");
         //ModifyPlayerGear(clickedWeapon,"Weapon");
     }
     else
     {
         Debug.LogError($"Weapon not found for image file: {imageFileName}");
     }
+
+
+
+
+
 }
 
 

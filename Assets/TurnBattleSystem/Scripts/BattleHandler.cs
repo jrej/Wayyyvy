@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Dialogue {
     public List<string> lines;
@@ -50,6 +51,9 @@ public class BattleHandler : MonoBehaviour {
     private GameObject backgroundObj;
 
     private GameObject quitButtonObj;
+
+    public PlayerConfig playerConfig;
+
 
     public Button quitButton;
 
@@ -334,45 +338,64 @@ public void UpdateConfigWithSelectedWeapon(string weaponPath) {
         
     }
 
-private void LoadAndDisplayCharacterSprites() {
+public void LoadAndDisplayCharacterSprites() {
     // Load player sprite
-   // string playerSpritePath = config["PlayerHead"]; // Assuming the config has the paths
     Texture2D playerTexture = LoadTextureFromFile(playerConfig.playerHead.path);
-    GameObject playerSpriteObj = new GameObject("PlayerSprite");
-    playerSpriteObj.transform.SetParent(canvas.transform);
 
-    // Add Image component and set sprite
-    Image playerImage = playerSpriteObj.AddComponent<Image>();
-    playerImage.sprite = Sprite.Create(playerTexture, new Rect(0, 0, playerTexture.width, playerTexture.height), new Vector2(0.5f, 0.5f));
-    
-    // Adjust position and size
-    RectTransform playerRect = playerSpriteObj.GetComponent<RectTransform>();
-    playerRect.sizeDelta = new Vector2(50, 50); // Adjust size as necessary
-    playerRect.anchoredPosition = new Vector2(-110, -10); // Adjust position as necessary
-    playerRect.anchorMin = new Vector2(0.5f, 0.5f);
-    playerRect.anchorMax = new Vector2(0.5f, 0.5f);
-    playerRect.pivot = new Vector2(0.5f, 0.5f);
+    // Check if the player sprite object already exists
+    GameObject playerSpriteObj = GameObject.Find("PlayerSprite");
+    if (playerSpriteObj == null) {
+        playerSpriteObj = new GameObject("PlayerSprite");
+        playerSpriteObj.transform.SetParent(canvas.transform);
 
-   
+        // Add Image component and set sprite
+        Image playerImage = playerSpriteObj.AddComponent<Image>();
+        playerImage.sprite = Sprite.Create(playerTexture, new Rect(0, 0, playerTexture.width, playerTexture.height), new Vector2(0.5f, 0.5f));
+
+        // Adjust position and size
+        RectTransform playerRect = playerSpriteObj.GetComponent<RectTransform>();
+        playerRect.sizeDelta = new Vector2(50, 50); // Adjust size as necessary
+        playerRect.anchoredPosition = new Vector2(-110, -10); // Adjust position as necessary
+        playerRect.anchorMin = new Vector2(0.5f, 0.5f);
+        playerRect.anchorMax = new Vector2(0.5f, 0.5f);
+        playerRect.pivot = new Vector2(0.5f, 0.5f);
+    } else {
+        // Optionally update the existing object, e.g., changing the sprite
+        Image playerImage = playerSpriteObj.GetComponent<Image>();
+        if (playerImage != null) {
+            playerImage.sprite = Sprite.Create(playerTexture, new Rect(0, 0, playerTexture.width, playerTexture.height), new Vector2(0.5f, 0.5f));
+        }
+    }
 
     // Load enemy sprite
-   // string enemySpritePath = config["EnemyHead"]; // Assuming the config has the paths
     Texture2D enemyTexture = LoadTextureFromFile(playerConfig.playerHead.path);
-    GameObject enemySpriteObj = new GameObject("EnemySprite");
-    enemySpriteObj.transform.SetParent(canvas.transform);
 
-    // Add Image component and set sprite
-    Image enemyImage = enemySpriteObj.AddComponent<Image>();
-    enemyImage.sprite = Sprite.Create(enemyTexture, new Rect(0, 0, enemyTexture.width, enemyTexture.height), new Vector2(0.5f, 0.5f));
-    
-    // Adjust position and size
-    RectTransform enemyRect = enemySpriteObj.GetComponent<RectTransform>();
-    enemyRect.sizeDelta = new Vector2(50, 50); // Adjust size as necessary
-    enemyRect.anchoredPosition = new Vector2(110, -10); // Adjust position as necessary
-    enemyRect.anchorMin = new Vector2(0.5f, 0.5f);
-    enemyRect.anchorMax = new Vector2(0.5f, 0.5f);
-    enemyRect.pivot = new Vector2(0.5f, 0.5f);
+    // Check if the enemy sprite object already exists
+    GameObject enemySpriteObj = GameObject.Find("EnemySprite");
+    if (enemySpriteObj == null) {
+        enemySpriteObj = new GameObject("EnemySprite");
+        enemySpriteObj.transform.SetParent(canvas.transform);
+
+        // Add Image component and set sprite
+        Image enemyImage = enemySpriteObj.AddComponent<Image>();
+        enemyImage.sprite = Sprite.Create(enemyTexture, new Rect(0, 0, enemyTexture.width, enemyTexture.height), new Vector2(0.5f, 0.5f));
+
+        // Adjust position and size
+        RectTransform enemyRect = enemySpriteObj.GetComponent<RectTransform>();
+        enemyRect.sizeDelta = new Vector2(50, 50); // Adjust size as necessary
+        enemyRect.anchoredPosition = new Vector2(110, -10); // Adjust position as necessary
+        enemyRect.anchorMin = new Vector2(0.5f, 0.5f);
+        enemyRect.anchorMax = new Vector2(0.5f, 0.5f);
+        enemyRect.pivot = new Vector2(0.5f, 0.5f);
+    } else {
+        // Optionally update the existing object, e.g., changing the sprite
+        Image enemyImage = enemySpriteObj.GetComponent<Image>();
+        if (enemyImage != null) {
+            enemyImage.sprite = Sprite.Create(enemyTexture, new Rect(0, 0, enemyTexture.width, enemyTexture.height), new Vector2(0.5f, 0.5f));
+        }
+    }
 }
+
 private bool MadeSelection = false ;
 private bool UserHasMadeSelection() {
     // Implement logic to determine if the user has made a selection
@@ -420,7 +443,7 @@ private IEnumerator StartBattleWithDialogue() {
     public void TestBattleStart() {
         // Use BattleOverWindow to display the dialogue text
         string dialogueText = string.Join("\n", preFightDialogue.lines);
-        BattleOverWindow.Show_Static(dialogueText);
+        //BattleOverWindow.Show_Static(dialogueText);
 
         // Wait for a short time to simulate displaying the dialogue
         StartCoroutine(WaitAndStartGame(5f)); // Wait for 5 seconds before starting the game
@@ -429,7 +452,7 @@ private IEnumerator StartBattleWithDialogue() {
 
     private IEnumerator WaitAndStartGame(float waitTime) {
         yield return new WaitForSeconds(waitTime);
-        BattleOverWindow.Hide_Static();
+        //BattleOverWindow.Hide_Static();
         StartNewGame();
     }
 
@@ -513,12 +536,12 @@ private IEnumerator StartBattleWithDialogue() {
 
     private bool TestBattleOver() {
         if (playerCharacterBattle.IsDead()) {
-            BattleOverWindow.Show_Static("Enemy Wins!");
+         //   BattleOverWindow.Show_Static("Enemy Wins!");
             RestartGame();
             return true;
         }
         if (enemyCharacterBattle.IsDead()) {
-            BattleOverWindow.Show_Static("Player Wins!");
+         //   BattleOverWindow.Show_Static("Player Wins!");
             RestartGame();
             return true;
         }
@@ -526,62 +549,19 @@ private IEnumerator StartBattleWithDialogue() {
         return false;
     }
 private void LoadCharacterConfig(string path) {
+    Debug.Log("PATH " + path);
     if (!File.Exists(path)) {
         Debug.LogError("Config file not found: " + path);
         return;
     }
 
-    using (StreamReader reader = new StreamReader(path)) {
-        string line;
-        while ((line = reader.ReadLine()) != null) {
-            string[] keyValue = line.Split('=');
-            if (keyValue.Length == 2) {
-                string key = keyValue[0].Trim();
-                string value = keyValue[1].Trim();
-
-                // Map the config values to PlayerConfig properties
-                switch (key) {
-                    case "PlayerName":
-                        playerConfig.playerName = value;
-                        break;
-                    case "PlayerHead":
-                        playerConfig.playerHead.path = value;
-                        break;
-                    case "PlayerBody":
-                        playerConfig.playerBody.path = value;
-                        break;
-                    case "PlayerWeapon":
-                        playerConfig.playerWeapon.path = value;
-                        break;
-                    case "PlayerOffHand":
-                        playerConfig.playerOffHand.path = value;
-                        break;
-                    case "PlayerLegs":
-                        playerConfig.playerLegs.path = value;
-                        break;
-                    case "PlayerFeet":
-                        playerConfig.playerFeet.path = value;
-                        break;
-                    case "PlayerRelic":
-                        playerConfig.playerRelic.path = value;
-                        break;
-                    case "PlayerCloak":
-                        playerConfig.playerCloak.path = value;
-                        break;
-                    default:
-                        Debug.LogWarning("Unknown config key: " + key);
-                        break;
-                }
-            }
-        }
-    }
+    playerConfig = playerConfig.LoadPlayerConfig(path);
 
     // Optional: Log player config for debugging purposes
     playerConfig.DisplayPlayerConfig();
 }
 
 
-public PlayerConfig playerConfig;
     public void SetupPlayer(string configPath) {
     playerConfig = new PlayerConfig();  // Ensure playerConfig is initialized
 
@@ -605,13 +585,13 @@ public PlayerConfig playerConfig;
     Debug.Log("Enemy is loaded");
     }
 
-    private void LoadCharacterSprites(bool isPlayer) {
+    public void LoadCharacterSprites(bool isPlayer) {
     if (isPlayer) {
         // Use PlayerConfig for the player character
         string headFile = playerConfig.playerHead.path;
         string bodyFile = playerConfig.playerBody.path;
         string weaponFile = playerConfig.playerWeapon.path;
-
+        Debug.Log("HJEAD : " + headFile +"bodyFile : " + bodyFile+ "weaponFile : " + weaponFile ) ;
         // Apply the player-specific textures
         ModifyPlayerBodySpritesheet(bodyFile);
         ModifyPlayerWeaponSpritesheet(weaponFile);
@@ -751,6 +731,7 @@ public PlayerConfig playerConfig;
     }
 
     public void ModifyPlayerWeaponSpritesheet(string weaponFile) {
+        Debug.Log("Modify playterSpriteshete");
         // Paths to files and folders
         string baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
         string outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
@@ -782,6 +763,7 @@ public PlayerConfig playerConfig;
         // Save the modified spritesheet
         SaveTextureToFile(baseSpritesheet, outputImagePath);
         Debug.Log($"Modified spritesheet saved to {outputImagePath}");
+       // SetupPlayer("configPlayer.txt");
     }
 
     private void ModifyEnemyWeaponSpritesheet(string weaponFile) {
@@ -822,14 +804,40 @@ public PlayerConfig playerConfig;
         SaveTextureToFile(baseSpritesheet, outputImagePath);
         Debug.Log($"Modified spritesheet saved to {outputImagePath}");
     }
+private Texture2D LoadTextureFromFile(string filePath)
+{
+    // Check if the filePath is valid
+    if (string.IsNullOrEmpty(filePath))
+    {
+        Debug.LogError("Error: filePath is null or empty.");
+        return null;
+    }
 
-    private Texture2D LoadTextureFromFile(string filePath) {
+    // Check if the file exists
+    if (!System.IO.File.Exists(filePath))
+    {
+        Debug.LogError($"Error: File not found at {filePath}");
+        return null;
+    }
+
+    try
+    {
+            Debug.Log($"Loading texture from {filePath}");
+
         byte[] fileData = System.IO.File.ReadAllBytes(filePath);
         Texture2D texture = new Texture2D(2, 2);
         texture.LoadImage(fileData);
 
         return texture;
     }
+    catch (Exception ex)
+    {
+        Debug.LogError($"Error while loading texture from {filePath}: {ex.Message}");
+        return null;
+    }
+}
+
+    
 
     private Texture2D[] LoadTexturesFromFolder(string folderPath) {
     string[] files = System.IO.Directory.GetFiles(folderPath, "*.png");

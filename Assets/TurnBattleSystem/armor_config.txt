@@ -1,0 +1,34 @@
+ArmorName=SteelChestplate
+IconFile=IconArmor01.png
+Path=Assets/TurnBattleSystem/Textures/Armors/
+Defense=80
+Durability=100
+Description=A solid steel chestplate offering high protection.
+
+ArmorName=GoldenHelmet
+IconFile=IconArmor02.png
+Path=Assets/TurnBattleSystem/Textures/Armors/
+Defense=50
+Durability=75
+Description=A shiny golden helmet, lightweight but durable.
+
+ArmorName=ShadowRobes
+IconFile=IconArmor03.png
+Path=Assets/TurnBattleSystem/Textures/Armors/
+Defense=40
+Durability=60
+Description=Robes that allow the wearer to blend into the shadows.
+
+ArmorName=DragonScaleShield
+IconFile=IconArmor04.png
+Path=Assets/TurnBattleSystem/Textures/Armors/
+Defense=90
+Durability=120
+Description=A shield made from dragon scales, incredibly durable.
+
+ArmorName=LeatherLeggings
+IconFile=IconArmor05.png
+Path=Assets/TurnBattleSystem/Textures/Armors/
+Defense=30
+Durability=50
+Description=Light leather leggings, offering speed and agility.

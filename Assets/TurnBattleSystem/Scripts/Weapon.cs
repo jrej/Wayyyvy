@@ -12,12 +12,17 @@ public class Weapon : UserObjects
     public int maneuverability;
 
     // Constructor
-    public Weapon(string name, string iconFile,string path, int attack, int speed, int maneuverability, string description)
-        : base(name, description, iconFile,path )
+    public Weapon(string name, string iconFile,string path, int attack, int speed, int maneuverability, string description,int agility , int intelligence, int lifePoints)
+        : base(name, description, iconFile,path ,  agility,  intelligence, lifePoints,GearType.Weapon)
     {
         this.attack = attack;
         this.speed = speed;
         this.maneuverability = maneuverability;
+    }
+
+    public Weapon()
+    {
+        
     }
 
     // Load weapons from a config file
@@ -48,7 +53,7 @@ public class Weapon : UserObjects
             {
                 case "WeaponName":
                     if (currentWeapon != null) weapons.Add(currentWeapon);
-                    currentWeapon = new Weapon(value, "","", 0, 0, 0, "");
+                    currentWeapon = new Weapon(value, "","", 0, 0, 0, "",0,0,0);
                     break;
                 case "IconFile":
                     if (currentWeapon != null) currentWeapon.iconFile = value;
@@ -78,9 +83,14 @@ public class Weapon : UserObjects
 
     // Find a weapon by its icon file name
     public static Weapon FindWeaponByIconFile(string iconFileName, List<Weapon> weapons)
-    {
-        return weapons.Find(weapon => weapon.iconFile == iconFileName);
-    }
+{
+    // Extract the file name from the full path (without directories)
+    string fileName = Path.GetFileName(iconFileName);
+
+    // Find the weapon whose iconFile matches the extracted file name
+    return weapons.Find(weapon => weapon.iconFile == fileName);
+}
+
 
     // Display weapon info
     public void DisplayWeaponInfo()

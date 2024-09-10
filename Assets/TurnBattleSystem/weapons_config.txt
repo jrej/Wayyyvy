@@ -1,13 +1,20 @@
 WeaponName=Excalibur
-IconFile=Icon28_01.png
-Path=Assets\TurnBattleSystem\Textures\Weapons
+IconFile=Icon28.png
+Path=Assets/TurnBattleSystem/Textures/bag/
+Attack=100
+Speed=70
+Maneuverability=85
+Description=A legendary sword with magical powers.
+
+WeaponName=Excalibur0
+Path=Assets/TurnBattleSystem/Textures/Weapons/
 Attack=100
 Speed=70
 Maneuverability=85
 Description=A legendary sword with magical powers.
 
 WeaponName=ShadowDagger
-Path=Assets\TurnBattleSystem\Textures\Weapons
+Path=Assets/TurnBattleSystem/Textures/Weapons/
 IconFile=Icon28_02.png
 Attack=75
 Speed=95
@@ -15,7 +22,7 @@ Maneuverability=90
 Description=A swift dagger that strikes from the shadows.
 
 WeaponName=ThunderHammer
-Path=Assets\TurnBattleSystem\Textures\Weapons
+Path=Assets/TurnBattleSystem/Textures/Weapons/
 IconFile=Icon28_03.png
 Attack=120
 Speed=50
@@ -23,7 +30,7 @@ Maneuverability=60
 Description=A hammer imbued with the power of thunder.
 
 WeaponName=FlameBlade
-Path=Assets\TurnBattleSystem\Textures\Weapons
+Path=Assets/TurnBattleSystem/Textures/Weapons/
 IconFile=Icon28_04.png
 Attack=90
 Speed=80
@@ -31,7 +38,7 @@ Maneuverability=70
 Description=A sword engulfed in flames, perfect for close combat.
 
 WeaponName=FrostAxe
-Path=Assets\TurnBattleSystem\Textures\Weapons
+Path=Assets/TurnBattleSystem/Textures/Weapons/
 IconFile=Icon28_05.png
 Attack=110
 Speed=60
@@ -39,7 +46,7 @@ Maneuverability=65
 Description=An axe forged in the coldest mountains, slows down enemies.
 
 WeaponName=CrystalBow
-Path=Assets\TurnBattleSystem\Textures\Weapons
+Path=Assets/TurnBattleSystem/Textures/Weapons/
 IconFile=Icon28_06.png
 Attack=85
 Speed=90
@@ -47,7 +54,7 @@ Maneuverability=95
 Description=A bow made of crystal, light and precise, favored by archers.
 
 WeaponName=DragonLance
-Path=Assets\TurnBattleSystem\Textures\Weapons
+Path=Assets/TurnBattleSystem/Textures/Weapons/
 IconFile=Icon28_07.png
 Attack=115
 Speed=70
@@ -55,7 +62,7 @@ Maneuverability=80
 Description=A lance used by the dragon knights, infused with dragon magic.
 
 WeaponName=ViperSpear
-Path=Assets\TurnBattleSystem\Textures\Weapons
+Path=Assets/TurnBattleSystem/Textures/Weapons/
 IconFile=Icon28_08.png
 Attack=105
 Speed=85

@@ -1,0 +1,24 @@
+OtherName=HealthPotion
+IconFile=IconOther01.png
+Path=Assets/TurnBattleSystem/Textures/Others/
+Description=A potion that restores health over time.
+
+OtherName=ManaPotion
+IconFile=IconOther02.png
+Path=Assets/TurnBattleSystem/Textures/Others/
+Description=A potion that replenishes mana quickly.
+
+OtherName=TeleportScroll
+IconFile=IconOther03.png
+Path=Assets/TurnBattleSystem/Textures/Others/
+Description=A magical scroll that teleports the user to a known location.
+
+OtherName=Torch
+IconFile=IconOther04.png
+Path=Assets/TurnBattleSystem/Textures/Others/
+Description=A simple torch, useful for lighting dark places.
+
+OtherName=FishingRod
+IconFile=IconOther05.png
+Path=Assets/TurnBattleSystem/Textures/Others/
+Description=A basic fishing rod, used for catching fish.
