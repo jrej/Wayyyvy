@@ -1,0 +1,9 @@
+PlayerName=Player1
+PlayerHead=Assets/TurnBattleSystem/Textures/head.png
+PlayerBody=Assets/TurnBattleSystem/Textures/body.png
+PlayerWeapon=Assets/TurnBattleSystem/Textures/Weapons/Icon28_01.png
+PlayerOffHand=Assets/TurnBattleSystem/Textures/Weapons/Icon28_02.png
+PlayerLegs=Assets/TurnBattleSystem/Textures/legs.png
+PlayerFeet=Assets/TurnBattleSystem/Textures/feet.png
+PlayerRelic=Assets/TurnBattleSystem/Textures/relic.png
+PlayerCloak=Assets/TurnBattleSystem/Textures/cloak.png

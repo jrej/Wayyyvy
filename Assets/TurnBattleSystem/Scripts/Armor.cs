@@ -21,7 +21,7 @@ public class Armor : UserObjects
     {
     }
 
-    // Load armors from a config file
+    // Load armors from a single config file
     public static List<Armor> LoadArmorsFromConfig(string configFilePath)
     {
         List<Armor> armors = new List<Armor>();
@@ -71,6 +71,20 @@ public class Armor : UserObjects
 
         if (currentArmor != null) armors.Add(currentArmor);
         return armors;
+    }
+
+    // Load armors from multiple config files
+    public static List<Armor> LoadArmorsFromConfigs(List<string> configFilePaths)
+    {
+        List<Armor> allArmors = new List<Armor>();
+
+        foreach (string configFilePath in configFilePaths)
+        {
+            List<Armor> armorsFromFile = LoadArmorsFromConfig(configFilePath);
+            allArmors.AddRange(armorsFromFile);
+        }
+
+        return allArmors;
     }
 
     // Find an armor by its icon file name

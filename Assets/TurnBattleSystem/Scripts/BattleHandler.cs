@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
@@ -757,6 +757,120 @@ private void LoadCharacterConfig(string path) {
 
         // Define coordinates for the wepons (adjust based on your spritesheet)
         Rect weapon1Rect = new Rect(50, 180, selectedWeapons.width, selectedWeapons.height); // Adjusted coordinates and size based on the image
+        ReplaceTextureSection(baseSpritesheet, selectedWeapons, weapon1Rect);
+
+
+        // Save the modified spritesheet
+        SaveTextureToFile(baseSpritesheet, outputImagePath);
+        Debug.Log($"Modified spritesheet saved to {outputImagePath}");
+       // SetupPlayer("configPlayer.txt");
+    }
+    
+
+public void ModifyPlayerArmorSpritesheet(string armorFile) {
+    Debug.Log("Modify PlayerArmorSpritesheet");
+
+    // Paths to files and folders
+    string baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+    string outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+    // Load the base spritesheet
+    Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
+
+    if (baseSpritesheet == null) {
+        Debug.LogError("Failed to load base spritesheet.");
+        return;
+    }
+
+    // Load the selected armor image
+    Texture2D selectedArmor = LoadTextureFromFile(armorFile);
+
+    if (selectedArmor == null) {
+        Debug.LogError("Failed to load selected armor.");
+        return;
+    }
+
+    // Resize the loaded armor image if necessary
+    selectedArmor = ResizeTexture(selectedArmor, selectedArmor.width, selectedArmor.height);
+
+    // Define coordinates for the armor (adjust based on your spritesheet)
+    Rect armorRect = new Rect(baseSpritesheet.width - selectedArmor.width, baseSpritesheet.height - selectedArmor.height, selectedArmor.width, selectedArmor.height); // Top-right position
+
+    // Replace the specific section of the spritesheet with the armor image
+    ReplaceTextureSection(baseSpritesheet, selectedArmor, armorRect);
+
+    // Save the modified spritesheet
+    SaveTextureToFile(baseSpritesheet, outputImagePath);
+    Debug.Log($"Modified spritesheet saved to {outputImagePath}");
+
+    // Optionally, you can trigger player setup here if needed.
+    // SetupPlayer("configPlayer.txt");
+}
+
+public void ModifyPlayerFeetSpritesheet(string weaponFile) {
+        Debug.Log("Modify playterSpriteshete");
+        // Paths to files and folders
+        string baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+        string outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        // Load the base spritesheet
+        Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
+
+        if (baseSpritesheet == null) {
+            Debug.LogError("Failed to load base spritesheet.");
+            return;
+        }
+
+        // Load the selected weapon image
+        Texture2D selectedWeapons = LoadTextureFromFile(weaponFile);
+
+        if (selectedWeapons == null) {
+            Debug.LogError("Failed to load selected weapons.");
+            return;
+        }
+
+        // Resize the loaded weapon image if necessary
+        selectedWeapons = ResizeTexture(selectedWeapons, selectedWeapons.width, selectedWeapons.height);
+
+        // Define coordinates for the wepons (adjust based on your spritesheet)
+        Rect weapon1Rect = new Rect(50, 160, selectedWeapons.width, selectedWeapons.height); // Adjusted coordinates and size based on the image
+        ReplaceTextureSection(baseSpritesheet, selectedWeapons, weapon1Rect);
+
+
+        // Save the modified spritesheet
+        SaveTextureToFile(baseSpritesheet, outputImagePath);
+        Debug.Log($"Modified spritesheet saved to {outputImagePath}");
+       // SetupPlayer("configPlayer.txt");
+    }
+
+
+    public void ModifyPlayerLegsSpritesheet(string weaponFile) {
+        Debug.Log("Modify playterSpriteshete");
+        // Paths to files and folders
+        string baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+        string outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        // Load the base spritesheet
+        Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
+
+        if (baseSpritesheet == null) {
+            Debug.LogError("Failed to load base spritesheet.");
+            return;
+        }
+
+        // Load the selected weapon image
+        Texture2D selectedWeapons = LoadTextureFromFile(weaponFile);
+
+        if (selectedWeapons == null) {
+            Debug.LogError("Failed to load selected weapons.");
+            return;
+        }
+
+        // Resize the loaded weapon image if necessary
+        selectedWeapons = ResizeTexture(selectedWeapons, selectedWeapons.width, selectedWeapons.height);
+
+        // Define coordinates for the wepons (adjust based on your spritesheet)
+        Rect weapon1Rect = new Rect(50, 230, selectedWeapons.width, selectedWeapons.height); // Adjusted coordinates and size based on the image
         ReplaceTextureSection(baseSpritesheet, selectedWeapons, weapon1Rect);
 
 

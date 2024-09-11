@@ -1,4 +1,4 @@
-﻿/* 
+/* 
     ------------------- Code Monkey -------------------
 
     Thank you for downloading the Code Monkey Utilities
@@ -17,6 +17,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
 namespace CodeMonkey.Utils {
     
@@ -24,6 +25,12 @@ namespace CodeMonkey.Utils {
      * Button in the UI
      * */
     public class Button_UI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IPointerDownHandler, IPointerUpHandler {
+
+        public GameObject InventoryMenu;
+
+
+            public static List<string> panelNames = new List<string>();
+        private Transform[] itemSlots;
 
         public Action ClickFunc = null;
         public Action MouseRightClickFunc = null;
@@ -58,6 +65,10 @@ namespace CodeMonkey.Utils {
         private bool mouseOver;
         private float mouseOverPerSecFuncTimer;
 
+        
+                    private BattleHandler battleHandler;
+
+
         private Action internalOnPointerEnterFunc, internalOnPointerExitFunc, internalOnPointerClickFunc;
 
 #if SOUND_MANAGER
@@ -85,7 +96,48 @@ namespace CodeMonkey.Utils {
             if (MouseOutOnceTooltipFunc != null) MouseOutOnceTooltipFunc();
             mouseOver = false;
         }
+
+        private void OnWeaponButtonClick(int index) {
+    Debug.Log("Weapon button " + index + " clicked");
+
+    // Get the path of the selected weapon texture
+    string folderPath = "Assets/TurnBattleSystem/Textures/Weapons2";
+    string[] weaponFiles = System.IO.Directory.GetFiles(folderPath, "*.png");
+    if (index >= 0 && index < weaponFiles.Length) {
+        string selectedWeaponPath = weaponFiles[index];
+
+        // Update config with the selected weapon
+        battleHandler.UpdateConfigWithSelectedWeapon(selectedWeaponPath);
+    }
+
+    Debug.Log("Weapon button " + index + " clicked");
+
+    // Set the flag to true indicating the user has made a selection
+}
         public virtual void OnPointerClick(PointerEventData eventData) {
+                   // Assuming the script is attached to the button inside the panel
+    Transform panelTransform = transform.parent; // Direct parent panel of the button
+            Image panelImage = panelTransform.GetComponentInChildren<Image>();
+
+
+    if (panelTransform != null) {
+        // Find the Image component in the panel
+        if (panelImage != null) {
+            Debug.Log("Image Name in Panel: " + panelImage.gameObject.name);
+            Debug.Log("Source Image: " + panelImage.sprite.name); // Log the sprite name if you need to check which image it is
+        } else {
+            Debug.Log("No image component found in this panel.");
+        }
+    } else {
+        Debug.Log("This button is not a child of a panel.");
+    }
+    if (panelImage.gameObject.name == "Panel"){
+        OnWeaponButtonClick(1);
+
+    }
+    if (panelImage.gameObject.name == "Panel (1)"){
+        OnWeaponButtonClick(2);
+    }
             if (internalOnPointerClickFunc != null) internalOnPointerClickFunc();
             if (OnPointerClickFunc != null) OnPointerClickFunc(eventData);
             if (eventData.button == PointerEventData.InputButton.Left) {
@@ -128,6 +180,15 @@ namespace CodeMonkey.Utils {
             posExit = transform.localPosition;
             posEnter = (Vector2)transform.localPosition + hoverBehaviour_Move_Amount;
             SetHoverBehaviourType(hoverBehaviourType);
+            battleHandler = FindObjectOfType<BattleHandler>();
+            itemSlots = InventoryMenu.GetComponentsInChildren<Transform>();
+             Transform parentTransform = this.transform.parent; // Get the parent transform
+    if (parentTransform != null && !panelNames.Contains(parentTransform.name)) {
+        panelNames.Add(parentTransform.name); // Add the panel name if not already added
+    }
+            
+
+
 
 #if SOUND_MANAGER
             // Sound Manager

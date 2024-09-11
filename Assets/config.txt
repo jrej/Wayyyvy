@@ -1,8 +1,0 @@
-PlayerName=Player1
-PlayerHead=player_head.png
-PlayerBody=Assets/TurnBattleSystem/Textures/Bodies/
-PlayerWeapon=Assets/TurnBattleSystem/Textures/Weapons/Icon28_01.png
-EnemyName=Assets/TurnBattleSystem/Textures/Bodies/body1.png
-EnemyHead=enemy_head.png
-EnemyBody=Assets/TurnBattleSystem/Textures/Bodies/body2.png
-EnemyWeapon=Assets/TurnBattleSystem/Textures/Weapons/Icon28_01.png

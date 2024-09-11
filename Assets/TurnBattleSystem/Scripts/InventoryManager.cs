@@ -35,6 +35,8 @@ public class InventoryManager : MonoBehaviour
     private BattleHandler battleHandler;
 
     private List<Weapon> loadedWeapons;
+    private List<Armor> loadedArmor;
+    private List<Accessory> loadedAccessory;
 
 public GameObject[] ItemSlots;
      private Image playerSpriteImage;
@@ -335,7 +337,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
         }
     }
 
-
+public List<string> ArmorFilePaths;
 
     // Start is called before the first frame update
     void Start()
@@ -351,6 +353,14 @@ void ModifyPlayerGear(UserObjects obj, string name)
         LoadWeaponImages();
         // Load all weapons from the  config file at the start
         loadedWeapons = Weapon.LoadWeaponsFromConfig("Assets/TurnBattleSystem/weapons_config.txt");
+        loadedAccessory =  Accessory.LoadAccessoriesFromConfig("Assets/TurnBattleSystem/accessory_config.txt");
+        ArmorFilePaths = new List<string>
+    {
+        "Assets/TurnBattleSystem/armor_config.txt",
+        "Assets/TurnBattleSystem/",
+        "Assets/TurnBattleSystem/"
+    };
+        loadedArmor = Armor.LoadArmorsFromConfigs(ArmorFilePaths);
     
        // LoadBodyImages();
     }
@@ -453,7 +463,7 @@ void ModifyDescription(string name, string description)
     }
 }
 
-
+GearType gear ;
 
 void LoadWeaponImages()
 {
@@ -524,129 +534,109 @@ void LoadWeaponImages()
             // Add a Button component dynamically if it doesn't exist
             slotButton = itemSlots[i].gameObject.AddComponent<Button>();
         }
-
-        // Set up the button to be clickable and pass the image file name to OnSlotClicked
+        
+         // Set up the button to be clickable and pass the image file name to OnSlotClicked
         string currentImageFile = imageFile; // Capture the image file path for closure
         slotButton.onClick.RemoveAllListeners(); // Clear any existing listeners
         slotButton.onClick.AddListener(() => OnSlotClicked(currentImageFile));
+    
     }
 }
-
 
 
 // Method to handle what happens when an ItemSlot is clicked
 void OnSlotClicked(string imageFileName)
 {
-            Debug.Log("Icon imageFileName : " + imageFileName );
-
-    // Find the weapon based on the image file name
-    Weapon clickedWeapon = Weapon.FindWeaponByIconFile(imageFileName, loadedWeapons);
-
-    if (clickedWeapon != null)
-    {
-        // Display the weapon's information in the console
-        clickedWeapon.DisplayWeaponInfo();
-        // Update the player's weapon configuration
-        battleHandler.playerConfig.playerWeapon = clickedWeapon;
-        Debug.Log("Icon path : " + clickedWeapon.path );
-
-        battleHandler.playerConfig.SavePlayerConfig("configPlayer.txt");
-  //      Debug.Log($"Weapon path: {battleHandler.playerConfig.playerWeapon.path}");
-//Debug.Log($"Weapon icon file: {battleHandler.playerConfig.playerWeapon.iconFile}");
-
-
-        // Modify the UI description with the weapon's name and description
-        ModifyDescription(clickedWeapon.name, clickedWeapon.description);
-        //battleHandler.playerConfig.playerWeapon = clickedWeapon;
-       LoadPlayerSpriteGear();
-        //battleHandler.LoadAndDisplayCharacterSprites();
-        battleHandler.ModifyPlayerWeaponSpritesheet($"{battleHandler.playerConfig.playerWeapon.path}/{battleHandler.playerConfig.playerWeapon.iconFile}");
-        //ModifyPlayerGear(clickedWeapon,"Weapon");
+    if (imageFileName == null )
+        {
+        Debug.LogError("Icon imageFileName NULL");
+        return ;
     }
-    else
+    UserObjects objects = new UserObjects();
+    GearType gear = objects.FindGearTypeByFilename(imageFileName);
+    Debug.Log("Icon imageFileName : " + imageFileName);
+    Weapon clickedWeapon = new Weapon();
+    Armor clickedArmor = new Armor();
+    Accessory clickedAccesory = new Accessory();
+    
+
+    switch (gear)
     {
-        Debug.LogError($"Weapon not found for image file: {imageFileName}");
+        case GearType.Weapon:
+                clickedWeapon = Weapon.FindWeaponByIconFile(imageFileName,loadedWeapons);
+                clickedWeapon.DisplayWeaponInfo();
+                battleHandler.playerConfig.playerWeapon = clickedWeapon;
+                battleHandler.playerConfig.SavePlayerConfig("configPlayer.txt");
+
+                ModifyDescription(clickedWeapon.name, clickedWeapon.description);
+                battleHandler.ModifyPlayerWeaponSpritesheet($"{battleHandler.playerConfig.playerWeapon.path}/{battleHandler.playerConfig.playerWeapon.iconFile}");
+
+            break;
+
+        case GearType.Legs:
+            Armor clickedLegArmor = Armor.FindArmorByIconFile(imageFileName, loadedArmor);
+            if (clickedLegArmor != null)
+            {
+                clickedLegArmor.DisplayArmorInfo();
+                battleHandler.playerConfig.playerLegs = clickedLegArmor;
+                battleHandler.playerConfig.SavePlayerConfig("configPlayer.txt");
+
+                ModifyDescription(clickedLegArmor.name, clickedLegArmor.description);
+                battleHandler.ModifyPlayerLegsSpritesheet($"{battleHandler.playerConfig.playerLegs.path}/{battleHandler.playerConfig.playerLegs.iconFile}");
+            }
+            break;
+
+        case GearType.Feet:
+            Armor clickedFeetArmor = Armor.FindArmorByIconFile(imageFileName, loadedArmor);
+            if (clickedFeetArmor != null)
+            {
+                clickedFeetArmor.DisplayArmorInfo();
+                battleHandler.playerConfig.playerFeet = clickedFeetArmor;
+                battleHandler.playerConfig.SavePlayerConfig("configPlayer.txt");
+
+                ModifyDescription(clickedFeetArmor.name, clickedFeetArmor.description);
+                battleHandler.ModifyPlayerFeetSpritesheet($"{battleHandler.playerConfig.playerFeet.path}/{battleHandler.playerConfig.playerFeet.iconFile}");
+            }
+            break;
+
+        case GearType.Head:
+            Armor clickedHeadArmor = Armor.FindArmorByIconFile(imageFileName, loadedArmor);
+            if (clickedHeadArmor != null)
+            {
+                clickedHeadArmor.DisplayArmorInfo();
+                battleHandler.playerConfig.playerHead = clickedHeadArmor;
+                battleHandler.playerConfig.SavePlayerConfig("configPlayer.txt");
+
+                ModifyDescription(clickedHeadArmor.name, clickedHeadArmor.description);
+                battleHandler.ModifyPlayerFeetSpritesheet($"{battleHandler.playerConfig.playerFeet.path}/{battleHandler.playerConfig.playerFeet.iconFile}");
+            }
+            break;
+
+
+            case GearType.Armor:
+            clickedArmor = Armor.FindArmorByIconFile(imageFileName, loadedArmor);
+            if (clickedArmor != null)
+            {
+                clickedArmor.DisplayArmorInfo();
+                battleHandler.playerConfig.playerOffHand = clickedArmor;
+                battleHandler.playerConfig.SavePlayerConfig("configPlayer.txt");
+
+                ModifyDescription(clickedArmor.name, clickedArmor.description);
+                battleHandler.ModifyPlayerFeetSpritesheet($"{battleHandler.playerConfig.playerFeet.path}/{battleHandler.playerConfig.playerFeet.iconFile}");
+            }
+            break;
+
+        default:
+            Debug.LogError($"Item not found for image file: {imageFileName}");
+            break;
     }
+    LoadPlayerSpriteGear();
 
 
 
-
-
+    // Add handling for other item types here as needed...
+    Debug.LogError($"ImageChanged");
 }
 
-
-
-
-
-
-
-
-
-
-    void LoadBodyImages()
-    {
-        int maxBodies = 4;
-        int startIndex = 4; // Starting index for body images (after the first 4 weapon slots)
-
-        // Get all body files from the folder
-        string[] bodyFiles = Directory.GetFiles(bodiesFolderPath, "*.png");
-
-        for (int i = 0; i < maxBodies; i++)
-        {
-            int slotIndex = startIndex + i;
-            if (i >= bodyFiles.Length || slotIndex >= ItemSlots.Length)
-                break;
-
-            string bodyFile = bodyFiles[i];
-            GameObject slotTransform = ItemSlots[slotIndex + 1]; // itemSlots[0] is the parent, so start at index 1
-            Image slotImage = slotTransform.GetComponent<Image>();
-
-            if (slotImage != null)
-            {
-                // Load the texture from the file
-                byte[] fileData = File.ReadAllBytes(bodyFile);
-                Texture2D texture = new Texture2D(2, 2);
-                texture.LoadImage(fileData);
-
-                // Create a sprite from the texture
-                Sprite bodySprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
-                slotImage.sprite = bodySprite;
-
-            }
-        }
-    }
-
-
-    void ModifyWeapon(string weaponName) 
-    {
-        Debug.Log("Item selected: " + weaponName);
-
-        if (battleHandler != null)
-        {
-            // Use the ModifyPlayerSpriteSheet method from the BattleHandler to modify the configuration file
-            battleHandler.ModifyPlayerWeaponSpritesheet(weaponName);
-            Debug.LogError("player spritesheetmodified");
-        }
-        else
-        {
-            Debug.LogError("BattleHandler not found");
-        }
-    }
-
-    void ModifyBody(string bodyName) 
-    {
-        Debug.Log("Item selected: " + bodyName);
-
-        if (battleHandler != null)
-        {
-            // Use the ModifyPlayerSpriteSheet method from the BattleHandler to modify the configuration file
-            battleHandler.ModifyPlayerWeaponSpritesheet(bodyName);
-            Debug.LogError("player spritesheetmodified");
-        }
-        else
-        {
-            Debug.LogError("BattleHandler not found");
-        }
-    }
 }
 

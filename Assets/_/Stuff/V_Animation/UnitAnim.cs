@@ -1,4 +1,4 @@
-﻿#define SILENT
+#define SILENT
 #define OVERWRITE_DEFAULT_ANIMATIONS
 
 using System.Collections;
@@ -25,6 +25,7 @@ namespace V_AnimationSystem {
             DownRight,
             UpLeft,
             UpRight,
+            
         }
 
 
