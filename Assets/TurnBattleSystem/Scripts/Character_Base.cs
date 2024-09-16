@@ -89,8 +89,12 @@ public class Character_Base : MonoBehaviour {
     }
 
     public void PlayAnimDodge(Vector3 dodgeDir) {
-        //unitAnimation.PlayAnimForced(UnitAnimType.GetUnitAnimType("dBareHands_Dodge"), dodgeDir, 1f, null, null, null);
+       // unitAnimation.PlayAnimForced(UnitAnimType.GetUnitAnimType("dBareHands_Dodge"), dodgeDir, 1f, null, null, null);
         PlayAnimSlideRight();
+      //         unitAnimation.PlayAnimForced(UnitAnimType.GetUnitAnimType("dBareHands_Dodge"), -dodgeDir, 1f, null, null, null);
+
+        
+        PlayAnimSlideLeft();
     }
 
     public void SetAnimsBareHands() {

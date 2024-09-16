@@ -40,6 +40,9 @@ public class BattleHandler : MonoBehaviour {
 
     private Dialogue preFightDialogue;
 
+    public AudioClip musicClip;  // Assign this in the Inspector
+    private AudioSource audioSource;
+
     private GameObject canvas;
     private GameObject textObj;
 
@@ -53,9 +56,24 @@ public class BattleHandler : MonoBehaviour {
     private GameObject quitButtonObj;
 
     public PlayerConfig playerConfig;
+        public PlayerConfig enemyConfig;
 
+
+
+    public GameObject inventoryMenu;
+        public GameObject SelectionMenu;
+
+    public Button toggleInventoryButton;
+        public Button toggleInInventoryButton;
+
+        public Button Enemy1;
+        public Button Enemy2;
+        public Button Enemy3;
+        public Button Enemy4;
 
     public Button quitButton;
+        public GameObject buttonCanvas;
+
 
     public static BattleHandler GetInstance() {
         return instance;
@@ -65,9 +83,121 @@ public class BattleHandler : MonoBehaviour {
         WaitingForPlayer,
         Busy,
     }
+  private void LoadUi()
+{
+    // Try to find the SelectionCanvas in the scene
+    Transform selectionCanvasTransform = GameObject.Find("SelectionCanvas")?.transform;
+
+    if (selectionCanvasTransform == null)
+    {
+        Debug.LogError("SelectionCanvas not found.");
+        return;
+    }
+
+    // Show the SelectionCanvas initially
+    selectionCanvasTransform.gameObject.SetActive(true);
+
+    // Get all children of SelectionCanvas
+    Transform[] allChildren = selectionCanvasTransform.GetComponentsInChildren<Transform>();
+
+    // Define paths to enemy images
+    string enemy1ImagePath = "Assets/TurnBattleSystem/Textures/EnemySprite.png";
+    string enemy2ImagePath = "Assets/TurnBattleSystem/Textures/Enemy2Sprite.png";
+    string enemy3ImagePath = "Assets/TurnBattleSystem/Textures/EnemySprite.png";
+    string enemy4ImagePath = "Assets/TurnBattleSystem/Textures/Enemy2Sprite.png";
+
+    // Iterate through all the children of SelectionCanvas
+    foreach (Transform child in allChildren)
+    {
+        if (child.name == "PlayerSpriteGearSelect")
+        {
+            playerSpriteGearImage = child.GetComponent<Image>();
+            if (playerSpriteGearImage != null)
+            {
+                LoadPlayerSpriteGearImage(playerSpriteGearImage, PlayerSpritePath);
+                Debug.Log("Player sprite gear loaded successfully.");
+            }
+            else
+            {
+                Debug.LogError("Image component not found on PlayerSpriteGearSelect.");
+            }
+        }
+
+        else if (child.name == "Enemy1")
+        {
+            LoadEnemyImage(child, enemy1ImagePath);
+        }
+
+        else if (child.name == "Enemy2")
+        {
+            LoadEnemyImage(child, enemy2ImagePath);
+        }
+
+        else if (child.name == "Enemy3")
+        {
+            LoadEnemyImage(child, enemy3ImagePath);
+        }
+
+        else if (child.name == "Enemy4")
+        {
+            LoadEnemyImage(child, enemy4ImagePath);
+        }
+    }
+}
+
+
+// Helper function to load and assign enemy image
+private void LoadEnemyImage(Transform enemyTransform, string imagePath)
+{
+    // Load the image into a Texture2D
+    byte[] fileData = File.ReadAllBytes(imagePath);
+    Texture2D texture = new Texture2D(2, 2);
+    texture.LoadImage(fileData);
+
+    // Create a sprite from the texture
+    Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+
+    // Assign the sprite to the enemy's image component
+    Image enemyImage = enemyTransform.GetComponent<Image>();
+    if (enemyImage != null)
+    {
+        enemyImage.sprite = sprite;
+        Debug.Log($"Loaded enemy image from {imagePath}");
+    }
+    else
+    {
+        Debug.LogError("Image component not found on " + enemyTransform.name);
+    }
+}
+
+
 
     private void Awake() {
+
+
+
         instance = this;
+    
+    canvas = GameObject.Find("Canvas2");
+    //inventoryMenu.SetActive(false);
+    SelectionMenu.SetActive(true);
+
+
+   ////// dialogueText = canvas.GetComponentInChildren<Text>();
+
+  //  if (dialogueText == null) {
+   //     Debug.LogError("DialogueText component not found under Canvas2.");
+    ///    return;
+   // }
+
+    // Create enemy selection UI
+  //  CreateEnemySelectionUI();
+
+
+
+
+
+        /*instance = this;
 
         SetupPlayer("configPlayer.txt");
         SetupEnemy("configPlayer.txt");
@@ -120,14 +250,40 @@ public class BattleHandler : MonoBehaviour {
         };
 
         LoadAndDisplayCharacterSprites();
+
+
+        // Get or add the AudioSource component to this GameObject
+        audioSource = gameObject.AddComponent<AudioSource>();
+        
+        // Assign the music clip
+        audioSource.clip = musicClip;
+        
+        // Set additional AudioSource properties if needed
+        audioSource.loop = true;  // Loop the music
+        audioSource.volume = 0.5f;  // Set volume (0.0 to 1.0)
+
+        // Play the music
+        //
+        audioSource.Play();
+        */
                 
 
         
     }
-    private void     ShowWeaponSelectionUI(){
-        CreateWeaponButtonArray(); // Call the method to create the button array
-                CreateBodyButtonArray();
-    }
+
+
+
+private void LoadEnemyAndStartBattle(int enemyIndex) {
+    SelectionMenu.SetActive(false);
+    buttonCanvas.SetActive(true);
+    string enemyConfigPath = $"configEnemy{enemyIndex}.txt";
+    SetupEnemy(enemyConfigPath); // Load the selected enemy config file
+    StartNewGame(); // Start the battle with the selected enemy
+}
+
+
+
+
 
            //    string weaponFolderPath = config["PlayerWeapon"]; // Path within Resources folder
     private void CreateWeaponButtonArray() {
@@ -325,18 +481,10 @@ public void UpdateConfigWithSelectedWeapon(string weaponPath) {
     Debug.Log("Updating config with weapon: " + weaponPath);
     // Example code to update the config file
      config["PlayerWeapon"] = weaponPath;
-     ModifyPlayerBodySpritesheet(weaponPath);
+     ModifyPlayerBodySpritesheet(weaponPath,true);
      
 }
 
-
-
- private void QuitGame() {
-        Debug.Log("Quitting the game...");
-        
-            Application.Quit();
-        
-    }
 
 public void LoadAndDisplayCharacterSprites() {
     // Load player sprite
@@ -414,7 +562,7 @@ private IEnumerator StartBattleWithDialogue() {
     // Wait for the user to make their selection
    //yield return new WaitUntil(() => UserHasMadeSelection());
 
-    yield return StartCoroutine(ShowDialogue(preFightDialogue));
+   // yield return StartCoroutine(ShowDialogue(preFightDialogue));
 
     // Deactivate the background and remove sprites after the dialogue is complete
     backgroundObj.SetActive(false);
@@ -455,19 +603,94 @@ private IEnumerator StartBattleWithDialogue() {
         //BattleOverWindow.Hide_Static();
         StartNewGame();
     }
+private Image playerSpriteGearImage;
+private Image Enemy1Image;
+private Image Enemy2Image;
+private Image Enemy3Image;
+
+private Image Enemy4Image;
+   /// <summary>
+    private string PlayerSpritePath = "Assets/TurnBattleSystem/Textures/PlayerSprite.png";
+        private string EnemySpritePath = "Assets/TurnBattleSystem/Textures/EnemySprite.png";
+
+   /// </summary>
 
 
 
     private void Start() {
-// Initialize Character Customization UI
-        
-        StartCoroutine(StartBattleWithDialogue());
+
+        toggleInInventoryButton.onClick.AddListener(ToggleInventoryMenu);
+        toggleInventoryButton.onClick.AddListener(ToggleInventoryMenu);
+        quitButton.onClick.AddListener(QuitGame);
+        // Add listeners for enemy buttons using lambda expressions
+        Enemy1.onClick.AddListener(() => LoadEnemyAndStartBattle(1));
+        Enemy2.onClick.AddListener(() => LoadEnemyAndStartBattle(2));
+        Enemy3.onClick.AddListener(() => LoadEnemyAndStartBattle(3));
+        Enemy4.onClick.AddListener(() => LoadEnemyAndStartBattle(4));
+
+            LoadUi();
+
+
+
+
+      
+
+    }
+        public void LoadPlayerSpriteGearImage(Image img, string imagePath)
+    {
+        if (File.Exists(imagePath))
+        {
+            // Load the texture from the file
+            byte[] fileData = File.ReadAllBytes(imagePath);
+            Texture2D texture = new Texture2D(2, 2);
+            texture.LoadImage(fileData);
+
+            // Create a sprite from the texture
+            Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+            img.sprite = newSprite;
+        }
+        else
+        {
+            Debug.LogError($"Image file not found at path: {imagePath}");
+        }
     }
 
+
+
+    // Method to toggle the inventory menu
+    private void ToggleInventoryMenu() {
+        Debug.Log("Toglle inventory "+ inventoryMenu.activeSelf);
+        if (inventoryMenu != null) {
+            bool isActive = inventoryMenu.activeSelf;
+            inventoryMenu.SetActive(!isActive);
+        }
+    }
+
+   private void QuitGame() {
+    Debug.Log("Quitting game...");
+    Destroy(playerCharacterBattle.gameObject);
+    Destroy(enemyCharacterBattle.gameObject);
+    SelectionMenu.SetActive(true);
+    buttonCanvas.SetActive(false);
+
+   /* // If we are running on Android
+    #if UNITY_ANDROID
+        // Close the application on Android
+        Application.Quit();
+    #else
+        // For any other platform (like in the Unity Editor or Desktop)
+        Application.Quit();
+    #endif*/
+}
+
+
+
     private void StartNewGame() {
+
         // Update spritesheets
         SetupPlayer("configPlayer.txt");
-        SetupEnemy("configPlayer.txt");
+       //Enemy should be loaded with LoadEnemyAndStartBattle by choosing on button
+       // SetupEnemy("configPlayer.txt");
 
         // Spawn player and enemy characters
         playerCharacterBattle = SpawnCharacter(true);
@@ -478,16 +701,31 @@ private IEnumerator StartBattleWithDialogue() {
         state = State.WaitingForPlayer;
     }
 
-    private void Update() {
-        if (state == State.WaitingForPlayer) {
-            if (Input.GetKeyDown(KeyCode.Space)) {
+private void Update() {
+    if (state == State.WaitingForPlayer) {
+        // For touch input (Android)
+        if (Input.touchCount > 0) {
+            Touch touch = Input.GetTouch(0);
+
+            // Check if the touch is a "Tap"
+            if (touch.phase == TouchPhase.Ended) {
                 state = State.Busy;
                 playerCharacterBattle.Attack(enemyCharacterBattle, () => {
                     ChooseNextActiveCharacter();
                 });
             }
         }
+
+        // For spacebar input (Desktop testing)
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            state = State.Busy;
+            playerCharacterBattle.Attack(enemyCharacterBattle, () => {
+                ChooseNextActiveCharacter();
+            });
+        }
     }
+}
+
 
     private CharacterBattle SpawnCharacter(bool isPlayerTeam) {
         Vector3 position = isPlayerTeam ? new Vector3(-50, -20) : new Vector3(+50, -20);
@@ -548,17 +786,26 @@ private IEnumerator StartBattleWithDialogue() {
 
         return false;
     }
-private void LoadCharacterConfig(string path) {
+private void LoadCharacterConfig(string path,bool player ) {
     Debug.Log("PATH " + path);
     if (!File.Exists(path)) {
         Debug.LogError("Config file not found: " + path);
         return;
     }
+    if(player){
+        
+        playerConfig = playerConfig.LoadPlayerConfig(path);
 
-    playerConfig = playerConfig.LoadPlayerConfig(path);
+        // Optional: Log player config for debugging purposes
+        playerConfig.DisplayPlayerConfig();
 
-    // Optional: Log player config for debugging purposes
-    playerConfig.DisplayPlayerConfig();
+    }
+    else {
+        enemyConfig = enemyConfig.LoadPlayerConfig(path);
+
+        enemyConfig.DisplayPlayerConfig();
+    }
+    
 }
 
 
@@ -566,7 +813,7 @@ private void LoadCharacterConfig(string path) {
     playerConfig = new PlayerConfig();  // Ensure playerConfig is initialized
 
     // Load the player configuration from the file
-    LoadCharacterConfig(configPath);
+    LoadCharacterConfig(configPath,true);
 
     // Apply the loaded player sprites based on the configuration
     LoadCharacterSprites(true); 
@@ -575,10 +822,10 @@ private void LoadCharacterConfig(string path) {
 }
 
     public void SetupEnemy(string configPath) {
-        playerConfig = new PlayerConfig();  // Ensure playerConfig is initialized
+        enemyConfig = new PlayerConfig();  // Ensure playerConfig is initialized
 
     // Load the player configuration from the file
-    LoadCharacterConfig(configPath);
+    LoadCharacterConfig(configPath,false);
 
     // Apply the loaded player sprites based on the configuration
     LoadCharacterSprites(false); 
@@ -591,30 +838,38 @@ private void LoadCharacterConfig(string path) {
         string headFile = playerConfig.playerHead.path;
         string bodyFile = playerConfig.playerBody.path;
         string weaponFile = playerConfig.playerWeapon.path;
-        Debug.Log("HJEAD : " + headFile +"bodyFile : " + bodyFile+ "weaponFile : " + weaponFile ) ;
+       // Debug.Log(" HEAD : " + headFile +" bodyFile : " + bodyFile+ " weaponFile : " + weaponFile ) ;
         // Apply the player-specific textures
-        ModifyPlayerBodySpritesheet(bodyFile);
-        ModifyPlayerWeaponSpritesheet(weaponFile);
-        ModifyPlayerHeadSpritesheet(headFile);
+        ModifyPlayerBodySpritesheet(bodyFile,true);
+        ModifyPlayerWeaponSpritesheet(weaponFile,true);
+        ModifyPlayerHeadSpritesheet(headFile,true);
     } else {
-       // string headFile = playerConfig.playerHead;
-        string bodyFile = playerConfig.playerBody.path;
-        string weaponFile = playerConfig.playerWeapon.path;
+        string headFile = enemyConfig.playerHead.path;
+        string bodyFile = enemyConfig.playerBody.path;
+        string weaponFile = enemyConfig.playerWeapon.path;
 
 
-        // Apply the enemy-specific textures if the paths are available
-        if (!string.IsNullOrEmpty(bodyFile)) ModifyEnemyBodySpritesheet(bodyFile);
-        if (!string.IsNullOrEmpty(weaponFile)) ModifyEnemyWeaponSpritesheet(weaponFile);
-        //if (!string.IsNullOrEmpty(headFile)) ModifyEnemyHeadSpritesheet(headFile);
+        ModifyPlayerBodySpritesheet(bodyFile,true);
+        ModifyPlayerWeaponSpritesheet(weaponFile,true);
+        ModifyPlayerHeadSpritesheet(headFile,true);
     }
 }
 
     string[] nameSlots = {};
 
-    private void ModifyPlayerBodySpritesheet(string bodyFile) {
-        // Paths to files and folders
-        string baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
-        string outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+    private void ModifyPlayerBodySpritesheet(string bodyFile,bool player ) {
+        //Setup as enemy for default
+
+        string baseImagePath = "Assets/TurnBattleSystem/Textures/EnemySpritesheet.png";
+        string outputImagePath = "Assets/TurnBattleSystem/Textures/EnemySpritesheet.png";
+
+        if (player){
+            // Paths to files and folders
+         baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+         outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        }
+        
 
         // Load the base spritesheet
         Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
@@ -650,10 +905,17 @@ private void LoadCharacterConfig(string path) {
         Debug.Log($"Modified spritesheet saved to {outputImagePath}");
     }
 
-    private void ModifyPlayerHeadSpritesheet(string bodyFile) {
+    private void ModifyPlayerHeadSpritesheet(string bodyFile,bool player) {
         // Paths to files and folders
         string baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
         string outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        if (player){
+            // Paths to files and folders
+         baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+         outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        }
 
         // Load the base spritesheet
         Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
@@ -691,7 +953,7 @@ private void LoadCharacterConfig(string path) {
         Debug.Log($"Modified spritesheet saved to {outputImagePath}");
     }
 
-    private void ModifyEnemyBodySpritesheet(string bodyFile) {
+    /*private void ModifyEnemyBodySpritesheet(string bodyFile) {
         // Paths to files and folders
         string baseImagePath = "Assets/TurnBattleSystem/Textures/EnemySpritesheet.png";
         string outputImagePath = "Assets/TurnBattleSystem/Textures/EnemySpritesheet.png";
@@ -729,12 +991,20 @@ private void LoadCharacterConfig(string path) {
         SaveTextureToFile(baseSpritesheet, outputImagePath);
         Debug.Log($"Modified spritesheet saved to {outputImagePath}");
     }
+    */
 
-    public void ModifyPlayerWeaponSpritesheet(string weaponFile) {
+    public void ModifyPlayerWeaponSpritesheet(string weaponFile,bool player) {
         Debug.Log("Modify playterSpriteshete");
         // Paths to files and folders
         string baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
         string outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        if (player){
+            // Paths to files and folders
+         baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+         outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        }
 
         // Load the base spritesheet
         Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
@@ -767,12 +1037,19 @@ private void LoadCharacterConfig(string path) {
     }
     
 
-public void ModifyPlayerArmorSpritesheet(string armorFile) {
+public void ModifyPlayerArmorSpritesheet(string armorFile, bool player) {
     Debug.Log("Modify PlayerArmorSpritesheet");
 
     // Paths to files and folders
     string baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
     string outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+    if (player){
+            // Paths to files and folders
+         baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+         outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        }
 
     // Load the base spritesheet
     Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
@@ -807,11 +1084,18 @@ public void ModifyPlayerArmorSpritesheet(string armorFile) {
     // SetupPlayer("configPlayer.txt");
 }
 
-public void ModifyPlayerFeetSpritesheet(string weaponFile) {
+public void ModifyPlayerFeetSpritesheet(string weaponFile, bool player) {
         Debug.Log("Modify playterSpriteshete");
         // Paths to files and folders
         string baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
         string outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        if (player){
+            // Paths to files and folders
+         baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+         outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        }    
 
         // Load the base spritesheet
         Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
@@ -844,11 +1128,19 @@ public void ModifyPlayerFeetSpritesheet(string weaponFile) {
     }
 
 
-    public void ModifyPlayerLegsSpritesheet(string weaponFile) {
+    public void ModifyPlayerLegsSpritesheet(string weaponFile, bool player) {
         Debug.Log("Modify playterSpriteshete");
         // Paths to files and folders
         string baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
         string outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        if (player){
+            // Paths to files and folders
+         baseImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+         outputImagePath = "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png";
+
+        }
+
 
         // Load the base spritesheet
         Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
@@ -879,7 +1171,7 @@ public void ModifyPlayerFeetSpritesheet(string weaponFile) {
         Debug.Log($"Modified spritesheet saved to {outputImagePath}");
        // SetupPlayer("configPlayer.txt");
     }
-
+/*
     private void ModifyEnemyWeaponSpritesheet(string weaponFile) {
         // Paths to files and folders
         string baseImagePath = "Assets/TurnBattleSystem/Textures/EnemySpritesheet.png";
@@ -918,6 +1210,7 @@ public void ModifyPlayerFeetSpritesheet(string weaponFile) {
         SaveTextureToFile(baseSpritesheet, outputImagePath);
         Debug.Log($"Modified spritesheet saved to {outputImagePath}");
     }
+    */
 private Texture2D LoadTextureFromFile(string filePath)
 {
     // Check if the filePath is valid

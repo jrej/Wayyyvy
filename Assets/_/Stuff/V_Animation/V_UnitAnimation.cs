@@ -100,6 +100,9 @@ namespace V_AnimationSystem {
         public void PlayAnimForced(UnitAnimType animType, Vector3 dir, float frameRateMod, V_UnitSkeleton.OnAnimComplete onAnimComplete, V_UnitSkeleton.OnAnimTrigger onAnimTrigger, V_UnitSkeleton.OnAnimInterrupted onAnimInterrupted) {
             int angle = GetAngleFromVector(dir);
             PlayAnimForced(animType, angle, frameRateMod, onAnimComplete, onAnimTrigger, onAnimInterrupted);
+
+            
+            PlayAnimForced(animType, -angle, frameRateMod, onAnimComplete, onAnimTrigger, onAnimInterrupted);
         }
         public void PlayAnimForced(UnitAnimType animType, int angle, float frameRateMod, V_UnitSkeleton.OnAnimComplete onAnimComplete, V_UnitSkeleton.OnAnimTrigger onAnimTrigger, V_UnitSkeleton.OnAnimInterrupted onAnimInterrupted) {
             // Forcefully play animation no matter what is currently playing

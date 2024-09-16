@@ -13,7 +13,7 @@ public class InventoryManager : MonoBehaviour
     private string weaponsFolderPath = "Assets/TurnBattleSystem/Textures/Weapons";
     private string bodiesFolderPath = "Assets/TurnBattleSystem/Textures/Bodies2";
 
-    private string PlayerSpritePath = "Assets/TurnBattleSystem/Textures/PlayerSprite.png";
+    public string PlayerSpritePath = "Assets/TurnBattleSystem/Textures/PlayerSprite.png";
 
     private string PlayerHeadPath = "Assets/TurnBattleSystem/Textures/head.png";
 
@@ -190,7 +190,7 @@ void ModifyPlayerGear(UserObjects obj, string name)
                 {
                     LoadPlayerSpriteGearImage(playerSpriteWeaponHandImage, $"{battleHandler.playerConfig.playerWeapon.path}/{battleHandler.playerConfig.playerWeapon.iconFile}");
                     //    System.Diagnostics.Process.Start("Assets/TurnBattleSystemTextures/PlayerSpritesheet.png");
-                    battleHandler.ModifyPlayerWeaponSpritesheet($"{battleHandler.playerConfig.playerWeapon.path}/{battleHandler.playerConfig.playerWeapon.iconFile}");
+                    battleHandler.ModifyPlayerWeaponSpritesheet($"{battleHandler.playerConfig.playerWeapon.path}/{battleHandler.playerConfig.playerWeapon.iconFile}",true);
                     
                     
 //                                        battleHandler.LoadAndDisplayCharacterSprites();
@@ -348,7 +348,7 @@ public List<string> ArmorFilePaths;
         battleHandler = FindObjectOfType<BattleHandler>();
 
         //itemSlots = InventoryMenu.GetComponentsInChildren<Transform>();
-        LoadPlayerSprite();
+        //LoadPlayerSprite();
         LoadPlayerSpriteGear();
         LoadWeaponImages();
         // Load all weapons from the  config file at the start
@@ -357,8 +357,8 @@ public List<string> ArmorFilePaths;
         ArmorFilePaths = new List<string>
     {
         "Assets/TurnBattleSystem/armor_config.txt",
-        "Assets/TurnBattleSystem/",
-        "Assets/TurnBattleSystem/"
+        "Assets/TurnBattleSystem/feet_config",
+        "Assets/TurnBattleSystem/head_config"
     };
         loadedArmor = Armor.LoadArmorsFromConfigs(ArmorFilePaths);
     
@@ -501,7 +501,7 @@ void LoadWeaponImages()
     Image[] itemSlots = itemSlotsTransform.GetComponentsInChildren<Image>();
 
     // Define the path to the weapon images folder
-    string weaponImagesPath = "Assets/TurnBattleSystem/Textures/bag/";
+    string weaponImagesPath = "Assets/TurnBattleSystem/Textures/bag";
 
     // Get all the image files from the folder
     string[] imageFiles = Directory.GetFiles(weaponImagesPath, "*.png");
@@ -538,7 +538,7 @@ void LoadWeaponImages()
          // Set up the button to be clickable and pass the image file name to OnSlotClicked
         string currentImageFile = imageFile; // Capture the image file path for closure
         slotButton.onClick.RemoveAllListeners(); // Clear any existing listeners
-        slotButton.onClick.AddListener(() => OnSlotClicked(currentImageFile));
+        slotButton.onClick.AddListener(() => OnSlotClicked(imageFile));
     
     }
 }
@@ -552,9 +552,15 @@ void OnSlotClicked(string imageFileName)
         Debug.LogError("Icon imageFileName NULL");
         return ;
     }
+        // Extract the file name from the full path
+        string fileName = Path.GetFileName(imageFileName);
+
+        Debug.Log(">>>>>>>>>>>>>>>Icon imageFileName : " + imageFileName + fileName);
+
     UserObjects objects = new UserObjects();
-    GearType gear = objects.FindGearTypeByFilename(imageFileName);
-    Debug.Log("Icon imageFileName : " + imageFileName);
+
+
+    GearType gear = objects.FindGearTypeByFilename(fileName);
     Weapon clickedWeapon = new Weapon();
     Armor clickedArmor = new Armor();
     Accessory clickedAccesory = new Accessory();
@@ -569,7 +575,7 @@ void OnSlotClicked(string imageFileName)
                 battleHandler.playerConfig.SavePlayerConfig("configPlayer.txt");
 
                 ModifyDescription(clickedWeapon.name, clickedWeapon.description);
-                battleHandler.ModifyPlayerWeaponSpritesheet($"{battleHandler.playerConfig.playerWeapon.path}/{battleHandler.playerConfig.playerWeapon.iconFile}");
+                battleHandler.ModifyPlayerWeaponSpritesheet($"{battleHandler.playerConfig.playerWeapon.path}/{battleHandler.playerConfig.playerWeapon.iconFile}",true);
 
             break;
 
@@ -582,7 +588,7 @@ void OnSlotClicked(string imageFileName)
                 battleHandler.playerConfig.SavePlayerConfig("configPlayer.txt");
 
                 ModifyDescription(clickedLegArmor.name, clickedLegArmor.description);
-                battleHandler.ModifyPlayerLegsSpritesheet($"{battleHandler.playerConfig.playerLegs.path}/{battleHandler.playerConfig.playerLegs.iconFile}");
+                battleHandler.ModifyPlayerLegsSpritesheet($"{battleHandler.playerConfig.playerLegs.path}/{battleHandler.playerConfig.playerLegs.iconFile}",true);
             }
             break;
 
@@ -595,7 +601,7 @@ void OnSlotClicked(string imageFileName)
                 battleHandler.playerConfig.SavePlayerConfig("configPlayer.txt");
 
                 ModifyDescription(clickedFeetArmor.name, clickedFeetArmor.description);
-                battleHandler.ModifyPlayerFeetSpritesheet($"{battleHandler.playerConfig.playerFeet.path}/{battleHandler.playerConfig.playerFeet.iconFile}");
+                battleHandler.ModifyPlayerFeetSpritesheet($"{battleHandler.playerConfig.playerFeet.path}/{battleHandler.playerConfig.playerFeet.iconFile}",true);
             }
             break;
 
@@ -608,7 +614,7 @@ void OnSlotClicked(string imageFileName)
                 battleHandler.playerConfig.SavePlayerConfig("configPlayer.txt");
 
                 ModifyDescription(clickedHeadArmor.name, clickedHeadArmor.description);
-                battleHandler.ModifyPlayerFeetSpritesheet($"{battleHandler.playerConfig.playerFeet.path}/{battleHandler.playerConfig.playerFeet.iconFile}");
+                battleHandler.ModifyPlayerFeetSpritesheet($"{battleHandler.playerConfig.playerFeet.path}/{battleHandler.playerConfig.playerFeet.iconFile}",true);
             }
             break;
 
@@ -622,7 +628,7 @@ void OnSlotClicked(string imageFileName)
                 battleHandler.playerConfig.SavePlayerConfig("configPlayer.txt");
 
                 ModifyDescription(clickedArmor.name, clickedArmor.description);
-                battleHandler.ModifyPlayerFeetSpritesheet($"{battleHandler.playerConfig.playerFeet.path}/{battleHandler.playerConfig.playerFeet.iconFile}");
+                battleHandler.ModifyPlayerFeetSpritesheet($"{battleHandler.playerConfig.playerFeet.path}/{battleHandler.playerConfig.playerFeet.iconFile}",true);
             }
             break;
 

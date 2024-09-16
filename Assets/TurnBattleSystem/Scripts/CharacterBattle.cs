@@ -183,6 +183,18 @@ playerConfig.totalLifePoints = 100 ;
     // Set dodge state and play animation
     state = State.Dodging;
     characterBase.PlayAnimDodge(dodgeDirection);
+
+
+    // Slide to dodge position
+    SlideToPosition(position, () => {
+        // Dodge completed, invoke callback
+        state = State.Idle;
+        onDodgeComplete();
+    });
+
+    // Set dodge state and play animation
+    state = State.Dodging;
+    characterBase.PlayAnimDodge(-dodgeDirection);
 }
 
 

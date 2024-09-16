@@ -53,7 +53,7 @@ public class UserObjects
 public GearType FindGearTypeByFilename(string input)
 {
     // Define the paths to your configuration files
-    string weaponConfigPath = "Assets/TurnBattleSystem/weapon_config.txt";
+    string weaponConfigPath = "Assets/TurnBattleSystem/weapons_config.txt";
     string armorConfigPath = "Assets/TurnBattleSystem/armor_config.txt";
     string legsConfigPath = "Assets/TurnBattleSystem/legs_config.txt";
     string feetConfigPath = "Assets/TurnBattleSystem/feet_config.txt";
