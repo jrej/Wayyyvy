@@ -137,7 +137,8 @@ void ModifyPlayerGear(UserObjects obj, string name)
     Debug.Log("LoadP;layerSpriteGear");
     battleHandler.playerConfig.DisplayPlayerConfig();
     // Find the InventoryMenu object first
-    Transform inventoryMenuTransform = transform.Find("InventoryMenu");
+    //Transform inventoryMenuTransform = transform.Find("InventoryMenu");
+    GameObject inventoryMenuTransform = battleHandler.inventoryMenu;
     
 
     if (inventoryMenuTransform != null)

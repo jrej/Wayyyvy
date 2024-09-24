@@ -38,18 +38,38 @@ public class CharacterBattle : MonoBehaviour {
     }
 
 
-    public void Setup(bool isPlayerTeam) {
-         playerConfig = new PlayerConfig();
-        playerConfig.LoadPlayerConfig("configPlayer.txt");
-        playerConfig.CalculateTotalStats();
+    public void Setup(bool isPlayerTeam, string sprite) {
+        Debug.Log("Setup ////////////// sprite " + sprite);
+                 playerConfig = new PlayerConfig();
+        //playerConfig.LoadPlayerConfig("configPlayer.txt");
+        //playerConfig.CalculateTotalStats();
         this.isPlayerTeam = isPlayerTeam;
         
         if (isPlayerTeam) {
             characterBase.SetAnimsSwordTwoHandedBack();
-            characterBase.GetMaterial().mainTexture = BattleHandler.GetInstance().playerSpritesheet;
+            
         } else {
             characterBase.SetAnimsSwordShield();
+        }
+
+        if(sprite == "Assets/TurnBattleSystem/Textures/PlayerSpritesheet.png"){
+            characterBase.GetMaterial().mainTexture = BattleHandler.GetInstance().playerSpritesheet;
+                    Debug.Log("Setup //////////////playerSpritesheet");
+
+        }
+        else if(sprite =="Assets/TurnBattleSystem/Textures/EnemySpritesheet.png"){
             characterBase.GetMaterial().mainTexture = BattleHandler.GetInstance().enemySpritesheet;
+            Debug.Log("Setup //////////////enemySpritesheet");
+
+        }else if(sprite =="Assets/TurnBattleSystem/Textures/CopSpritesheet.png") {
+            characterBase.GetMaterial().mainTexture = BattleHandler.GetInstance().copSpritesheet;
+                        Debug.Log("Setup //////////////copSpritesheet");
+
+
+        }
+        else{
+            Debug.Log("Setup //////////////not reconize");
+            characterBase.GetMaterial().mainTexture = BattleHandler.GetInstance().playerSpritesheet;;
         }
 playerConfig.totalLifePoints = 100 ;
         // Use playerConfig stats for initial setup

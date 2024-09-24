@@ -10,6 +10,8 @@ using System;
 public class PlayerConfig
 {
     public string playerName;
+
+    public string spriteSheetPath;
     public UserObjects playerHead = new UserObjects();
     public UserObjects playerBody = new UserObjects();
     public UserObjects playerWeapon = new UserObjects();
@@ -42,6 +44,7 @@ public class PlayerConfig
     lines.Add("PlayerFeet=" + playerFeet.path);
     lines.Add("PlayerRelic=" + playerRelic.path);
     lines.Add("PlayerCloak=" + playerCloak.path);
+    lines.Add("SpriteSheetPAth=" + spriteSheetPath);
 
     try
     {
@@ -110,6 +113,9 @@ public class PlayerConfig
                     break;
                 case "PlayerCloak":
                     playerConfig.playerCloak.path = value;
+                    break;
+                case "SpriteSheetPath":
+                    playerConfig.spriteSheetPath =  value ;
                     break;
             }
         }
