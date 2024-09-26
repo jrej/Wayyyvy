@@ -28,7 +28,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2022_3_34;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_34;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
@@ -55,102 +55,196 @@
     <UnityProjectGeneratorVersion>2.0.22</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
     <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2022.3.34f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\grego\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\grego\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.4\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.34f1-x86_64\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.34f1-x86_64\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_IObjectTransform.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Enums\PropertyId.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Common\SoloState.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\InventoryExample.cs" />
     <Compile Include="Assets\ItemSlots.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\AttackingExample.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Elements\Equipment.cs" />
+    <Compile Include="Assets\HeroEditor\FantasyHeroes\TestRoom\Scripts\Tweens\TweenBase.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\TestRoom.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\SaveLoadExample.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_BarMultiple.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\CharacterSetup.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\FullscreenPlayMode.cs" />
+    <Compile Include="Assets\HeroEditor\FantasyHeroes\TestRoom\Scripts\StateHandler.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\CameraFollow.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\World_Sprite.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\PlayerConfig.cs" />
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_IObjectTransformBody.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Common\TextureUtil.cs" />
+    <Compile Include="Assets\HeroEditor\Common\SimpleColorPicker\Scripts\PaletteGradient.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\LayerManager.cs" />
     <Compile Include="Assets\_\Stuff\GridPathfinding\UnitMovement.cs" />
+    <Compile Include="Assets\HeroEditor\Common\SimpleColorPicker\Scripts\ColorSlider.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\FunctionUpdater.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\CharacterState.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\Button_UI.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\FunctionPeriodic.cs" />
+    <Compile Include="Assets\HeroEditor\Common\SimpleColorPicker\Scripts\RainbowGenerator.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Data\LocalizedValue.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Common\Springs\ScaleSpring.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\AnimationEvents.cs" />
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_Object.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\Sound_Manager.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Enums\ModificatorType.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\Shoot_Flash.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\CMDebug.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Firearms\FirearmReload.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\QuickStart.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\EnemyHandler.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\EditorScripts\CaptureOptions.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\CharacterExtensions.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\Blood_Handler.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\Weapon.cs" />
     <Compile Include="Assets\_\Stuff\GridPathfinding\MapPos.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Collections\IconCollection.cs" />
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_ObjectTransform_LateUpdate.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\EditorScripts\SpriteSheetCapture.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\Dirt_Handler.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\Character_Base.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Elements\ScrollInventoryFilter.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Firearms\Firearm.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Data\Modifier.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\ShopBase.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\InventoryBase.cs" />
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_IActiveInactive.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\UVVectors.cs" />
+    <Compile Include="Assets\HeroEditor\FantasyHeroes\TestRoom\Scripts\Monster.cs" />
     <Compile Include="Assets\_\Stuff\GridPathfinding\PathNode.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Firearms\Enums\HoldType.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\Enemy_Base.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UtilsClass.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_TextComplex.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Common\Serializer.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\CharacterPositionMovementHandler.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Common\StandaloneFilePicker.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\UserObject.cs" />
+    <Compile Include="Assets\HeroEditor\Common\SimpleColorPicker\Scripts\ColorPicker.cs" />
+    <Compile Include="Assets\HeroEditor\FantasyHeroes\TestRoom\Scripts\LayerManager.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\Enemy.cs" />
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_IObjectActiveLogic.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\BattleOverWindow.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Data\ItemParams.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\CharacterAimHandler.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\V_UnitSkeleton_Composite_Weapon.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\CharacterSwordHandler.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Elements\ItemSlot.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\RuntimeSetup.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\SetSpriteSorting.cs" />
+    <Compile Include="Assets\HeroEditor\FantasyHeroes\TestRoom\Scripts\SoloState.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\Armor.cs" />
     <Compile Include="Assets\_\Stuff\GridPathfinding\LastMoveTo.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\PlayerSword.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Collections\FirearmCollection.cs" />
     <Compile Include="Assets\UiManager.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Enums\ItemClass.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\PlayerPositionMovement.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Enums\ItemType.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Data\ItemIcon.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Firearms\Enums\MagazineType.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\AppearanceExample.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\Generic_Mesh_Script.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\CharacterWaypointsHandler.cs" />
+    <Compile Include="Assets\HeroEditor\Common\SimpleColorPicker\Scripts\ColorMode.cs" />
+    <Compile Include="Assets\HeroEditor\FantasyHeroes\TestRoom\Scripts\MonsterState.cs" />
+    <Compile Include="Assets\HeroEditor\FantasyHeroes\TestRoom\Scripts\MonsterVariation.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\FunctionTimer.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Helpers\CharacterInventorySetup.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Data\FirearmParams.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Elements\ItemInfo.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_Bar.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\InventoryManager.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\Accessory.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\EquipmentExample.cs" />
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_IDestroySelf.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\ComponentActions.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\AnimatedWalker.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Data\Property.cs" />
     <Compile Include="Assets\TurnBattleSystem\DamagePopups\Testing.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\CharacterBattle.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\FlyingBody.cs" />
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_IHasWorldPosition.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_Sprite.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\BattleHandler.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\CharacterAppearance.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\EditorScripts\NavigateButton.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\EditorScripts\SpriteSequenceCapture.cs" />
+    <Compile Include="Assets\HeroEditor\Common\SimpleColorPicker\Scripts\ColorJoystick.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Elements\ItemWorkspace.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\ScreenshotHandler.cs" />
     <Compile Include="Assets\_\Stuff\GridPathfinding\PathQueue.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\MovementExample.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Firearms\Enums\FirearmType.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\Other.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Common\Extensions.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Firearms\Enums\FirearmLoadType.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\Button_Sprite.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Enums\ItemTag.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Data\Item.cs" />
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_TimeScaleManager.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\Player_Base.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\GameHandler_Setup.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Elements\ItemContainer.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\CharacterSerializer.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\CharacterCustomizationUI.cs" />
     <Compile Include="Assets\_\Stuff\GridPathfinding\GridPathfinding.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Enums\ItemRarity.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Assets.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\BowExample.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\SortingOrderExample.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\UiManager.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\EditorScripts\AnimationManager.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\EditorScripts\ScreenshotTransparent.cs" />
     <Compile Include="Assets\_\Base\BaseScripts\PlayerPunch.cs" />
     <Compile Include="Assets\TurnBattleSystem\DamagePopups\DamagePopup.cs" />
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_ObjectLogic_SkeletonUpdater.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\PlayingAnimations.cs" />
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_ObjectTransformBody.cs" />
-    <Compile Include="Assets\Equipment.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\EditorScripts\CharacterReferencesResolver.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Firearms\FirearmFire.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\MeleeWeapon.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Enums\ElementId.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\CharacterBodySculptor.cs" />
     <Compile Include="Assets\_\Stuff\GridPathfinding\PathRoute.cs" />
+    <Compile Include="Assets\HeroEditor\FantasyHeroes\TestRoom\Scripts\AnchorManager.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\World_Mesh.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\ItemCollection.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\GameAssets.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\AvatarSetup.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\DialogueUI.cs" />
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_ObjectTransform.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Elements\InventoryItem.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Common\StateHandler.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Elements\ScrollInventory.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Common\Springs\SpringBase.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\CameraFollowSetup.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Firearms\Shell.cs" />
     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_Main.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\EditorScripts\CharacterEditor.cs" />
     <Compile Include="Assets\_\Stuff\GridPathfinding\BinaryTree.cs" />
+    <Compile Include="Assets\HeroEditor\FantasyHeroes\TestRoom\Scripts\Tweens\ScaleSpring.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\WeaponTracer.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\World_Bar.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\SpriteAnimator.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\Projectile.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Firearms\FingerTrigger.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\EditorScripts\Screenshot.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\CharacterAnimation.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\V_UnitSkeleton_Composite_Walker.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\HealthSystem.cs" />
+    <Compile Include="Assets\HeroEditor\FantasyHeroes\TestRoom\Scripts\Scarecrow.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Character.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\PositionRendererSorter.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -160,27 +254,32 @@
     <None Include="Assets\_\Stuff\Shaders\Endless_UI_SolidColorTint.shader" />
     <None Include="Assets\_\Stuff\Shaders\Endless_Sprites_Hue.shader" />
     <None Include="Assets\Resources\config.txt" />
+    <None Include="Assets\HeroEditor\Common\Shaders\GrayPaint.shader" />
     <None Include="Assets\_\Stuff\Shaders\Endless_UI_Blur.shader" />
     <None Include="Assets\_\Stuff\Shaders\Endless_Sprites_Outline.shader" />
     <None Include="Assets\_\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\_\Stuff\Shaders\Endless_TestUnlit.shader" />
     <None Include="Assets\TurnBattleSystem\feet_config.txt" />
     <None Include="Assets\_\Stuff\Shaders\Endless_TransColor.shader" />
+    <None Include="Assets\HeroEditor\FantasyHeroes\TestRoom\BackgroundLicense.txt" />
     <None Include="Assets\TurnBattleSystem\weapons_config.txt" />
     <None Include="Assets\_\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\_\Stuff\CodeMonkey\README.txt" />
     <None Include="Assets\_\Stuff\Shaders\Endless_Sprites_Shadow.shader" />
     <None Include="Assets\_\Stuff\Shaders\MultiplyTwoTextures.shader" />
     <None Include="Assets\TurnBattleSystem\others_config.txt" />
+    <None Include="Assets\HeroEditor\Common\Scripts\EditorScripts\HeroEditor.Common.dll" />
     <None Include="Assets\_\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\_\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\_\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\HeroEditor\InventorySystem\ReadMe.txt" />
     <None Include="Assets\_\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\_\Stuff\Shaders\Endless_TransDiffuseWithTint.shader" />
     <None Include="Assets\_\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\configPlayer.txt" />
     <None Include="Assets\TurnBattleSystem\legs_config.txt" />
     <None Include="Assets\_\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\HeroEditor\Common\RangedWeapons\Sounds\Firearms\License.txt" />
     <None Include="Assets\_\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\_\Stuff\Shaders\Endless_TransDiffuse.shader" />
     <None Include="Assets\_\Stuff\Shaders\Endless_Sprites_SolidColorTint.shader" />
@@ -238,6 +337,14 @@
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.34f1-x86_64\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.34f1-x86_64\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.34f1-x86_64\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ContentLoadModule">
@@ -452,6 +559,10 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.34f1-x86_64\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.34f1-x86_64\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.WindModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.34f1-x86_64\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
       <Private>False</Private>
@@ -530,6 +641,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HeroEditor.Common">
+      <HintPath>Assets\HeroEditor\Common\Scripts\EditorScripts\HeroEditor.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">

@@ -350,8 +350,8 @@ public List<string> ArmorFilePaths;
 
         //itemSlots = InventoryMenu.GetComponentsInChildren<Transform>();
         //LoadPlayerSprite();
-        LoadPlayerSpriteGear();
-        LoadWeaponImages();
+       // LoadPlayerSpriteGear();
+        //LoadWeaponImages();
         // Load all weapons from the  config file at the start
         loadedWeapons = Weapon.LoadWeaponsFromConfig("Assets/TurnBattleSystem/weapons_config.txt");
         loadedAccessory =  Accessory.LoadAccessoriesFromConfig("Assets/TurnBattleSystem/accessory_config.txt");
@@ -370,7 +370,7 @@ public List<string> ArmorFilePaths;
     void Update()
     {
 
-        LoadWeaponImages();
+       // LoadWeaponImages();
         if (Input.GetKeyDown(KeyCode.W))
         {
             if (active)
