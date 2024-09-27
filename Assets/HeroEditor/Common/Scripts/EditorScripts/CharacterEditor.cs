@@ -535,6 +535,7 @@ namespace Assets.HeroEditor.Common.Scripts.EditorScripts
             }
 		}
 
+
 	    /// <summary>
 		/// Load character from prefab.
 		/// </summary>

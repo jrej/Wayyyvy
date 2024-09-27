@@ -13,6 +13,9 @@ using Assets.HeroEditor.Common.Scripts.CharacterScripts.Firearms;
 using Assets.HeroEditor.Common.Scripts.CharacterScripts.Firearms.Enums;
 using HeroEditor.Common.Enums;
 using Unity.VisualScripting;
+using Assets.HeroEditor.Common.Scripts.ExampleScripts;
+using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class Dialogue {
     public List<string> lines;
@@ -29,6 +32,10 @@ public class Dialogue {
 public class BattleHandler : MonoBehaviour {
 
 //public KeyCode FireButton;
+
+public int enemyIndexnum;
+Character[] characters;
+
         public KeyCode ReloadButton;
     private static BattleHandler instance;
     private Dictionary<string, string> config;
@@ -75,7 +82,7 @@ public Button CreateAccountButton;
 
     public PlayerConfig playerConfig;
         public PlayerConfig enemyConfig;
-
+public  Camera PlayerCamera;
 
         public Character Character;
         public Character Enemy;
@@ -229,10 +236,13 @@ private void LoadEnemyImage(Transform enemyTransform, string imagePath)
         instance = this;
     
     canvas = GameObject.Find("Canvas2");
+    characters = FindObjectsOfType<Character>();
+
     inventoryMenu.SetActive(false);
     SelectionMenu.SetActive(false);
     
     buttonCanvas.SetActive(false);
+    HideCharacters();
                 
 
         
@@ -256,6 +266,7 @@ private void LoadEnemyAndStartBattle(int enemyIndex) {
     //editor = new CharacterEditor();
     SelectionMenu.SetActive(false);
     buttonCanvas.SetActive(true);
+    enemyIndexnum = enemyIndex;
     enemyConfigPath = $"configEnemy{enemyIndex}.json";
     playerConfigPath = "configPlayer.json" ;
    //         SetupPlayer("configPlayer.json");
@@ -268,68 +279,72 @@ private void LoadEnemyAndStartBattle(int enemyIndex) {
 
 private void StartNewGame() {
     // Launch coroutines to spawn player and enemy characters concurrently
-    StartCoroutine(SpawnCharacterCoroutine(true));  // Spawn player character
-    StartCoroutine(SpawnCharacterCoroutine(false)); // Spawn enemy character
+    StartCoroutine(SpawnCharacterCoroutine());  // Spawn player character
+   
 }
 
 // Coroutine to spawn characters asynchronously
-private IEnumerator SpawnCharacterCoroutine(bool isPlayerTeam) {
+private IEnumerator SpawnCharacterCoroutine() {
     // Simulate a delay for loading, customization, or other setup if necessary
     yield return new WaitForSeconds(0.5f); // Adjust or remove the delay as needed
 
     // Call your SpawnCharacter method
-    SpawnCharacter(isPlayerTeam);
+    SpawnCharacter();
 
-    Debug.Log(isPlayerTeam ? "Player character spawned." : "Enemy character spawned.");
+    Debug.Log(  "Player character spawned.Enemy character spawned.");
 }
 
 // Updated SpawnCharacter method
-private void SpawnCharacter(bool isPlayerTeam) {
-    Vector3 position = isPlayerTeam ? new Vector3(-50, -20) : new Vector3(+50, -20);
+private void SpawnCharacter() {
+    // Find all objects of type 'Character' in the scene
+// Loop through and find the one named 'Human'
+        Character humanCharacter = null;
+         // Loop through and find the one named 'Human'
+        Character EnemyCharacter = null;
 
-    if (isPlayerTeam) {
-        // Instantiate HeroEditor character prefab for the player
-        Character = Instantiate(CharacterPrefab);  // Ensure CharacterPrefab is assigned in the Inspector
+        string enemyname = $"character{enemyIndexnum}";
+        Debug.Log("Looking for : : " + enemyname);
 
+        foreach (Character character in characters)
+        {
+            if (character.gameObject.name == "Human")
+            {
+                 humanCharacter = character;
+
+                
+            }
+            else if (character.gameObject.name == enemyname)
+            {   
+                EnemyCharacter = character;
+                
+            }
+            else{
+                character.gameObject.SetActive(false);
+            }
+            
+        }
+  
+   
+        Character = humanCharacter;  // Ensure CharacterPrefab is assigned in the Inspector
+        Enemy = EnemyCharacter;  // Ensure EnemyPrefab is assigned in the Inspector
+    
+      // Character = Instantiate((Character)); 
         // Set character position and scale
-        Character.transform.position = position;
+        Character.transform.position = new Vector3(-50, -20);
         Character.transform.localScale = new Vector3(5f, 5f, 5f);
+        Character.gameObject.SetActive(true);
 
         Debug.Log("Setting up player character with sprite: " + playerConfigPath);
 
-        // Load character from JSON using the HeroEditor CharacterEditor
-        var characterEditor = Character.GetComponent<CharacterEditor>();
-        if (characterEditor != null) {
-            characterEditor.LoadFromJson(playerConfigPath);  // Load customization from JSON
-        } else {
-            Debug.LogError("CharacterEditor component missing on the Character prefab.");
-        }
-
-        // Start the character (if any additional logic is required after loading)
-        characterEditor?.Start();
-        
-    } else {
-        // Instantiate HeroEditor character prefab for the enemy
-        Enemy = Instantiate(EnemyPrefab);  // Ensure EnemyPrefab is assigned in the Inspector
 
         // Set enemy position, rotation, and scale
-        Enemy.transform.position = position;
+        Enemy.transform.position = new Vector3(+50, -20);
         Enemy.transform.Rotate(0, 180, 0);
         Enemy.transform.localScale = new Vector3(5f, 5f, 5f);
+        Character.gameObject.SetActive(true);
 
-        Debug.Log("Setting up enemy character with sprite: " + enemyConfigPath);
-
-        // Load enemy character from JSON using the HeroEditor CharacterEditor
-        var enemyEditor = Enemy.GetComponent<CharacterEditor>();
-        if (enemyEditor != null) {
-            enemyEditor.LoadFromJson(enemyConfigPath);  // Load customization from JSON
-        } else {
-            Debug.LogError("CharacterEditor component missing on the Enemy prefab.");
-        }
-
-        // Start the enemy character (if additional logic is required after loading)
-        enemyEditor?.Start();
-    }
+      
+    
 }
 
 
@@ -417,8 +432,9 @@ public void LoadAndDisplayCharacterSprites() {
 
         createButton.onClick.AddListener(SignIn);
         ConnectionButton.onClick.AddListener(Connect);
+        
 
-        toggleInInventoryButton.onClick.AddListener(ToggleInventoryMenu);
+       // toggleInInventoryButton.onClick.AddListener(ToggleInventoryMenu);
         toggleInventoryButton.onClick.AddListener(ToggleInventoryMenu);
         quitButton.onClick.AddListener(QuitGame);
         // Add listeners for enemy buttons using lambda expressions
@@ -456,11 +472,15 @@ public void LoadAndDisplayCharacterSprites() {
         startCanvas.SetActive(false);
         LoginMenu.SetActive(true);
         
+        
     }
     private void Connect() {
         Debug.Log("Starting Connection email "+ emailInput.text + "pass : " +passwordInput.text);
         LoginMenu.SetActive(false);
         SelectionMenu.SetActive(true);
+        DisplayCharactersOnScreen();
+        buttonCanvas.SetActive(true);
+        ToggleInventoryMenu();
         
     }
 
@@ -468,7 +488,7 @@ public void LoadAndDisplayCharacterSprites() {
         Debug.Log("SignIn  ");
         SignInMenu.SetActive(true);
         LoginMenu.SetActive(false);
-        
+        DisplayCharactersOnScreen();
     }
 
       private void Login() {
@@ -487,53 +507,26 @@ public void LoadAndDisplayCharacterSprites() {
             inventoryMenu.SetActive(!isActive);
         }
     }
-
+private void HideCharacters(){
+    foreach (Character character in characters)
+        {
+            character.gameObject.SetActive(false);
+        }
+}
+private void DisplayCharactersOnScreen(){
+    foreach (Character character in characters)
+        {
+            character.gameObject.SetActive(true);
+        }
+}
    private void QuitGame() {
     Debug.Log("Quitting game...");
+    
+    
+    string currentSceneName = SceneManager.GetActiveScene().name;
+SceneManager.LoadScene(currentSceneName);
+    
 
-    GameObject humanClone = GameObject.Find("Human(Clone)");
-    if (humanClone != null) {
-        Destroy(humanClone);
-        Debug.Log("Human(Clone) destroyed.");
-    }
-    GameObject Clone1 = GameObject.Find("character1(Clone)");
-    if (humanClone != null) {
-        Destroy(humanClone);
-        Debug.Log("character1(Clone) destroyed.");
-    }
-    GameObject Clone2 = GameObject.Find("character2(Clone)");
-    if (humanClone != null) {
-        Destroy(humanClone);
-        Debug.Log("character2(Clone) destroyed.");
-    }
-    GameObject Clone3 = GameObject.Find("character3(Clone)");
-    if (humanClone != null) {
-        Destroy(humanClone);
-        Debug.Log("character3(Clone) destroyed.");
-    }
-    GameObject Clone4 = GameObject.Find("character4(Clone)");
-    if (humanClone != null) {
-        Destroy(humanClone);
-        Debug.Log("character4(Clone) destroyed.");
-    }
-
-
-    Destroy(Character.gameObject);
-    Destroy(Enemy.gameObject);
-
-
-    SelectionMenu.SetActive(false);
-    buttonCanvas.SetActive(false);
-    startCanvas.SetActive(true);
-
-   /* // If we are running on Android
-    #if UNITY_ANDROID
-        // Close the application on Android
-        Application.Quit();
-    #else
-        // For any other platform (like in the Unity Editor or Desktop)
-        Application.Quit();
-    #endif*/
 }
 
 
@@ -542,8 +535,8 @@ public void LoadAndDisplayCharacterSprites() {
 private bool isMoving = false;
 private Vector3 originalPosition;
 private Vector3 targetPosition;
-private float moveSpeed = 100f; // Speed of movement
-private float waitTime = 1f; // Time to wait between actions
+private float moveSpeed = 200f; // Speed of movement
+private float waitTime = 0.4f; // Time to wait between actions
 
 
 private IEnumerator MoveToEnemyAndBack() {
@@ -587,7 +580,7 @@ private IEnumerator MoveToPlayerAndBack() {
     isMoving = true;
     Enemy.SetState(CharacterState.Run);
     originalPosition = Enemy.transform.position; // Save original position
-    targetPosition = Character.transform.position - new Vector3(0.5f, 0f, 0f); // Target position near the enemy
+    targetPosition = Character.transform.position - new Vector3(-10f, 0f, 0f); // Target position near the enemy
 
     
     // Move toward the enemy
@@ -630,13 +623,9 @@ private IEnumerator MoveCharacter(Transform character, Vector3 destination, floa
 
 
 private void Update() {
-    //animator = Character.GetComponent<Animator>();
-    
-    if (animator = null){
-            Debug.Log("no animator detected in character");
-
-    }
-
+   
+         PlayerCamera.transform.position = new Vector3 (Character.transform.position.x , Character.transform.position.y +7, -190); // Camera follows the player with specified offset position
+PlayerCamera.orthographicSize = 10 ;
     if (state == State.WaitingForPlayer) {
         // For touch input (Android)
         if (Input.touchCount > 0) {
@@ -659,7 +648,7 @@ private void Update() {
         if (Input.GetKeyDown(KeyCode.Space)) {
 
             originalPosition = Character.transform.position; // Save original position
-            targetPosition = Enemy.transform.position - new Vector3(1f, 0f, 0f); // Target position near the enemy
+            targetPosition = Enemy.transform.position - new Vector3(10f, 0f, 0f); // Target position near the enemy
             StartCoroutine(MoveToEnemyAndBack()); // Start movement coroutine
             
         }

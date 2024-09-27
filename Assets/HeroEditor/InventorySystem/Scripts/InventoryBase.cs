@@ -120,7 +120,7 @@ namespace Assets.HeroEditor.InventorySystem.Scripts
             if (SelectedItem.IsTwoHanded || SelectedItem.IsShield) AutoRemove(Equipment.Items.Where(i => i.IsWeapon && i.IsFirearm).ToList());
 
             MoveItem(SelectedItem, PlayerInventory, Equipment);
-            AudioSource.PlayOneShot(EquipSound, SfxVolume);
+//            AudioSource.PlayOneShot(EquipSound, SfxVolume);
             OnEquip?.Invoke(SelectedItem);
         }
 
@@ -128,7 +128,7 @@ namespace Assets.HeroEditor.InventorySystem.Scripts
         {
             MoveItem(SelectedItem, Equipment, PlayerInventory);
             SelectItem(SelectedItem);
-            AudioSource.PlayOneShot(EquipSound, SfxVolume);
+//            AudioSource.PlayOneShot(EquipSound, SfxVolume);
         }
 
         public void Craft()

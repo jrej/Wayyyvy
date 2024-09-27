@@ -69,8 +69,8 @@
     <Compile Include="Assets\HeroEditor\Common\Scripts\Common\SoloState.cs" />
     <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\InventoryExample.cs" />
     <Compile Include="Assets\ItemSlots.cs" />
-    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\AttackingExample.cs" />
     <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Elements\Equipment.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\AttackingExample.cs" />
     <Compile Include="Assets\HeroEditor\FantasyHeroes\TestRoom\Scripts\Tweens\TweenBase.cs" />
     <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\TestRoom.cs" />
     <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\SaveLoadExample.cs" />
@@ -109,8 +109,8 @@
     <Compile Include="Assets\TurnBattleSystem\Scripts\Weapon.cs" />
     <Compile Include="Assets\_\Stuff\GridPathfinding\MapPos.cs" />
     <Compile Include="Assets\HeroEditor\Common\Scripts\Collections\IconCollection.cs" />
-    <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_ObjectTransform_LateUpdate.cs" />
     <Compile Include="Assets\HeroEditor\Common\Scripts\EditorScripts\SpriteSheetCapture.cs" />
+    <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_ObjectTransform_LateUpdate.cs" />
     <Compile Include="Assets\_\Stuff\Scripts\Dirt_Handler.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\Character_Base.cs" />
     <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Elements\ScrollInventoryFilter.cs" />
@@ -187,8 +187,8 @@
     <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\MovementExample.cs" />
     <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Firearms\Enums\FirearmType.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\Other.cs" />
-    <Compile Include="Assets\HeroEditor\Common\Scripts\Common\Extensions.cs" />
     <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Firearms\Enums\FirearmLoadType.cs" />
+    <Compile Include="Assets\HeroEditor\Common\Scripts\Common\Extensions.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\Button_Sprite.cs" />
     <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Enums\ItemTag.cs" />
     <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Data\Item.cs" />
@@ -214,8 +214,8 @@
     <Compile Include="Assets\HeroEditor\Common\Scripts\EditorScripts\CharacterReferencesResolver.cs" />
     <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\Firearms\FirearmFire.cs" />
     <Compile Include="Assets\HeroEditor\Common\Scripts\ExampleScripts\MeleeWeapon.cs" />
-    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Enums\ElementId.cs" />
     <Compile Include="Assets\HeroEditor\Common\Scripts\CharacterScripts\CharacterBodySculptor.cs" />
+    <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Enums\ElementId.cs" />
     <Compile Include="Assets\_\Stuff\GridPathfinding\PathRoute.cs" />
     <Compile Include="Assets\HeroEditor\FantasyHeroes\TestRoom\Scripts\AnchorManager.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\World_Mesh.cs" />
@@ -639,12 +639,12 @@
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.5\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="HeroEditor.Common">
       <HintPath>Assets\HeroEditor\Common\Scripts\EditorScripts\HeroEditor.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
