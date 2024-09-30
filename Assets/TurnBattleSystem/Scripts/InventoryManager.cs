@@ -10,26 +10,9 @@ public class InventoryManager : MonoBehaviour
     public GameObject InventoryMenu;
     public GameObject DescritionSlot;
     private bool active;
-    private string weaponsFolderPath = "Assets/TurnBattleSystem/Textures/Weapons";
-    private string bodiesFolderPath = "Assets/TurnBattleSystem/Textures/Bodies2";
+   
 
     public string PlayerSpritePath = "Assets/TurnBattleSystem/Textures/PlayerSprite.png";
-
-    private string PlayerHeadPath = "Assets/TurnBattleSystem/Textures/head.png";
-
-    private string PlayerWeaponHandPath = "Assets/TurnBattleSystem/Textures/weapon.png";
-
-    private string PlayerOffHandPath = "Assets/TurnBattleSystem/Textures/offhand.png";
-    
-    private string PlayerRelicPath = "Assets/TurnBattleSystem/Textures/relic.png";
-    
-    private string PlayerFeetPath = "Assets/TurnBattleSystem/Textures/feet.png";
-
-    private string PlayerCloakPath = "Assets/TurnBattleSystem/Textures/cloak.png";
-
-    private string PlayerBodyPath = "Assets/TurnBattleSystem/Textures/body.png";
-
-    private string PlayerLegsPath = "Assets/TurnBattleSystem/Textures/legs.png";
 
 
     private BattleHandler battleHandler;

@@ -8,7 +8,7 @@ using TMPro;
 using Assets.HeroEditor.Common.Scripts.EditorScripts;
 using HeroEditor.Common;
 using Assets.HeroEditor.Common.Scripts.CharacterScripts;
-using UnityEditor.Build.Reporting;
+//using UnityEditor.Build.Reporting;
 using Assets.HeroEditor.Common.Scripts.CharacterScripts.Firearms;
 using Assets.HeroEditor.Common.Scripts.CharacterScripts.Firearms.Enums;
 using HeroEditor.Common.Enums;
@@ -16,6 +16,7 @@ using Unity.VisualScripting;
 using Assets.HeroEditor.Common.Scripts.ExampleScripts;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using Assets.HeroEditor.Common.Scripts.Common;
 
 public class Dialogue {
     public List<string> lines;
@@ -35,6 +36,13 @@ public class BattleHandler : MonoBehaviour {
 
 public int enemyIndexnum;
 Character[] characters;
+public Image Lifebar1;
+
+public Image Lifebar2;
+
+public TextMeshProUGUI textlife1 ;
+     public TextMeshProUGUI textlife2 ;
+
 
         public KeyCode ReloadButton;
     private static BattleHandler instance;
@@ -47,6 +55,8 @@ Character[] characters;
     public Texture2D enemySpritesheet;
 
     public Texture2D copSpritesheet;
+    private BattleManager battleManager;
+    public GameObject lifebarCanvas;
 
     //private CharacterBattle playerCharacterBattle;
    // private CharacterBattle enemyCharacterBattle;
@@ -109,6 +119,7 @@ public  Camera PlayerCamera;
     public Button StartButton;
          public Button toggleInInventoryButton;
            public Button ConnectionButton;
+           public Button FightButton;
 
         public Button Enemy1;
         public Button Enemy2;
@@ -117,7 +128,7 @@ public  Camera PlayerCamera;
     public Character CharacterPrefab;
     public Character EnemyPrefab;
     public Button quitButton;
-        public GameObject buttonCanvas;
+        //public GameObject buttonCanvas;
 
 
         private Image playerSpriteGearImage;
@@ -148,7 +159,7 @@ private Image Enemy4Image;
 
     if (selectionCanvasTransform == null)
     {
-        Debug.LogError("SelectionCanvas not found.");
+        //Debug.LogError("SelectionCanvas not found.");
         return;
     }
 
@@ -173,11 +184,11 @@ private Image Enemy4Image;
             if (playerSpriteGearImage != null)
             {
                 LoadPlayerSpriteGearImage(playerSpriteGearImage, PlayerSpritePath);
-                Debug.Log("Player sprite gear loaded successfully.");
+                //Debug.Log("Player sprite gear loaded successfully.");
             }
             else
             {
-                Debug.LogError("Image component not found on PlayerSpriteGearSelect.");
+                //Debug.LogError("Image component not found on PlayerSpriteGearSelect.");
             }
         }
 
@@ -220,11 +231,11 @@ private void LoadEnemyImage(Transform enemyTransform, string imagePath)
     if (enemyImage != null)
     {
         enemyImage.sprite = sprite;
-        Debug.Log($"Loaded enemy image from {imagePath}");
+        //Debug.Log($"Loaded enemy image from {imagePath}");
     }
     else
     {
-        Debug.LogError("Image component not found on " + enemyTransform.name);
+        //Debug.LogError("Image component not found on " + enemyTransform.name);
     }
 }
 
@@ -241,7 +252,7 @@ private void LoadEnemyImage(Transform enemyTransform, string imagePath)
     inventoryMenu.SetActive(false);
     SelectionMenu.SetActive(false);
     
-    buttonCanvas.SetActive(false);
+   // buttonCanvas.SetActive(false);
     HideCharacters();
                 
 
@@ -263,9 +274,9 @@ private void LoadEnemyImage(Transform enemyTransform, string imagePath)
 
 
 private void LoadEnemyAndStartBattle(int enemyIndex) {
-    //editor = new CharacterEditor();
+   // editor = new CharacterEditor();
     SelectionMenu.SetActive(false);
-    buttonCanvas.SetActive(true);
+    //buttonCanvas.SetActive(true);
     enemyIndexnum = enemyIndex;
     enemyConfigPath = $"configEnemy{enemyIndex}.json";
     playerConfigPath = "configPlayer.json" ;
@@ -290,8 +301,9 @@ private IEnumerator SpawnCharacterCoroutine() {
 
     // Call your SpawnCharacter method
     SpawnCharacter();
+    
 
-    Debug.Log(  "Player character spawned.Enemy character spawned.");
+    //Debug.Log(  "Player character spawned.Enemy character spawned.");
 }
 
 // Updated SpawnCharacter method
@@ -303,7 +315,7 @@ private void SpawnCharacter() {
         Character EnemyCharacter = null;
 
         string enemyname = $"character{enemyIndexnum}";
-        Debug.Log("Looking for : : " + enemyname);
+        //Debug.Log("Looking for : : " + enemyname);
 
         foreach (Character character in characters)
         {
@@ -334,7 +346,7 @@ private void SpawnCharacter() {
         Character.transform.localScale = new Vector3(5f, 5f, 5f);
         Character.gameObject.SetActive(true);
 
-        Debug.Log("Setting up player character with sprite: " + playerConfigPath);
+        //Debug.Log("Setting up player character with sprite: " + playerConfigPath);
 
 
         // Set enemy position, rotation, and scale
@@ -342,6 +354,12 @@ private void SpawnCharacter() {
         Enemy.transform.Rotate(0, 180, 0);
         Enemy.transform.localScale = new Vector3(5f, 5f, 5f);
         Character.gameObject.SetActive(true);
+        battleManager = new BattleManager(Character,Enemy);
+        lifebarCanvas.SetActive(true);
+        Lifebar1.fillAmount = 1; 
+        Lifebar2.fillAmount = 1; 
+        //FightButton.SetActive(true);
+        
 
       
     
@@ -353,7 +371,7 @@ private void SpawnCharacter() {
 public void UpdateConfigWithSelectedWeapon(string weaponPath) {
     // Example implementation for updating config
     // This should be replaced with your actual config update logic
-    Debug.Log("Updating config with weapon: " + weaponPath);
+    //Debug.Log("Updating config with weapon: " + weaponPath);
     // Example code to update the config file
      config["PlayerWeapon"] = weaponPath;
      ModifyPlayerBodySpritesheet(weaponPath,true);
@@ -432,6 +450,7 @@ public void LoadAndDisplayCharacterSprites() {
 
         createButton.onClick.AddListener(SignIn);
         ConnectionButton.onClick.AddListener(Connect);
+        FightButton.onClick.AddListener(Battle);
         
 
        // toggleInInventoryButton.onClick.AddListener(ToggleInventoryMenu);
@@ -462,32 +481,56 @@ public void LoadAndDisplayCharacterSprites() {
         }
         else
         {
-            Debug.LogError($"Image file not found at path: {imagePath}");
+            //Debug.LogError($"Image file not found at path: {imagePath}");
         }
     }
 
      // Method to toggle the inventory menu
     private void StartGame() {
-        Debug.Log("Starting Game ");
+        //Debug.Log("Starting Game ");
         startCanvas.SetActive(false);
         LoginMenu.SetActive(true);
         
         
     }
     private void Connect() {
-        Debug.Log("Starting Connection email "+ emailInput.text + "pass : " +passwordInput.text);
+        //Debug.Log("Starting Connection email "+ emailInput.text + "pass : " +passwordInput.text);
         LoginMenu.SetActive(false);
+        ToggleInventoryMenu();
         SelectionMenu.SetActive(true);
         DisplayCharactersOnScreen();
-        buttonCanvas.SetActive(true);
-        ToggleInventoryMenu();
+    //    buttonCanvas.SetActive(true);
         
+        
+    }
+    private void Battle(){
+        Debug.Log("FIght button:");
+        
+
+        if(battleManager.playerStats.HP > 0 && battleManager.enemyStats.HP > 0  ){
+                StartCoroutine(HandleCombat());
+        }
+        else{
+
+
+                if(battleManager.playerStats.HP <= 0 ){
+                    Character.SetState(CharacterState.DeathB);
+                    Character.SetExpression("Dead");
+                }
+                else{Enemy.SetState(CharacterState.DeathB);
+                    Enemy.SetExpression("Dead");
+                }   
+            
+            Debug.Log("FIght is Over:");
+        }
+        state = State.WaitingForPlayer;
     }
 
       private void SignIn() {
         Debug.Log("SignIn  ");
         SignInMenu.SetActive(true);
         LoginMenu.SetActive(false);
+      //  buttonCanvas.SetActive(true);
         DisplayCharactersOnScreen();
     }
 
@@ -540,10 +583,15 @@ private float waitTime = 0.4f; // Time to wait between actions
 
 
 private IEnumerator MoveToEnemyAndBack() {
+    if(battleManager.playerStats.HP <= 0 ){
+        Character.SetState(CharacterState.DeathB);
+                Character.SetExpression("Dead");
+    }else{
     state = State.Busy;
     isMoving = true;
                 Character.SetState(CharacterState.Run);
                 Character.SetExpression("Default");
+    
 
     
     // Move toward the enemy
@@ -561,10 +609,14 @@ private IEnumerator MoveToEnemyAndBack() {
 
     Character.Slash();
     yield return new WaitForSeconds(waitTime);
+    battleManager.PerformAttack(battleManager.playerStats,battleManager.enemyStats);
+    UpdateLifebar();
+
 
 
     // Move back to original position
     yield return StartCoroutine(MoveCharacter(Character.transform, originalPosition, moveSpeed));
+    
 
 
 
@@ -572,10 +624,15 @@ private IEnumerator MoveToEnemyAndBack() {
     state = State.WaitingForPlayer; // Set back to waiting after moving back
                 Character.SetState(CharacterState.Relax);
                 // Handle attack logic
-    StartCoroutine(HandlePlayerAttack(Enemy));
+   // StartCoroutine(HandlePlayerAttack(Enemy));
+   }
 
 }
 private IEnumerator MoveToPlayerAndBack() {
+    if(battleManager.enemyStats.HP <= 0 ){
+        Enemy.SetState(CharacterState.DeathB);
+                Enemy.SetExpression("Dead");
+    }else{
     state = State.Busy;
     isMoving = true;
     Enemy.SetState(CharacterState.Run);
@@ -594,13 +651,16 @@ private IEnumerator MoveToPlayerAndBack() {
     yield return new WaitForSeconds(waitTime);
 
     Enemy.Shoot();
-    yield return new WaitForSeconds(waitTime);
+   yield return new WaitForSeconds(waitTime);
 
     Enemy.Slash();
-    yield return new WaitForSeconds(waitTime);
+   yield return new WaitForSeconds(waitTime);
 
     // Handle attack logic
     //StartCoroutine(HandlePlayerAttack(Enemy));
+        battleManager.PerformAttack(battleManager.enemyStats,battleManager.playerStats);
+        UpdateLifebar();
+
 
     // Move back to original position
     yield return StartCoroutine(MoveCharacter(Enemy.transform, originalPosition, moveSpeed));
@@ -608,7 +668,7 @@ private IEnumerator MoveToPlayerAndBack() {
     isMoving = false;
     state = State.WaitingForPlayer; // Set back to waiting after moving back
                 Enemy.SetState(CharacterState.Relax);
-ApplyDamageToEnemy(Character);
+                }
 }
 
 private IEnumerator MoveCharacter(Transform character, Vector3 destination, float speed) {
@@ -629,48 +689,107 @@ PlayerCamera.orthographicSize = 10 ;
     if (state == State.WaitingForPlayer) {
         // For touch input (Android)
         if (Input.touchCount > 0) {
+            
             Touch touch = Input.GetTouch(0);
 
             // Check if the touch is a "Tap"
             if (touch.phase == TouchPhase.Ended) {
                 state = State.Busy;
+                if(battleManager.playerStats.HP > 0 && battleManager.enemyStats.HP > 0  ){
+                StartCoroutine(HandleCombat());
+            }
+            else{
 
-                // Trigger player attack animation
-                //Character.GetComponent<Animator>().SetTrigger("Slash");; // Use HeroEditor attack animation trigger
-                //Character.GetReady();
-                // After the animation, handle logic
-                Character.Jab();
-                StartCoroutine(HandlePlayerAttack(Enemy));
+                if(battleManager.playerStats.HP <= 0 ){
+                    Character.SetState(CharacterState.DeathB);
+                    Character.SetExpression("Dead");
+                }
+                else{Enemy.SetState(CharacterState.DeathB);
+                    Enemy.SetExpression("Dead");
+                }   
+            
+           // Debug.Log("FIght is Over:");
+            }
+            state = State.WaitingForPlayer;
+
+                
             }
         }
 
         // For spacebar input (Desktop testing)
         if (Input.GetKeyDown(KeyCode.Space)) {
+            state = State.Busy;
 
-            originalPosition = Character.transform.position; // Save original position
-            targetPosition = Enemy.transform.position - new Vector3(10f, 0f, 0f); // Target position near the enemy
-            StartCoroutine(MoveToEnemyAndBack()); // Start movement coroutine
+            if(battleManager.playerStats.HP > 0 && battleManager.enemyStats.HP > 0  ){
+                StartCoroutine(HandleCombat());
+            }
+            else{
+
+                if(battleManager.playerStats.HP <= 0 ){
+                    Character.SetState(CharacterState.DeathB);
+                    Character.SetExpression("Dead");
+                }
+                else{Enemy.SetState(CharacterState.DeathB);
+                    Enemy.SetExpression("Dead");
+                }   
+            
+           // Debug.Log("FIght is Over:");
+            }
+            state = State.WaitingForPlayer;
+
+            
+            
+           // battleManager.Battle();
             
         }
+                //Character.transform.position = new Vector3(-50, -20);
+                // Enemy.transform.position = new Vector3(+50, -20);
+
+        }
     }
+
+
+    private IEnumerator HandleCombat(){
+         if(battleManager.playerStats.Speed <battleManager.enemyStats.Speed){
+
+                originalPosition = Character.transform.position; // Save original position
+                targetPosition = Enemy.transform.position - new Vector3(10f, 0f, 0f); // Target position near the enemy
+                yield return MoveToEnemyAndBack(); // Start movement coroutine
+
+                originalPosition = Enemy.transform.position; // Save original position
+                targetPosition = Character.transform.position - new Vector3(10f, 0f, 0f); // Target position near the enemy
+                yield return MoveToPlayerAndBack(); // Start movement coroutine
+
+
+            }else{
+
+                originalPosition = Enemy.transform.position; // Save original position
+                targetPosition = Character.transform.position - new Vector3(10f, 0f, 0f); // Target position near the enemy
+                 yield return MoveToPlayerAndBack(); // Start movement coroutine
+                originalPosition = Character.transform.position; // Save original position
+                targetPosition = Enemy.transform.position - new Vector3(10f, 0f, 0f); // Target position near the enemy
+                yield return MoveToEnemyAndBack(); // Start movement coroutine
+                
+
+            }
+
+    }
+private void UpdateLifebar(){
+                // Assuming Lifebar1 and Lifebar2 are Image components
+Lifebar1.fillAmount = battleManager.playerStats.HP / battleManager.playerMaxHP;
+textlife1.SetText(((int)(Lifebar1.fillAmount*100)).ToString());
+//Debug.Log("Lifebar1 = " + Lifebar1.fillAmount );
+Lifebar2.fillAmount = battleManager.enemyStats.HP / battleManager.enemyMaxHP;
+textlife2.SetText(((int)(Lifebar2.fillAmount*100)).ToString());
+
+//Debug.Log("Lifebar2 = " + Lifebar1.fillAmount );
 }
 
 private IEnumerator HandlePlayerAttack(Character enemyCharacter) {
     // Wait for attack animation to complete (adjust the time to match your animation)
    
     // Handle post-attack logic (e.g., applying damage)
-    ApplyDamageToEnemy(enemyCharacter);
 return MoveToPlayerAndBack();
-
-    // Choose the next active character after the attack
-    //ChooseNextActiveCharacter();
-}
-
-private void HandleEnemyAttack(Character enemyCharacter) {
-    // Wait for attack animation to complete (adjust the time to match your animation)
-   
-    // Handle post-attack logic (e.g., applying damage)
-    ApplyDamageToEnemy(Character);
 
     // Choose the next active character after the attack
     //ChooseNextActiveCharacter();
@@ -681,31 +800,34 @@ private void ApplyDamageToEnemy(Character enemyCharacter) {
     Debug.Log("Player attacked the enemy!");
     enemyCharacter.SetExpression("Angry");
     // e.g., enemyCharacter.TakeDamage(damageAmount);
-}
+        }
+
+
+
 
 
 
     private void SetActiveCharacterBattle(CharacterBattle characterBattle) {
         if (activeCharacterBattle != null) {
             activeCharacterBattle.HideSelectionCircle();
-        }
-
-        activeCharacterBattle = characterBattle;
-        activeCharacterBattle.ShowSelectionCircle();
     }
 
 
+    }
+
+
+
 private void LoadCharacterConfig(string path,bool player ) {
-    Debug.Log("PATH " + path);
+    ////Debug.Log("PATH " + path);
     if (!File.Exists(path)) {
-        Debug.LogError("Config file not found: " + path);
+        //Debug.LogError("Config file not found: " + path);
         return;
     }
     if(player){
         
         playerConfig = playerConfig.LoadPlayerConfig(path);
 
-        // Optional: Log player config for debugging purposes
+        // Optional: Log player config for //Debugging purposes
         playerConfig.DisplayPlayerConfig();
 
     }
@@ -728,7 +850,7 @@ private void LoadCharacterConfig(string path,bool player ) {
 
     // Apply the loaded player sprites based on the configuration
     LoadCharacterSprites(true); 
-    Debug.Log("Player is loaded");
+    //Debug.Log("Player is loaded");
 
 }
 
@@ -740,7 +862,7 @@ private void LoadCharacterConfig(string path,bool player ) {
 
     // Apply the loaded player sprites based on the configuration
     LoadCharacterSprites(false); 
-    Debug.Log("Enemy is loaded");
+    //Debug.Log("Enemy is loaded");
     }
 
     public void LoadCharacterSprites(bool isPlayer) {
@@ -748,32 +870,32 @@ private void LoadCharacterConfig(string path,bool player ) {
 
     if (isPlayer) {
         // Use PlayerConfig for the player character
-                   Debug.Log(" LoadCharacterSprites player ") ;
+                   //Debug.Log(" LoadCharacterSprites player ") ;
         string headFile = playerConfig.playerHead.path;
         string bodyFile = playerConfig.playerBody.path;
         string weaponFile = playerConfig.playerWeapon.path;
         string spritepath = playerConfig.spriteSheetPath;
-        Debug.Log(" HEAD : " + headFile +" bodyFile : " + bodyFile+ " weaponFile : " + weaponFile+ "Spritsheet at : "+ spritepath ) ;
+        //Debug.Log(" HEAD : " + headFile +" bodyFile : " + bodyFile+ " weaponFile : " + weaponFile+ "Spritsheet at : "+ spritepath ) ;
         // Apply the player-specific textures
         ModifyPlayerBodySpritesheet(bodyFile,true);
         ModifyPlayerWeaponSpritesheet(weaponFile,true);
         ModifyPlayerHeadSpritesheet(headFile,true);
     } else {
-                   Debug.Log(" LoadCharacterSprites enemy ") ;
+                   //Debug.Log(" LoadCharacterSprites enemy ") ;
         string headFile = enemyConfig.playerHead.path;
         string bodyFile = enemyConfig.playerBody.path;
         string weaponFile = enemyConfig.playerWeapon.path; 
         string spritepath = enemyConfig.spriteSheetPath;
-        Debug.Log(" HEAD : " + headFile +" bodyFile : " + bodyFile+ " weaponFile : " + weaponFile+ "Spritsheet at : "+ spritepath ) ;
+        //Debug.Log(" HEAD : " + headFile +" bodyFile : " + bodyFile+ " weaponFile : " + weaponFile+ "Spritsheet at : "+ spritepath ) ;
         
 
 
         ModifyPlayerBodySpritesheet(bodyFile,false);
-         Debug.Log(" Enemy body done : ");
+         //Debug.Log(" Enemy body done : ");
         ModifyPlayerWeaponSpritesheet(weaponFile,false);
-         Debug.Log(" Enemy weapon done : ");
+         //Debug.Log(" Enemy weapon done : ");
         ModifyPlayerHeadSpritesheet(headFile,false);
-         Debug.Log(" Enemy head done : ");
+         //Debug.Log(" Enemy head done : ");
     }
 }
 
@@ -797,7 +919,7 @@ private void LoadCharacterConfig(string path,bool player ) {
         Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
 
         if (baseSpritesheet == null) {
-            Debug.LogError("Failed to load base spritesheet.");
+            //Debug.LogError("Failed to load base spritesheet.");
             return;
         }
 
@@ -805,7 +927,7 @@ private void LoadCharacterConfig(string path,bool player ) {
         Texture2D selectedBodies = LoadTextureFromFile(bodyFile);
 
         if (selectedBodies == null) {
-            Debug.LogError("Failed to load selected bodies.");
+            //Debug.LogError("Failed to load selected bodies.");
             return;
         }
 
@@ -824,7 +946,7 @@ private void LoadCharacterConfig(string path,bool player ) {
 
         // Save the modified spritesheet
         SaveTextureToFile(baseSpritesheet, outputImagePath);
-        Debug.Log($"Modified spritesheet saved to {outputImagePath}");
+        //Debug.Log($"Modified spritesheet saved to {outputImagePath}");
     }
 
     private void ModifyPlayerHeadSpritesheet(string bodyFile,bool player) {
@@ -843,7 +965,7 @@ private void LoadCharacterConfig(string path,bool player ) {
         Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
 
         if (baseSpritesheet == null) {
-            Debug.LogError("Failed to load base spritesheet.");
+            //Debug.LogError("Failed to load base spritesheet.");
             return;
         }
 
@@ -851,7 +973,7 @@ private void LoadCharacterConfig(string path,bool player ) {
         Texture2D selectedHead = LoadTextureFromFile("Assets/TurnBattleSystem/Textures/head.png");
 
         if (selectedHead == null) {
-            Debug.LogError("Failed to load selected bodies.");
+            //Debug.LogError("Failed to load selected bodies.");
             return;
         }
 
@@ -872,12 +994,12 @@ private void LoadCharacterConfig(string path,bool player ) {
 
         // Save the modified spritesheet
         SaveTextureToFile(baseSpritesheet, outputImagePath);
-        Debug.Log($"Modified spritesheet saved to {outputImagePath}");
+        //Debug.Log($"Modified spritesheet saved to {outputImagePath}");
     }
 
 
     public void ModifyPlayerWeaponSpritesheet(string weaponFile,bool player) {
-        Debug.Log("Modify playterSpriteshete");
+        //Debug.Log("Modify playterSpriteshete");
         // Paths to files and folders
         string baseImagePath = enemyConfig.spriteSheetPath;
         string outputImagePath = enemyConfig.spriteSheetPath;
@@ -893,7 +1015,7 @@ private void LoadCharacterConfig(string path,bool player ) {
         Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
 
         if (baseSpritesheet == null) {
-            Debug.LogError("Failed to load base spritesheet.");
+            //Debug.LogError("Failed to load base spritesheet.");
             return;
         }
 
@@ -901,7 +1023,7 @@ private void LoadCharacterConfig(string path,bool player ) {
         Texture2D selectedWeapons = LoadTextureFromFile(weaponFile);
 
         if (selectedWeapons == null) {
-            Debug.LogError("Failed to load selected weapons.");
+            //Debug.LogError("Failed to load selected weapons.");
             return;
         }
 
@@ -915,13 +1037,13 @@ private void LoadCharacterConfig(string path,bool player ) {
 
         // Save the modified spritesheet
         SaveTextureToFile(baseSpritesheet, outputImagePath);
-        Debug.Log($"Modified spritesheet saved to {outputImagePath}");
+        //Debug.Log($"Modified spritesheet saved to {outputImagePath}");
        // SetupPlayer("configPlayer.txt");
     }
     
 
 public void ModifyPlayerArmorSpritesheet(string armorFile, bool player) {
-    Debug.Log("Modify PlayerArmorSpritesheet");
+    //Debug.Log("Modify PlayerArmorSpritesheet");
 
     // Paths to files and folders
     string baseImagePath = enemyConfig.spriteSheetPath;
@@ -938,7 +1060,7 @@ public void ModifyPlayerArmorSpritesheet(string armorFile, bool player) {
     Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
 
     if (baseSpritesheet == null) {
-        Debug.LogError("Failed to load base spritesheet.");
+        //Debug.LogError("Failed to load base spritesheet.");
         return;
     }
 
@@ -946,7 +1068,7 @@ public void ModifyPlayerArmorSpritesheet(string armorFile, bool player) {
     Texture2D selectedArmor = LoadTextureFromFile(armorFile);
 
     if (selectedArmor == null) {
-        Debug.LogError("Failed to load selected armor.");
+        //Debug.LogError("Failed to load selected armor.");
         return;
     }
 
@@ -961,14 +1083,14 @@ public void ModifyPlayerArmorSpritesheet(string armorFile, bool player) {
 
     // Save the modified spritesheet
     SaveTextureToFile(baseSpritesheet, outputImagePath);
-    Debug.Log($"Modified spritesheet saved to {outputImagePath}");
+    //Debug.Log($"Modified spritesheet saved to {outputImagePath}");
 
     // Optionally, you can trigger player setup here if needed.
     // SetupPlayer("configPlayer.txt");
 }
 
 public void ModifyPlayerFeetSpritesheet(string weaponFile, bool player) {
-        Debug.Log("Modify playterSpriteshete");
+        //Debug.Log("Modify playterSpriteshete");
         string baseImagePath = enemyConfig.spriteSheetPath;
         string outputImagePath = enemyConfig.spriteSheetPath;
 
@@ -983,7 +1105,7 @@ public void ModifyPlayerFeetSpritesheet(string weaponFile, bool player) {
         Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
 
         if (baseSpritesheet == null) {
-            Debug.LogError("Failed to load base spritesheet.");
+            //Debug.LogError("Failed to load base spritesheet.");
             return;
         }
 
@@ -991,7 +1113,7 @@ public void ModifyPlayerFeetSpritesheet(string weaponFile, bool player) {
         Texture2D selectedWeapons = LoadTextureFromFile(weaponFile);
 
         if (selectedWeapons == null) {
-            Debug.LogError("Failed to load selected weapons.");
+            //Debug.LogError("Failed to load selected weapons.");
             return;
         }
 
@@ -1005,13 +1127,13 @@ public void ModifyPlayerFeetSpritesheet(string weaponFile, bool player) {
 
         // Save the modified spritesheet
         SaveTextureToFile(baseSpritesheet, outputImagePath);
-        Debug.Log($"Modified spritesheet saved to {outputImagePath}");
+        //Debug.Log($"Modified spritesheet saved to {outputImagePath}");
        // SetupPlayer("configPlayer.txt");
     }
 
 
     public void ModifyPlayerLegsSpritesheet(string weaponFile, bool player) {
-        Debug.Log("Modify playterSpriteshete");
+        //Debug.Log("Modify playterSpriteshete");
         // Paths to files and folders
         string baseImagePath = enemyConfig.spriteSheetPath;
         string outputImagePath = enemyConfig.spriteSheetPath;
@@ -1028,7 +1150,7 @@ public void ModifyPlayerFeetSpritesheet(string weaponFile, bool player) {
         Texture2D baseSpritesheet = LoadTextureFromFile(baseImagePath);
 
         if (baseSpritesheet == null) {
-            Debug.LogError("Failed to load base spritesheet.");
+            //Debug.LogError("Failed to load base spritesheet.");
             return;
         }
 
@@ -1036,7 +1158,7 @@ public void ModifyPlayerFeetSpritesheet(string weaponFile, bool player) {
         Texture2D selectedWeapons = LoadTextureFromFile(weaponFile);
 
         if (selectedWeapons == null) {
-            Debug.LogError("Failed to load selected weapons.");
+            //Debug.LogError("Failed to load selected weapons.");
             return;
         }
 
@@ -1050,7 +1172,7 @@ public void ModifyPlayerFeetSpritesheet(string weaponFile, bool player) {
 
         // Save the modified spritesheet
         SaveTextureToFile(baseSpritesheet, outputImagePath);
-        Debug.Log($"Modified spritesheet saved to {outputImagePath}");
+        //Debug.Log($"Modified spritesheet saved to {outputImagePath}");
        // SetupPlayer("configPlayer.txt");
     }
 
@@ -1059,20 +1181,20 @@ private Texture2D LoadTextureFromFile(string filePath)
     // Check if the filePath is valid
     if (string.IsNullOrEmpty(filePath))
     {
-        Debug.LogError("Error: filePath is null or empty.");
+        //Debug.LogError("Error: filePath is null or empty.");
         return null;
     }
 
     // Check if the file exists
     if (!System.IO.File.Exists(filePath))
     {
-        Debug.LogError($"Error: File not found at {filePath}");
+        //Debug.LogError($"Error: File not found at {filePath}");
         return null;
     }
 
     try
     {
-            Debug.Log($"Loading texture from {filePath}");
+            //Debug.Log($"Loading texture from {filePath}");
 
         byte[] fileData = System.IO.File.ReadAllBytes(filePath);
         Texture2D texture = new Texture2D(2, 2);
@@ -1082,7 +1204,7 @@ private Texture2D LoadTextureFromFile(string filePath)
     }
     catch (Exception ex)
     {
-        Debug.LogError($"Error while loading texture from {filePath}: {ex.Message}");
+        //Debug.LogError($"Error while loading texture from {filePath}: {ex.Message}");
         return null;
     }
 }
