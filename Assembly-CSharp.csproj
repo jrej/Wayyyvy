@@ -165,6 +165,7 @@
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\FunctionTimer.cs" />
     <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Helpers\CharacterInventorySetup.cs" />
     <Compile Include="Assets\HeroEditor\Common\Scripts\Data\FirearmParams.cs" />
+    <Compile Include="Assets\TurnBattleSystem\Scripts\ConnectionManager.cs" />
     <Compile Include="Assets\HeroEditor\InventorySystem\Scripts\Elements\ItemInfo.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_Bar.cs" />
     <Compile Include="Assets\TurnBattleSystem\Scripts\InventoryManager.cs" />
@@ -264,6 +265,7 @@
     <None Include="Assets\_\Stuff\Shaders\Endless_TestUnlit.shader" />
     <None Include="Assets\TurnBattleSystem\feet_config.txt" />
     <None Include="Assets\_\Stuff\Shaders\Endless_TransColor.shader" />
+    <None Include="Assets\SpritePaths.txt" />
     <None Include="Assets\HeroEditor\FantasyHeroes\TestRoom\BackgroundLicense.txt" />
     <None Include="Assets\TurnBattleSystem\weapons_config.txt" />
     <None Include="Assets\_\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

@@ -10,13 +10,10 @@ using HeroEditor.Common;
 using Assets.HeroEditor.Common.Scripts.CharacterScripts;
 //using UnityEditor.Build.Reporting;
 using Assets.HeroEditor.Common.Scripts.CharacterScripts.Firearms;
-using Assets.HeroEditor.Common.Scripts.CharacterScripts.Firearms.Enums;
-using HeroEditor.Common.Enums;
-using Unity.VisualScripting;
-using Assets.HeroEditor.Common.Scripts.ExampleScripts;
-using System.Linq;
+
 using UnityEngine.SceneManagement;
-using Assets.HeroEditor.Common.Scripts.Common;
+//using Unity.EditorCoroutines.Editor;
+
 
 public class Dialogue {
     public List<string> lines;
@@ -30,19 +27,41 @@ public class Dialogue {
     }
 }
 
+
+[System.Serializable]
+public class CharacterPosition
+{
+     public string characterName;
+    public Vector3 initialPosition;
+    public Vector3 initialSize; // Store the size of the GameObject
+    public Quaternion initialRotation; // Store the rotation of the GameObject
+
+    public CharacterPosition(string name, Vector3 position, Vector3 size, Quaternion rotation)
+    {
+        characterName = name;
+        initialPosition = position;
+        initialSize = size;
+        initialRotation = rotation;
+    }
+}
+
+
 public class BattleHandler : MonoBehaviour {
 
-//public KeyCode FireButton;
 
 public int enemyIndexnum;
-Character[] characters;
+private Character[] characters;
+Character humanCharacter = null;
 public Image Lifebar1;
 
 public Image Lifebar2;
+public GameObject backg;
+
+public Button CreateCharacterbutton;
 
 public TextMeshProUGUI textlife1 ;
      public TextMeshProUGUI textlife2 ;
-
+public Button buttonPrefab;
 
         public KeyCode ReloadButton;
     private static BattleHandler instance;
@@ -57,13 +76,14 @@ public TextMeshProUGUI textlife1 ;
     public Texture2D copSpritesheet;
     private BattleManager battleManager;
     public GameObject lifebarCanvas;
+    //public GameObject ChooseCharacterMEnu;
 
     //private CharacterBattle playerCharacterBattle;
    // private CharacterBattle enemyCharacterBattle;
     private CharacterBattle activeCharacterBattle;
     private State state;
     private Text dialogueText;
-
+    public TMP_InputField nameInput;
     public TMP_InputField emailInput;
         public TMP_InputField passwordInput;
 
@@ -72,8 +92,8 @@ private CharacterEditor editor;
 
     private Dialogue preFightDialogue;
 
-    public AudioClip musicClip;  // Assign this in the Inspector
-    private AudioSource audioSource;
+   // public AudioClip musicClip;  // Assign this in the Inspector
+  // private AudioSource audioSource;
 
     private GameObject canvas;
     private GameObject textObj;
@@ -86,6 +106,7 @@ private CharacterEditor editor;
     private GameObject backgroundObj;
 string enemyConfigPath;
 string playerConfigPath;
+ public GameObject ChooseCharacterMenu;
 
 public Button CreateAccountButton;
     private GameObject quitButtonObj;
@@ -104,6 +125,8 @@ public  Camera PlayerCamera;
         public KeyCode FireButton;
         [Header("Check to disable arm auto rotation.")]
 	    public bool FixedArm;
+        // Find the Character Panel and the corresponding Button
+           public     GameObject dropdowncCharaterPanel;
 
     public GameObject inventoryMenu;
         public GameObject SelectionMenu;
@@ -112,6 +135,9 @@ public  Camera PlayerCamera;
                 public GameObject SignInMenu;
 
             public GameObject startCanvas; // Drag the StartCanvas into this field in the Inspector
+public ConnectionManager connectionManager;
+
+    public List<CharacterPosition> characterPositions = new List<CharacterPosition>(); // Store character positions
 
 
     public Button toggleInventoryButton;
@@ -125,6 +151,16 @@ public  Camera PlayerCamera;
         public Button Enemy2;
         public Button Enemy3;
         public Button Enemy4;
+
+        public Button Enemy5;
+
+        public Button Enemy6;
+
+        public Button Enemy7;
+
+        public Button Enemy8;
+
+        public Button Enemy9;
     public Character CharacterPrefab;
     public Character EnemyPrefab;
     public Button quitButton;
@@ -152,6 +188,51 @@ private Image Enemy4Image;
         WaitingForPlayer,
         Busy,
     }
+
+        private string[] arenaImages = { "Assets/arena1.png", "Assets/arena2.png", "Assets/arena3.png", "Assets/arena4.png", "Assets/arena5.png" };  // Array of arena image names
+ private SpriteRenderer spriteRenderer;
+
+
+    // Function to randomly change the background image
+    public void ChangeBackground()
+    {
+        // Randomly select one of the arena images
+        string selectedArena = arenaImages[UnityEngine.Random.Range(0, arenaImages.Length)];
+
+        // Load the corresponding sprite (assuming the images are located in Resources folder)
+        Sprite newSprite = Resources.Load<Sprite>(selectedArena);
+
+        if (newSprite != null)
+        {
+            // Set the sprite to the background's SpriteRenderer
+            spriteRenderer.sprite = newSprite;
+            Debug.Log("Background changed to: " + selectedArena);
+        }
+        else
+        {
+            Debug.LogError("Sprite not found for: " + selectedArena);
+        }
+    }
+    public void Mapbackground()
+    {
+        // Randomly select one of the arena images
+        string selectedArena = "Assets/map.png";
+
+        // Load the corresponding sprite (assuming the images are located in Resources folder)
+        Sprite newSprite = Resources.Load<Sprite>(selectedArena);
+
+        if (newSprite != null)
+        {
+            // Set the sprite to the background's SpriteRenderer
+            spriteRenderer.sprite = newSprite;
+            Debug.Log("Background changed to: " + selectedArena);
+        }
+        else
+        {
+            Debug.LogError("Sprite not found for: " + selectedArena);
+        }
+    }
+
   private void LoadUi()
 {
     // Try to find the SelectionCanvas in the scene
@@ -241,23 +322,63 @@ private void LoadEnemyImage(Transform enemyTransform, string imagePath)
 
 
     private void Awake() {
-
-
-
-        instance = this;
-    
+    instance = this;
     canvas = GameObject.Find("Canvas2");
     characters = FindObjectsOfType<Character>();
 
+    // Save the initial positions, sizes, and rotations of each character
+    foreach (Character character in characters)
+    {
+        string characterName = character.gameObject.name;
+        Vector3 initialPosition = character.transform.position;
+        Vector3 initialSize = character.transform.localScale;
+        Quaternion initialRotation = character.transform.rotation; // Store the initial rotation
+
+        // Store the name, initial position, size, and rotation
+        characterPositions.Add(new CharacterPosition(characterName, initialPosition, initialSize, initialRotation));
+    }
+
+    // Log the initial positions and rotations
+    foreach (CharacterPosition cp in characterPositions)
+    {
+        Debug.Log($"Character {cp.characterName} initial position: {cp.initialPosition}, rotation: {cp.initialRotation}");
+    }
+
     inventoryMenu.SetActive(false);
     SelectionMenu.SetActive(false);
-    
-   // buttonCanvas.SetActive(false);
     HideCharacters();
-                
+    state = State.WaitingForPlayer;
+}
 
-        
+
+
+
+// Function to reset all characters to their initial positions
+    public void ResetToInitialPositions()
+{
+    foreach (Character character in characters)
+    {
+        character.SetExpression("Default");
+        Character.SetState(CharacterState.Idle);
+        foreach (CharacterPosition cp in characterPositions)
+        {
+            // Check if the name of the character matches the saved position's name
+            if (character.gameObject.name == cp.characterName)
+            {
+                // Reset the character's position, size, and rotation
+                character.transform.position = cp.initialPosition;
+                character.transform.localScale = cp.initialSize;
+                character.transform.rotation = cp.initialRotation;
+
+                // Log the reset action
+                Debug.Log($"Character {cp.characterName} reset to initial position: {cp.initialPosition} and rotation: {cp.initialRotation}");
+            }
+        }
     }
+}
+
+
+
 // Method to activate all children of a given Transform
     void ActivateAllChildren(Transform parent)
     {
@@ -275,8 +396,11 @@ private void LoadEnemyImage(Transform enemyTransform, string imagePath)
 
 private void LoadEnemyAndStartBattle(int enemyIndex) {
    // editor = new CharacterEditor();
+   ChangeBackground();
     SelectionMenu.SetActive(false);
+    
     //buttonCanvas.SetActive(true);
+    //buttonCanvas.SetActive(false);
     enemyIndexnum = enemyIndex;
     enemyConfigPath = $"configEnemy{enemyIndex}.json";
     playerConfigPath = "configPlayer.json" ;
@@ -301,6 +425,8 @@ private IEnumerator SpawnCharacterCoroutine() {
 
     // Call your SpawnCharacter method
     SpawnCharacter();
+    FightButton.gameObject.SetActive(true);
+
     
 
     //Debug.Log(  "Player character spawned.Enemy character spawned.");
@@ -310,7 +436,7 @@ private IEnumerator SpawnCharacterCoroutine() {
 private void SpawnCharacter() {
     // Find all objects of type 'Character' in the scene
 // Loop through and find the one named 'Human'
-        Character humanCharacter = null;
+        
          // Loop through and find the one named 'Human'
         Character EnemyCharacter = null;
 
@@ -322,6 +448,7 @@ private void SpawnCharacter() {
             if (character.gameObject.name == "Human")
             {
                  humanCharacter = character;
+                 //connectionManager.characterEditor.Character =  humanCharacter ;
 
                 
             }
@@ -344,6 +471,7 @@ private void SpawnCharacter() {
         // Set character position and scale
         Character.transform.position = new Vector3(-50, -20);
         Character.transform.localScale = new Vector3(5f, 5f, 5f);
+        //Character.transform.rotation = Quaternion.identity; // Or any rotation you'd like to apply
         Character.gameObject.SetActive(true);
 
         //Debug.Log("Setting up player character with sprite: " + playerConfigPath);
@@ -355,9 +483,13 @@ private void SpawnCharacter() {
         Enemy.transform.localScale = new Vector3(5f, 5f, 5f);
         Character.gameObject.SetActive(true);
         battleManager = new BattleManager(Character,Enemy);
+        battleManager.ExtractCharacterItems();
         lifebarCanvas.SetActive(true);
         Lifebar1.fillAmount = 1; 
         Lifebar2.fillAmount = 1; 
+
+        battleManager.playerStats.HP = battleManager.playerMaxHP;
+                battleManager.enemyStats.HP = battleManager.enemyMaxHP;
         //FightButton.SetActive(true);
         
 
@@ -438,31 +570,56 @@ public void LoadAndDisplayCharacterSprites() {
 }
 
 
-
    /// </summary>
 
 
 
     private void Start() {
         // Get the Animator component
+        connectionManager = new ConnectionManager();
+        connectionManager.Initialize();
+        foreach (Character character in characters)
+        {
+            if (character.gameObject.name == "Human")
+            {
+                 connectionManager.characterEditor.Character =  humanCharacter ;
+
+                
+            }
+        }
+        // Get the SpriteRenderer component from the backg GameObject
+        spriteRenderer = backg.GetComponent<SpriteRenderer>();
+
+        if (spriteRenderer == null)
+        {
+            Debug.LogError("No SpriteRenderer found on the backg GameObject.");
+            return;
+        }
         StartButton.onClick.AddListener(StartGame);
                 CreateAccountButton.onClick.AddListener(Login);
+                CreateCharacterbutton.onClick.AddListener(createCaracter);
 
         createButton.onClick.AddListener(SignIn);
         ConnectionButton.onClick.AddListener(Connect);
         FightButton.onClick.AddListener(Battle);
+
         
 
        // toggleInInventoryButton.onClick.AddListener(ToggleInventoryMenu);
         toggleInventoryButton.onClick.AddListener(ToggleInventoryMenu);
         quitButton.onClick.AddListener(QuitGame);
         // Add listeners for enemy buttons using lambda expressions
-        Enemy1.onClick.AddListener(() => LoadEnemyAndStartBattle(1));
+//        Enemy1.onClick.AddListener(() => LoadEnemyAndStartBattle(1));
         Enemy2.onClick.AddListener(() => LoadEnemyAndStartBattle(2));
         Enemy3.onClick.AddListener(() => LoadEnemyAndStartBattle(3));
         Enemy4.onClick.AddListener(() => LoadEnemyAndStartBattle(4));
+        Enemy5.onClick.AddListener(() => LoadEnemyAndStartBattle(5));
+        Enemy6.onClick.AddListener(() => LoadEnemyAndStartBattle(6));
+        Enemy7.onClick.AddListener(() => LoadEnemyAndStartBattle(7));
+        Enemy8.onClick.AddListener(() => LoadEnemyAndStartBattle(8));
+        Enemy9.onClick.AddListener(() => LoadEnemyAndStartBattle(9));
 
-            LoadUi();
+            //();
       
 
     }
@@ -493,37 +650,200 @@ public void LoadAndDisplayCharacterSprites() {
         
         
     }
-    private void Connect() {
-        //Debug.Log("Starting Connection email "+ emailInput.text + "pass : " +passwordInput.text);
-        LoginMenu.SetActive(false);
-        ToggleInventoryMenu();
-        SelectionMenu.SetActive(true);
-        DisplayCharactersOnScreen();
-    //    buttonCanvas.SetActive(true);
-        
-        
-    }
-    private void Battle(){
-        Debug.Log("FIght button:");
-        
+    public void Connect()
+{
+    connectionManager.emailInput = emailInput.text;
+    connectionManager.passwordInput = passwordInput.text;
 
-        if(battleManager.playerStats.HP > 0 && battleManager.enemyStats.HP > 0  ){
-                StartCoroutine(HandleCombat());
+    // Use a coroutine to load characters to avoid UI freezing
+    StartCoroutine(LoadCharactersCoroutine());
+}
+
+private IEnumerator LoadCharactersCoroutine()
+{
+    connectionManager.Connect(Character);
+    Debug.Log("Connected");
+
+    List<string> characterFilePathList = connectionManager.PlayerDatadata.characterJsonPaths;
+    
+    if (characterFilePathList.Count > 0)
+    {
+        foreach (string characterPath in characterFilePathList)
+        {
+            Debug.Log("Creating character panel for: " + characterPath);
+            CreateCharacterPanel(characterPath);
+
+            // Optionally yield to allow UI updates between character loads
+            yield return null;
         }
-        else{
 
+      //  ChooseCharacterMenu.SetActive(true);
+    }
+    else
+    {
+      //  ChooseCharacterMenu.SetActive(true);  // Show empty state if no characters exist
+    }
+
+    Debug.Log("Character loading complete.");
+    dropdowncCharaterPanel.SetActive(false);
+        //ChooseCharacterMenu.SetActive(false);
+        LoginMenu.SetActive(false);
+
+        SelectionMenu.SetActive(true);
+        DisplayCharactersOnScreen();  // Display character on screen
+
+}
+
+
+private void CreateCharacterPanel(string characterPath) {
+    if (File.Exists(characterPath)) {
+        string characterName = Path.GetFileNameWithoutExtension(characterPath);
+
+        // Instantiate the button and set it inside the panel
+        Button newButton = Instantiate(buttonPrefab);
+        newButton.transform.SetParent(dropdowncCharaterPanel.transform, false);
+
+        // Update the TextMeshProUGUI instead of standard Text component
+        TextMeshProUGUI buttonText = newButton.GetComponentInChildren<TextMeshProUGUI>();
+        if (buttonText != null)
+        {
+            buttonText.text = characterName;
+        }
+        else
+        {
+            Debug.LogError("TextMeshProUGUI component not found in button prefab!");
+        }
+
+        // Set button click listener
+        //newButton.onClick.AddListener(() => SelectCharacter(characterPath));
+        Debug.Log($"AAAAAAAAAAAAAAAAAAButton clicked for character: {characterPath}");
+        newButton.onClick.AddListener(() =>
+{
+    Debug.Log($"Button clicked for character: {characterPath}");
+    SelectCharacter(characterPath);
+});
+        Debug.Log($"BBBBBBBBbuton clicked for character: {characterPath}");
+
+
+        // Configure the RawImage component
+       // GameObject rawImageObject = new GameObject("CharacterImage");
+      //  RawImage characterImage = rawImageObject.AddComponent<RawImage>();
+       // characterImage.transform.SetParent(newPanel.transform, false);
+
+        // Use placeholder texture or actual character image
+       ////// Texture2D placeholderTexture = Resources.Load<Texture2D>("Textures/Placeholder");
+      //  characterImage.texture = placeholderTexture;
+
+      //  RectTransform imageRect = characterImage.GetComponent<RectTransform>();
+      //  imageRect.sizeDelta = new Vector2(400, 300);
+    } else {
+        Debug.LogError("Character file not found: " + characterPath);
+    }
+}
+
+
+
+
+    
+public void createCaracter() {
+    string text = nameInput.text ;
+    connectionManager.CreateCharacter( text,characters);
+    Connect();
+}
+
+private void DebugTiming(string message, System.Action action)
+{
+    var start = Time.realtimeSinceStartup;
+    action();
+    var end = Time.realtimeSinceStartup;
+    Debug.Log($"{message} took {end - start} seconds");
+}
+    // A method to select the character (you can define what happens when a character is selected)
+    public void SelectCharacter(string selectedCharacterPath)
+{
+    Debug.Log("Selected character path OOOOOOOOOOOOOOOO: " + selectedCharacterPath);
+
+    if (File.Exists(selectedCharacterPath))
+    {
+        
+        string jsonContent = File.ReadAllText(selectedCharacterPath);
+        Debug.Log("Character JSON loaded: " + jsonContent);
+
+        connectionManager.characterEditor.LoadFromJson(selectedCharacterPath); // Load character from JSON
+        Character = (Character)connectionManager.characterEditor.Character;
+
+        dropdowncCharaterPanel.SetActive(false);
+        //ChooseCharacterMenu.SetActive(false);
+
+        SelectionMenu.SetActive(true);
+        DisplayCharactersOnScreen();  // Display character on screen
+    }
+    else
+    {
+        Debug.LogError("Character JSON file not found: " + selectedCharacterPath);
+    }
+}
+
+
+private void FaceEachOther(GameObject character, GameObject enemy)
+    {
+        // Check the positions of the character and enemy
+        if (character.transform.position.x < enemy.transform.position.x)
+        {
+            // Character is on the left, facing right
+            character.transform.localScale = new Vector3(Mathf.Abs(character.transform.localScale.x), character.transform.localScale.y, character.transform.localScale.z);
+            
+            // Enemy is on the right, facing left
+            enemy.transform.localScale = new Vector3(-Mathf.Abs(enemy.transform.localScale.x), enemy.transform.localScale.y, enemy.transform.localScale.z);
+        }
+        else
+        {
+            // Character is on the right, facing left
+            character.transform.localScale = new Vector3(-Mathf.Abs(character.transform.localScale.x), character.transform.localScale.y, character.transform.localScale.z);
+
+            // Enemy is on the left, facing right
+            enemy.transform.localScale = new Vector3(Mathf.Abs(enemy.transform.localScale.x), enemy.transform.localScale.y, enemy.transform.localScale.z);
+        }
+
+        Debug.Log("Character and enemy are now facing each other.");
+    }
+
+    private void Battle(){
+        Debug.Log("FIght button: state : " + state);
+                FaceEachOther(Character.gameObject, Enemy.gameObject);
+
+       
+        state = State.Busy;
+
+            if(battleManager.playerStats.HP > 0 && battleManager.enemyStats.HP > 0  ){
+                StartCoroutine(HandleCombat());
+            }
+            else{
 
                 if(battleManager.playerStats.HP <= 0 ){
                     Character.SetState(CharacterState.DeathB);
                     Character.SetExpression("Dead");
+                    Character.ResetAnimation();
+                   //Character.transform.Rotate(-90,00,00);
                 }
-                else{Enemy.SetState(CharacterState.DeathB);
+                else{
+                    Enemy.SetState(CharacterState.DeathB);
                     Enemy.SetExpression("Dead");
+                   Enemy.ResetAnimation();
                 }   
+
+                SelectionMenu.SetActive(true);
+                FightButton.gameObject.SetActive(false);
+                
+                Character.SetState(CharacterState.Walk);
+                HideCharacters();
+                ResetToInitialPositions();
+                DisplayCharactersOnScreen();
+                Mapbackground();
             
-            Debug.Log("FIght is Over:");
-        }
-        state = State.WaitingForPlayer;
+           // Debug.Log("FIght is Over:");
+            }
+            state = State.WaitingForPlayer;
     }
 
       private void SignIn() {
@@ -541,22 +861,150 @@ public void LoadAndDisplayCharacterSprites() {
         
     }
 
+ public void UpdateCharacterInDatabase()
+{
+    // Retrieve the list of character JSON paths from the connectionManager
+    List<string> characterFilePathList = connectionManager.PlayerDatadata.characterJsonPaths;
+
+    Debug.Log("Character Editor Loaded Name: " + connectionManager.characterEditor.Character.name);
+    
+    // Flag to track if character was found
+    bool characterFound = false;
+
+    // Iterate through the paths to find the matching character JSON
+    foreach (var characterPath in characterFilePathList)
+    {
+        // Extract the character name from the JSON file name (stored in characterPath)
+        string characterName = Path.GetFileNameWithoutExtension(characterPath);
+        
+        Debug.Log("Comparing with character name from path: " + characterName);
+
+        // Compare it with the name loaded from the connectionManager.characterEditor
+        if (connectionManager.characterEditor.Character.name == characterName)
+        {
+            // Update the character in the database using the JSON name
+            connectionManager.UpdatePlayerCharacter(connectionManager.emailInput, Character, characterName);
+            Debug.Log("Character " + characterName + " has been updated in the database.");
+            characterFound = true;
+            break;
+        }
+    }
+
+    if (!characterFound)
+    {
+        Debug.LogError("Character not found in the player's character list. Adding the character.");
+        
+        // Define the character name from the loaded character in the editor
+        string newCharacterName = connectionManager.characterEditor.Character.name;
+        
+        // Create the path for the new character JSON file
+        string directoryPath = Path.Combine("Assets", "Account", connectionManager.emailInput, "Characters");
+        string characterFilePath = Path.Combine(directoryPath, newCharacterName + ".json");
+
+        // Add the new character's path to the player's list of characters
+        connectionManager.PlayerDatadata.characterJsonPaths.Add(characterFilePath);
+        
+        // Save the character to the file system and update the database
+        connectionManager.UpdatePlayerCharacter(connectionManager.emailInput, Character, newCharacterName);
+
+        Debug.Log("New character " + newCharacterName + " added and saved to the database.");
+    }
+
+    // Make sure to save the database after any modification
+    connectionManager.SavePlayerDatabase();
+
+    // Simulate a "unit test" to ensure the character can be retrieved
+    SimulateCharacterRetrievalTest();
+}
+
+private void SimulateCharacterRetrievalTest()
+{
+    Debug.Log("=== Simulating Character Retrieval Test ===");
+    
+    // Re-load the database to simulate restarting the application
+    connectionManager.LoadPlayerDatabase();
+    
+    // Check if the newly added character can be retrieved
+    bool characterFoundAgain = false;
+
+    foreach (var characterPath in connectionManager.PlayerDatadata.characterJsonPaths)
+    {
+        string characterName = Path.GetFileNameWithoutExtension(characterPath);
+
+        if (connectionManager.characterEditor.Character.name == characterName)
+        {
+            Debug.Log("Character successfully retrieved from database: " + characterName);
+            characterFoundAgain = true;
+            break;
+        }
+    }
+
+    if (!characterFoundAgain)
+    {
+        Debug.LogError("Character was not found when re-loading from the database.");
+    }
+    else
+    {
+        Debug.Log("Character retrieval test passed.");
+    }
+}
+
+
+
+
+
 
     // Method to toggle the inventory menu
-    private void ToggleInventoryMenu() {
-        Debug.Log("Toglle inventory "+ inventoryMenu.activeSelf);
-        if (inventoryMenu != null) {
-            bool isActive = inventoryMenu.activeSelf;
-            inventoryMenu.SetActive(!isActive);
+    // Toggle inventory menu on/off
+    public void ToggleInventoryMenu()
+    {
+        bool isActive = inventoryMenu.activeSelf;
+        inventoryMenu.SetActive(!isActive);
+
+        if (isActive)
+        {
+            // Closing inventory, save character to database
+            SaveCharacter();
+        }
+        else
+        {
+            // Opening inventory, retrieve character from database
+            RetrieveCharacter();
+        }
+    }
+
+    // Save the character's current state using the connection manager
+    private void SaveCharacter()
+    {
+        Debug.Log("Saving character...");
+        connectionManager.UpdatePlayerCharacter(connectionManager.emailInput, Character, Character.name);
+    }
+
+    // Retrieve the character's saved state from the database
+    private void RetrieveCharacter()
+    {
+        Debug.Log("Retrieving character...");
+        string characterPath = connectionManager.GetCharacterPath(connectionManager.emailInput, Character.name);
+        if (!string.IsNullOrEmpty(characterPath))
+        {
+            connectionManager.characterEditor.LoadFromJson(characterPath);
+            Debug.Log($"Character {Character.name} retrieved from path: {characterPath}");
+        }
+        else
+        {
+            Debug.LogError("Failed to retrieve character path from database.");
         }
     }
 private void HideCharacters(){
+    Debug.Log("Hidin characters");
     foreach (Character character in characters)
         {
             character.gameObject.SetActive(false);
         }
 }
 private void DisplayCharactersOnScreen(){
+        Debug.Log("display characters");
+
     foreach (Character character in characters)
         {
             character.gameObject.SetActive(true);
@@ -587,7 +1035,7 @@ private IEnumerator MoveToEnemyAndBack() {
         Character.SetState(CharacterState.DeathB);
                 Character.SetExpression("Dead");
     }else{
-    state = State.Busy;
+   // state = State.Busy;
     isMoving = true;
                 Character.SetState(CharacterState.Run);
                 Character.SetExpression("Default");
@@ -621,7 +1069,7 @@ private IEnumerator MoveToEnemyAndBack() {
 
 
     isMoving = false;
-    state = State.WaitingForPlayer; // Set back to waiting after moving back
+    //state = State.WaitingForPlayer; // Set back to waiting after moving back
                 Character.SetState(CharacterState.Relax);
                 // Handle attack logic
    // StartCoroutine(HandlePlayerAttack(Enemy));
@@ -633,7 +1081,7 @@ private IEnumerator MoveToPlayerAndBack() {
         Enemy.SetState(CharacterState.DeathB);
                 Enemy.SetExpression("Dead");
     }else{
-    state = State.Busy;
+    
     isMoving = true;
     Enemy.SetState(CharacterState.Run);
     originalPosition = Enemy.transform.position; // Save original position
@@ -666,7 +1114,7 @@ private IEnumerator MoveToPlayerAndBack() {
     yield return StartCoroutine(MoveCharacter(Enemy.transform, originalPosition, moveSpeed));
 
     isMoving = false;
-    state = State.WaitingForPlayer; // Set back to waiting after moving back
+
                 Enemy.SetState(CharacterState.Relax);
                 }
 }
@@ -678,14 +1126,35 @@ private IEnumerator MoveCharacter(Transform character, Vector3 destination, floa
     }
 }
 
+private Vector3 cameraOffset = new Vector3(0, 7, -190);  // Customize your offset as needed
 
+// LateUpdate ensures the camera follows after all other updates
+    private void LateUpdate()
+    {
+        FollowCharacterWithCamera();
+    }
+
+    private void FollowCharacterWithCamera()
+    {
+        if (Character != null && PlayerCamera != null)
+        {
+            // Update the camera position based on the character's position with the offset
+            PlayerCamera.transform.position = Character.transform.position + cameraOffset;
+
+            // Set the camera's orthographic size (if using an orthographic camera)
+            PlayerCamera.orthographicSize = 8;  // Adjust size if needed
+        }
+        else
+        {
+            Debug.LogError("PlayerCamera or Character is not assigned.");
+        }
+    }
 
 
 
 private void Update() {
    
-         PlayerCamera.transform.position = new Vector3 (Character.transform.position.x , Character.transform.position.y +7, -190); // Camera follows the player with specified offset position
-PlayerCamera.orthographicSize = 10 ;
+         FollowCharacterWithCamera();
     if (state == State.WaitingForPlayer) {
         // For touch input (Android)
         if (Input.touchCount > 0) {
@@ -694,53 +1163,12 @@ PlayerCamera.orthographicSize = 10 ;
 
             // Check if the touch is a "Tap"
             if (touch.phase == TouchPhase.Ended) {
-                state = State.Busy;
-                if(battleManager.playerStats.HP > 0 && battleManager.enemyStats.HP > 0  ){
-                StartCoroutine(HandleCombat());
-            }
-            else{
-
-                if(battleManager.playerStats.HP <= 0 ){
-                    Character.SetState(CharacterState.DeathB);
-                    Character.SetExpression("Dead");
-                }
-                else{Enemy.SetState(CharacterState.DeathB);
-                    Enemy.SetExpression("Dead");
-                }   
-            
-           // Debug.Log("FIght is Over:");
-            }
-            state = State.WaitingForPlayer;
-
-                
+                Battle();  
             }
         }
-
         // For spacebar input (Desktop testing)
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            state = State.Busy;
-
-            if(battleManager.playerStats.HP > 0 && battleManager.enemyStats.HP > 0  ){
-                StartCoroutine(HandleCombat());
-            }
-            else{
-
-                if(battleManager.playerStats.HP <= 0 ){
-                    Character.SetState(CharacterState.DeathB);
-                    Character.SetExpression("Dead");
-                }
-                else{Enemy.SetState(CharacterState.DeathB);
-                    Enemy.SetExpression("Dead");
-                }   
-            
-           // Debug.Log("FIght is Over:");
-            }
-            state = State.WaitingForPlayer;
-
-            
-            
-           // battleManager.Battle();
-            
+        if (Input.GetKeyDown(KeyCode.Space)) {   
+            Battle();   
         }
                 //Character.transform.position = new Vector3(-50, -20);
                 // Enemy.transform.position = new Vector3(+50, -20);

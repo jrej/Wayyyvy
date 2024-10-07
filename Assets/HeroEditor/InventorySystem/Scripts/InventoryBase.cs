@@ -10,9 +10,6 @@ using UnityEngine.UI;
 
 namespace Assets.HeroEditor.InventorySystem.Scripts
 {
-    /// <summary>
-    /// High-level inventory interface.
-    /// </summary>
     public class InventoryBase : ItemWorkspace
     {
         public Equipment Equipment;
@@ -29,57 +26,64 @@ namespace Assets.HeroEditor.InventorySystem.Scripts
         public AudioSource AudioSource;
         public bool InitializeExample;
 
-        public Func<Item, bool> CanEquip = i => true; // Your game can override this.
+        public Func<Item, bool> CanEquip = i => true;
         public Action<Item> OnEquip;
 
         public void Awake()
         {
+            Debug.Log("Awake called - Initializing ItemCollection");
             ItemCollection.Active = ItemCollection;
         }
 
         public void Start()
         {
+            Debug.Log("Start called - InitializeExample: " + InitializeExample);
             if (InitializeExample)
             {
                 TestInitialize();
             }
         }
 
-        /// <summary>
-        /// Initialize owned items (just for example).
-        /// </summary>
         public void TestInitialize()
         {
-            var inventory = ItemCollection.Active.Items.Select(i => new Item(i.Id)).ToList(); // inventory.Clear();
+            Debug.Log("TestInitialize called");
+            var inventory = ItemCollection.Active.Items.Select(i => new Item(i.Id)).ToList();
             var equipped = new List<Item>();
 
             RegisterCallbacks();
             PlayerInventory.Initialize(ref inventory);
             Equipment.Initialize(ref equipped);
+            Debug.Log("Player inventory and equipment initialized in TestInitialize");
         }
 
-        public void Initialize(ref List<Item> playerItems, ref  List<Item> equippedItems, int bagSize, Action onRefresh)
+        public void Initialize(ref List<Item> playerItems, ref List<Item> equippedItems, int bagSize, Action onRefresh)
         {
+            Debug.Log("Initialize called with playerItems: " + playerItems.Count + ", equippedItems: " + equippedItems.Count);
             RegisterCallbacks();
             PlayerInventory.Initialize(ref playerItems);
             Equipment.SetBagSize(bagSize);
             Equipment.Initialize(ref equippedItems);
             Equipment.OnRefresh = onRefresh;
 
+            Debug.Log("Equipment and player inventory initialized.");
+
             if (!Equipment.SelectAny() && !PlayerInventory.SelectAny())
             {
                 ItemInfo.Reset();
+                Debug.Log("No item selected. Resetting ItemInfo.");
             }
         }
 
         public void RegisterCallbacks()
         {
+            Debug.Log("RegisterCallbacks called");
             InventoryItem.OnLeftClick = SelectItem;
             InventoryItem.OnRightClick = InventoryItem.OnDoubleClick = QuickAction;
         }
 
         public void SelectItem(Item item)
         {
+            Debug.Log("SelectItem called for item: " + item.Id);
             SelectedItem = item;
             ItemInfo.Initialize(SelectedItem, SelectedItem.Params.Price);
             Refresh();
@@ -87,21 +91,30 @@ namespace Assets.HeroEditor.InventorySystem.Scripts
 
         private void QuickAction(Item item)
         {
+            Debug.Log("QuickAction called for item: " + item.Id);
             SelectItem(item);
 
             if (Equipment.Items.Contains(item))
             {
+                Debug.Log("Item is already equipped. Removing it.");
                 Remove();
             }
             else if (CanEquipSelectedItem())
             {
+                Debug.Log("Equipping selected item.");
                 Equip();
             }
         }
 
         public void Equip()
         {
-            if (!CanEquip(SelectedItem)) return;
+            Debug.Log("Equip called for item: " + SelectedItem.Id);
+
+            if (!CanEquip(SelectedItem))
+            {
+                Debug.Log("Cannot equip item: " + SelectedItem.Id);
+                return;
+            }
 
             var equipped = SelectedItem.IsFirearm
                 ? Equipment.Items.Where(i => i.IsFirearm).ToList()
@@ -109,34 +122,45 @@ namespace Assets.HeroEditor.InventorySystem.Scripts
 
             if (equipped.Any())
             {
+                Debug.Log("Item(s) already equipped in the same slot. Auto-removing them.");
                 AutoRemove(equipped, Equipment.Slots.Count(i => i.Supports(SelectedItem)));
             }
 
             if (SelectedItem.IsTwoHanded) AutoRemove(Equipment.Items.Where(i => i.IsShield).ToList());
             if (SelectedItem.IsShield) AutoRemove(Equipment.Items.Where(i => i.IsWeapon && i.IsTwoHanded).ToList());
 
-            if (SelectedItem.IsFirearm) AutoRemove(Equipment.Items.Where(i => i.IsShield).ToList());
-            if (SelectedItem.IsFirearm) AutoRemove(Equipment.Items.Where(i => i.IsWeapon && i.IsTwoHanded).ToList());
-            if (SelectedItem.IsTwoHanded || SelectedItem.IsShield) AutoRemove(Equipment.Items.Where(i => i.IsWeapon && i.IsFirearm).ToList());
+            if (SelectedItem.IsFirearm)
+            {
+                AutoRemove(Equipment.Items.Where(i => i.IsShield).ToList());
+                AutoRemove(Equipment.Items.Where(i => i.IsWeapon && i.IsTwoHanded).ToList());
+            }
+
+            if (SelectedItem.IsTwoHanded || SelectedItem.IsShield)
+            {
+                AutoRemove(Equipment.Items.Where(i => i.IsWeapon && i.IsFirearm).ToList());
+            }
 
             MoveItem(SelectedItem, PlayerInventory, Equipment);
-//            AudioSource.PlayOneShot(EquipSound, SfxVolume);
+            Debug.Log("Item moved from PlayerInventory to Equipment.");
+
             OnEquip?.Invoke(SelectedItem);
         }
 
         public void Remove()
         {
+            Debug.Log("Remove called for item: " + SelectedItem.Id);
             MoveItem(SelectedItem, Equipment, PlayerInventory);
             SelectItem(SelectedItem);
-//            AudioSource.PlayOneShot(EquipSound, SfxVolume);
         }
 
         public void Craft()
         {
+            Debug.Log("Craft called");
             var materials = MaterialList;
 
             if (CanCraft(materials))
             {
+                Debug.Log("Materials found for crafting.");
                 materials.ForEach(i => PlayerInventory.Items.Single(j => j.Hash == i.Hash).Count -= i.Count);
                 PlayerInventory.Items.RemoveAll(i => i.Count == 0);
 
@@ -158,17 +182,13 @@ namespace Assets.HeroEditor.InventorySystem.Scripts
             }
             else
             {
-                Debug.Log("No materials.");
+                Debug.Log("No materials available for crafting.");
             }
-        }
-
-        public void Learn()
-        {
-            // Implement your logic here!
         }
 
         public void Use()
         {
+            Debug.Log("Use called for item: " + SelectedItem.Id);
             var sound = SelectedItem.Params.Type == ItemType.Coupon ? EquipSound : UseSound;
 
             if (SelectedItem.Count == 1)
@@ -203,8 +223,10 @@ namespace Assets.HeroEditor.InventorySystem.Scripts
 
         public override void Refresh()
         {
+            Debug.Log("Refresh called.");
             if (SelectedItem == null)
             {
+                Debug.Log("No item selected. Resetting ItemInfo.");
                 ItemInfo.Reset();
                 EquipButton.SetActive(false);
                 RemoveButton.SetActive(false);
@@ -212,6 +234,7 @@ namespace Assets.HeroEditor.InventorySystem.Scripts
             else
             {
                 var equipped = Equipment.Items.Contains(SelectedItem);
+                Debug.Log("SelectedItem is equipped: " + equipped);
 
                 EquipButton.SetActive(!equipped && CanEquipSelectedItem());
                 RemoveButton.SetActive(equipped);
@@ -219,53 +242,37 @@ namespace Assets.HeroEditor.InventorySystem.Scripts
             }
 
             var receipt = SelectedItem != null && SelectedItem.Params.Type == ItemType.Recipe;
-
-            if (CraftButton != null) CraftButton.SetActive(false);
-            if (LearnButton != null) LearnButton.SetActive(false);
-
-            if (receipt)
-            {
-                if (LearnButton == null)
-                {
-                    var materialSelected = !PlayerInventory.Items.Contains(SelectedItem) && !Equipment.Items.Contains(SelectedItem);
-
-                    CraftButton.SetActive(true);
-                    Materials.SetActive(materialSelected);
-                    Equipment.Scheme.SetActive(!materialSelected);
-
-                    var materials = MaterialList;
-
-                    Materials.Initialize(ref materials);
-                }
-                else
-                {
-                    LearnButton.SetActive(true);
-                }
-            }
+            if (CraftButton != null) CraftButton.SetActive(receipt);
+            if (LearnButton != null) LearnButton.SetActive(receipt);
         }
 
-        private List<Item> MaterialList => SelectedItem.Params.FindProperty(PropertyId.Materials).Value.Split(',').Select(i => i.Split(':')).Select(i => new Item(i[0], int.Parse(i[1]))).ToList();
+        private List<Item> MaterialList => SelectedItem.Params.FindProperty(PropertyId.Materials).Value
+            .Split(',')
+            .Select(i => i.Split(':'))
+            .Select(i => new Item(i[0], int.Parse(i[1])))
+            .ToList();
 
         private bool CanEquipSelectedItem()
         {
+            Debug.Log("CanEquipSelectedItem called for item: " + SelectedItem.Id);
             return PlayerInventory.Items.Contains(SelectedItem) && Equipment.Slots.Any(i => i.Supports(SelectedItem)) && SelectedItem.Params.Class != ItemClass.Booster;
         }
 
         private bool CanUse()
         {
+            Debug.Log("CanUse called for item: " + SelectedItem.Id);
             return SelectedItem.Params.Class == ItemClass.Booster || SelectedItem.Params.Type == ItemType.Coupon;
         }
 
         private bool CanCraft(List<Item> materials)
         {
+            Debug.Log("CanCraft called. Checking materials...");
             return materials.All(i => PlayerInventory.Items.Any(j => j.Hash == i.Hash && j.Count >= i.Count));
         }
 
-        /// <summary>
-        /// Automatically removes items if target slot is busy.
-        /// </summary>
         private void AutoRemove(List<Item> items, int max = 1)
         {
+            Debug.Log("AutoRemove called for items.");
             long sum = 0;
 
             foreach (var p in items)
@@ -275,6 +282,7 @@ namespace Assets.HeroEditor.InventorySystem.Scripts
 
             if (sum == max)
             {
+                Debug.Log("AutoRemoving extra item.");
                 MoveItemSilent(items.LastOrDefault(i => i.Id != SelectedItem.Id) ?? items.Last(), Equipment, PlayerInventory);
             }
         }

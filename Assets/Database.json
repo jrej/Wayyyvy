@@ -1,0 +1,55 @@
+{
+    "players": [
+        {
+            "email": "a",
+            "password": "a",
+            "characterJsonPaths": [
+                "Assets\\Account\\a\\Characters\\w.json",
+                "Assets/Account\\a\\Characters\\Human.json"
+            ]
+        },
+        {
+            "email": "",
+            "password": "",
+            "characterJsonPaths": [
+                "Assets\\Account\\Characters\\.json",
+                "Assets\\Account\\Characters\\Human.json"
+            ]
+        },
+        {
+            "email": "sds",
+            "password": "ss",
+            "characterJsonPaths": [
+                "Assets/Account/sds\\Characters\\.json"
+            ]
+        },
+        {
+            "email": "q",
+            "password": "q",
+            "characterJsonPaths": [
+                "Assets/Account/q\\Characters\\eee.json",
+                "Assets/Account/q\\Characters\\eee.json"
+            ]
+        },
+        {
+            "email": "c",
+            "password": "c",
+            "characterJsonPaths": []
+        },
+        {
+            "email": "e",
+            "password": "e",
+            "characterJsonPaths": []
+        },
+        {
+            "email": "z",
+            "password": "z",
+            "characterJsonPaths": []
+        },
+        {
+            "email": "r",
+            "password": "r",
+            "characterJsonPaths": []
+        }
+    ]
+}

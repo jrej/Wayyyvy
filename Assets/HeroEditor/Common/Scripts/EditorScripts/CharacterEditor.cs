@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using Assets.HeroEditor.Common.Scripts.CharacterScripts;
@@ -489,6 +490,32 @@ namespace Assets.HeroEditor.Common.Scripts.EditorScripts
             StartCoroutine(StandaloneFilePicker.SaveFile("Save as JSON", "", "New character", "json", Encoding.Default.GetBytes(Character.ToJson()), (success, path) => { Debug.Log(success ? $"Saved as {path}" : "Error saving."); }));
 		}
 
+public void SaveToJson(string path, string characterName)
+{
+    if (Character == null)
+    {
+        Debug.LogError("Character is not initialized. Cannot save to JSON.");
+        return;
+    }
+
+    try
+    {
+        // Convert the character to JSON
+        string characterJson = Character.ToJson();
+
+        // Write the JSON to the specified file path
+        File.WriteAllText(path, characterJson);
+
+        Debug.Log($"Character saved as {path}");
+    }
+    catch (Exception ex)
+    {
+        Debug.LogError($"Error saving character: {ex.Message}");
+    }
+}
+		
+
+
 		/// <summary>
 		/// Load character from json.
 		/// </summary>
@@ -504,18 +531,38 @@ namespace Assets.HeroEditor.Common.Scripts.EditorScripts
                 }
             }));
 	    }
-        public void LoadFromJson(string path)
-	    {
-            StartCoroutine(StandaloneFilePicker.OpenFile("Open as JSON", "", "json", (success, path, bytes) =>
+        
+            public void LoadFromJson(string path)
             {
-                if (success)
+                if (File.Exists(path))
                 {
-                    var json = System.IO.File.ReadAllText(path);
+                    // Read the JSON content from the file
+                    string jsonContent = System.IO.File.ReadAllText(path);
+                    if (string.IsNullOrEmpty(jsonContent))
+                    {
+                        Debug.LogError($"The JSON content is empty or null: {path}");
+                        return;
+                    }
 
-                    Character.FromJson(json);
+                    // Ensure Character object is initialized before loading data
+                    if (Character == null)
+                    {
+                        Debug.LogError("Character instance is null. Cannot load JSON into Character.");
+                        return;
+                    }
+
+                    // Load character data
+                    Character.FromJson(jsonContent);
+                    Debug.Log($"Character loaded from {path}");
                 }
-            }));
-	    }
+                else
+                {
+                    Debug.LogError("Character JSON file not found at: " + path);
+                }
+            }
+
+
+	    
 
         #if UNITY_EDITOR
 

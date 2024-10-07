@@ -1,0 +1,1964 @@
+Assets/HeroEditor/Common/Icons/Equipment/Armor/Christmas/ChristmasCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Armor/Christmas/NutcrackerOutfit.png
+Assets/HeroEditor/Common/Icons/Equipment/Armor/Christmas/SnowMaidenCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Armor/Halloween/DeathCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Armor/Halloween/DeerCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Armor/Halloween/PumpkinCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Armor/Halloween/WitchCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Arrow/Christmas/ChristmasBow.png
+Assets/HeroEditor/Common/Icons/Equipment/Arrow/Christmas/FestiveBow.png
+Assets/HeroEditor/Common/Icons/Equipment/Belt/Christmas/ChristmasCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Belt/Christmas/NutcrackerOutfit.png
+Assets/HeroEditor/Common/Icons/Equipment/Belt/Christmas/SnowMaidenCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Belt/Halloween/DeathCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Belt/Halloween/DeerCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Belt/Halloween/PumpkinCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Belt/Halloween/WitchCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Boots/Christmas/ChristmasCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Boots/Christmas/NutcrackerOutfit.png
+Assets/HeroEditor/Common/Icons/Equipment/Boots/Christmas/SnowMaidenCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Boots/Halloween/DeathCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Boots/Halloween/DeerCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Boots/Halloween/PumpkinCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Boots/Halloween/WitchCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Bow/Christmas/ChristmasBow.png
+Assets/HeroEditor/Common/Icons/Equipment/Bow/Christmas/FestiveBow.png
+Assets/HeroEditor/Common/Icons/Equipment/Cape/Christmas/Candycane.png
+Assets/HeroEditor/Common/Icons/Equipment/Cape/Christmas/ChristmasCape.png
+Assets/HeroEditor/Common/Icons/Equipment/Cape/Christmas/SnowMaidenCape.png
+Assets/HeroEditor/Common/Icons/Equipment/Firearm1H/Christmas/CandyCannon.png
+Assets/HeroEditor/Common/Icons/Equipment/Gloves/Christmas/ChristmasCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Gloves/Christmas/NutcrackerOutfit.png
+Assets/HeroEditor/Common/Icons/Equipment/Gloves/Christmas/SnowMaidenCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Gloves/Halloween/DeathCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Gloves/Halloween/DeerCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Gloves/Halloween/PumpkinCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Gloves/Halloween/WitchCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Helmet/Chrismas/ChristmasHat [FullHair].png
+Assets/HeroEditor/Common/Icons/Equipment/Helmet/Chrismas/NutcrackerHat.png
+Assets/HeroEditor/Common/Icons/Equipment/Helmet/Chrismas/SnowMaiden [FullHair].png
+Assets/HeroEditor/Common/Icons/Equipment/Helmet/Halloween/DeathHood.png
+Assets/HeroEditor/Common/Icons/Equipment/Helmet/Halloween/DeerHorns [FullHair].png
+Assets/HeroEditor/Common/Icons/Equipment/Helmet/Halloween/PumpkinHead.png
+Assets/HeroEditor/Common/Icons/Equipment/Helmet/Halloween/WitchHat.png
+Assets/HeroEditor/Common/Icons/Equipment/MeleeWeapon1H/Christmas/Hammer/CandyHammer.png
+Assets/HeroEditor/Common/Icons/Equipment/MeleeWeapon1H/Christmas/Hammer/NutcrackerHammer.png
+Assets/HeroEditor/Common/Icons/Equipment/MeleeWeapon2H/Halloween/Axe/DeathScythe.png
+Assets/HeroEditor/Common/Icons/Equipment/Pauldrons/Christmas/ChristmasCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Pauldrons/Christmas/NutcrackerOutfit.png
+Assets/HeroEditor/Common/Icons/Equipment/Pauldrons/Christmas/SnowMaidenCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Pauldrons/Halloween/DeathCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Pauldrons/Halloween/DeerCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Pauldrons/Halloween/PumpkinCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Pauldrons/Halloween/WitchCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Shield/Christmas/CaramelShield.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Bomb/HolyHandGrenade.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Food/ChristmasCandy.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Food/ChristmasTurkey.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Food/Eggnog.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Food/Fruitcake.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Food/GingerbreadMan.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Food/Punch.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Food/RoundChristmasCandy.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Other/ChristmasBell.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Other/ChristmasPresent.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Other/ChristmasStocking.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Other/ChristmasTreeToy.png
+Assets/HeroEditor/Common/Icons/Equipment/Supplies/Christmas/Other/ChristmasWreath.png
+Assets/HeroEditor/Common/Icons/Equipment/Vest/Christmas/ChristmasCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Vest/Christmas/NutcrackerOutfit.png
+Assets/HeroEditor/Common/Icons/Equipment/Vest/Christmas/SnowMaidenCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Vest/Halloween/DeathCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Vest/Halloween/DeerCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Vest/Halloween/PumpkinCostume.png
+Assets/HeroEditor/Common/Icons/Equipment/Vest/Halloween/WitchCostume.png
+Assets/HeroEditor/Common/Sprites/Equipment/Armor/Christmas/ChristmasCostume.png
+Assets/HeroEditor/Common/Sprites/Equipment/Armor/Christmas/NutcrackerOutfit.png
+Assets/HeroEditor/Common/Sprites/Equipment/Armor/Christmas/SnowMaidenCostume.png
+Assets/HeroEditor/Common/Sprites/Equipment/Armor/Halloween/DeathCostume.png
+Assets/HeroEditor/Common/Sprites/Equipment/Armor/Halloween/DeerCostume.png
+Assets/HeroEditor/Common/Sprites/Equipment/Armor/Halloween/PumpkinCostume.png
+Assets/HeroEditor/Common/Sprites/Equipment/Armor/Halloween/WitchCostume.png
+Assets/HeroEditor/Common/Sprites/Equipment/Bow/Christmas/ChristmasBow.png
+Assets/HeroEditor/Common/Sprites/Equipment/Bow/Christmas/FestiveBow.png
+Assets/HeroEditor/Common/Sprites/Equipment/Cape/Christmas/Candycane.png
+Assets/HeroEditor/Common/Sprites/Equipment/Cape/Christmas/ChristmasCape.png
+Assets/HeroEditor/Common/Sprites/Equipment/Cape/Christmas/SnowMaidenCape.png
+Assets/HeroEditor/Common/Sprites/Equipment/Firearm1H/Christmas/CandyCannon.png
+Assets/HeroEditor/Common/Sprites/Equipment/Helmet/Chrismas/ChristmasHat [FullHair].png
+Assets/HeroEditor/Common/Sprites/Equipment/Helmet/Chrismas/NutcrackerHat.png
+Assets/HeroEditor/Common/Sprites/Equipment/Helmet/Chrismas/SnowMaiden [FullHair].png
+Assets/HeroEditor/Common/Sprites/Equipment/Helmet/Halloween/DeathHood.png
+Assets/HeroEditor/Common/Sprites/Equipment/Helmet/Halloween/DeerHorns [FullHair].png
+Assets/HeroEditor/Common/Sprites/Equipment/Helmet/Halloween/PumpkinHead.png
+Assets/HeroEditor/Common/Sprites/Equipment/Helmet/Halloween/WitchHat.png
+Assets/HeroEditor/Common/Sprites/Equipment/MeleeWeapon1H/Christmas/Hammer/CandyHammer.png
+Assets/HeroEditor/Common/Sprites/Equipment/MeleeWeapon1H/Christmas/Hammer/NutcrackerHammer.png
+Assets/HeroEditor/Common/Sprites/Equipment/MeleeWeapon2H/Halloween/Axe/DeathScythe.png
+Assets/HeroEditor/Common/Sprites/Equipment/Shield/Christmas/CaramelShield.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Bomb/HolyHandGrenade.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Food/ChristmasCandy.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Food/ChristmasTurkey.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Food/Eggnog.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Food/Fruitcake.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Food/GingerbreadMan.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Food/Punch.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Food/RoundChristmasCandy.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Other/ChristmasBell.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Other/ChristmasPresent.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Other/ChristmasStocking.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Other/ChristmasTreeToy.png
+Assets/HeroEditor/Common/Sprites/Equipment/Supplies/Christmas/Other/ChristmasWreath.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/ArielDress [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/AssassinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/BanditArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/BanditLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/BaseballOutfit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/BerserkArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/BishopArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/BlacksmithCostume.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/CardinalArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/CataphractArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/ChainmailLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/ChampionArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Cleric [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/DarkKnight.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Deserter.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/DestroyerArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/DruidArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/DwellerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/FarmerClothes.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/FireAdept.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/FireKnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/FireWarriorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/FireWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/GladiatorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/GreyKnight.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/GuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/HalberdierArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/HeavyArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Hermit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Hunter.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/HunterLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/HunterTunic.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/IceWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/InquisitorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/IronArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/IronPlateArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/KnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/LandsknechtArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/LeatherJacket.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/LeatherLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/LeatherRivetedArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/ManticoreArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/MarauderArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/MercenaryArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Militiaman.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/MinerCostume.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/NecromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/NinjaOutfit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Nomad.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/PaladinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/PathfinderArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/PeasantClothing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/PyromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Rags1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Rags2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Rags3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/RangerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Robe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/RoyalArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/RoyalGuard.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Scout [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/ShamanArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/SiegeArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Slave.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/SniperArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/SpearmanArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/SpikedArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/StormBringerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/ThiefArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/Wanderer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/WarlockArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/WaterAdept.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/WaterWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/WitchArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Basic/WitchHunterArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Christmas/Santa1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Christmas/Santa2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Christmas/SantaHelper.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Knights/CrusaderChainmail [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Knights/EliteGuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Knights/FalconLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Knights/GguardsmenArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Knights/KnightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Samurai/Ninja1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Samurai/Ninja2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Samurai/Ninja3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Samurai/SamuraiElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Samurai/SamuraiHeavy1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Samurai/SamuraiHeavy2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Samurai/SamuraiHeavy3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Samurai/SamuraiLight1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Samurai/SamuraiLight2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Samurai/SamuraiLight3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SandLords/SandElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SandLords/SandHealer1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SandLords/SandHealer2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SandLords/SandMage1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SandLords/SandMage2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SandLords/SandShooter1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SandLords/SandShooter2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SandLords/SandWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SandLords/SandWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SwampLords/SwampElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SwampLords/SwampHealer1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SwampLords/SwampHealer2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SwampLords/SwampMage1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SwampLords/SwampMage2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SwampLords/SwampShooter1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SwampLords/SwampShooter2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SwampLords/SwampWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/SwampLords/SwampWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Thrones/DarkMountain.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Thrones/FreeFolk [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Thrones/GoldLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Thrones/HorseLord.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Thrones/IronIslands.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Thrones/LittleLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Thrones/Mountain [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Thrones/NightsWatch [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Thrones/NorthWarden.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Thrones/RedLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Thrones/SandWarrior.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Vikings/VikingFurArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Vikings/VikingLightArmor1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Vikings/VikingLightArmor2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Vikings/VikingLightArmor3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Vikings/VikingRoughArmor1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Vikings/VikingRoughArmor2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Armor/Vikings/VikingRoughArmor3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/BattleBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/FamilyBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/GoldDragon.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/HornBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/HunterBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/HunterShortBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/MarauderBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/OrcBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/PathFinderBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/RangerBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/RoyalArcherBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/ScoutBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/ScoutShortBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/SniperBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Basic/WitchHunterBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Samurai/SamuraiBow1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Samurai/SamuraiBow2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Samurai/SamuraiBow3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/SandLords/SandShooterBow1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/SandLords/SandShooterBow2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/SwampLords/SwampShooter1Bow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/SwampLords/SwampShooter2Bow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Vikings/VikingIronBow1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Vikings/VikingIronBow2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Vikings/VikingIronBow3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Vikings/VikingLongBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Vikings/VikingShortBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Arrow/Vikings/VikingWoodenBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Back/Basic/ArrowQuiver.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Back/Basic/ArrowQuiver2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Back/Basic/ArrowQuiver3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Back/Basic/ArrowQuiverBig.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/ArielDress [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/AssassinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/BanditArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/BanditLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/BaseballOutfit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/BerserkArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/BishopArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/BlacksmithCostume.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/CardinalArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/CataphractArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/ChainmailLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/ChampionArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Cleric [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/DarkKnight.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Deserter.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/DestroyerArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/DruidArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/DwellerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/FarmerClothes.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/FireAdept.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/FireKnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/FireWarriorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/FireWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/GladiatorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/GreyKnight.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/GuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/HalberdierArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/HeavyArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Hermit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Hunter.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/HunterLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/HunterTunic.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/IceWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/InquisitorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/IronArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/IronPlateArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/KnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/LandsknechtArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/LeatherJacket.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/LeatherLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/LeatherRivetedArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/ManticoreArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/MarauderArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/MercenaryArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Militiaman.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/MinerCostume.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/NecromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/NinjaOutfit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Nomad.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/PaladinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/PathfinderArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/PeasantClothing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/PyromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Rags1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Rags2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Rags3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/RangerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Robe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/RoyalArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/RoyalGuard.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Scout [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/ShamanArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/SiegeArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Slave.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/SniperArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/SpearmanArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/SpikedArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/StormBringerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/ThiefArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/Wanderer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/WarlockArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/WaterAdept.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/WaterWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/WitchArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Basic/WitchHunterArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Christmas/Santa1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Christmas/Santa2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Christmas/SantaHelper.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Knights/CrusaderChainmail [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Knights/EliteGuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Knights/FalconLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Knights/GguardsmenArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Knights/KnightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Samurai/Ninja1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Samurai/Ninja2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Samurai/Ninja3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Samurai/SamuraiElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Samurai/SamuraiHeavy1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Samurai/SamuraiHeavy2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Samurai/SamuraiHeavy3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Samurai/SamuraiLight1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Samurai/SamuraiLight2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Samurai/SamuraiLight3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SandLords/SandElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SandLords/SandHealer1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SandLords/SandHealer2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SandLords/SandMage1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SandLords/SandMage2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SandLords/SandShooter1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SandLords/SandShooter2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SandLords/SandWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SandLords/SandWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SwampLords/SwampElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SwampLords/SwampHealer1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SwampLords/SwampHealer2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SwampLords/SwampMage1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SwampLords/SwampMage2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SwampLords/SwampShooter1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SwampLords/SwampShooter2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SwampLords/SwampWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/SwampLords/SwampWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Thrones/DarkMountain.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Thrones/FreeFolk [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Thrones/GoldLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Thrones/HorseLord.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Thrones/IronIslands.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Thrones/LittleLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Thrones/Mountain [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Thrones/NightsWatch [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Thrones/NorthWarden.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Thrones/RedLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Thrones/SandWarrior.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Vikings/VikingFurArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Vikings/VikingLightArmor1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Vikings/VikingLightArmor2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Vikings/VikingLightArmor3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Vikings/VikingRoughArmor1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Vikings/VikingRoughArmor2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Belt/Vikings/VikingRoughArmor3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/ArielDress [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/AssassinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/BanditArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/BanditLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/BaseballOutfit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/BerserkArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/BishopArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/BlacksmithCostume.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/CardinalArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/CataphractArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/ChainmailLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/ChampionArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Cleric [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/DarkKnight.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Deserter.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/DestroyerArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/DruidArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/DwellerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/FarmerClothes.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/FireAdept.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/FireKnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/FireWarriorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/FireWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/GladiatorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/GreyKnight.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/GuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/HalberdierArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/HeavyArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Hermit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Hunter.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/HunterLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/HunterTunic.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/IceWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/InquisitorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/IronArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/IronPlateArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/KnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/LandsknechtArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/LeatherJacket.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/LeatherLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/LeatherRivetedArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/ManticoreArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/MarauderArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/MercenaryArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Militiaman.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/MinerCostume.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/NecromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/NinjaOutfit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Nomad.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/PaladinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/PathfinderArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/PeasantClothing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/PyromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Rags1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Rags2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Rags3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/RangerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Robe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/RoyalArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/RoyalGuard.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Scout [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/ShamanArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/SiegeArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Slave.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/SniperArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/SpearmanArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/SpikedArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/StormBringerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/ThiefArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/Wanderer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/WarlockArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/WaterAdept.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/WaterWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/WitchArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Basic/WitchHunterArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Christmas/Santa1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Christmas/Santa2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Christmas/SantaHelper.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Knights/CrusaderChainmail [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Knights/EliteGuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Knights/FalconLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Knights/GguardsmenArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Knights/KnightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Samurai/Ninja1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Samurai/Ninja2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Samurai/Ninja3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Samurai/SamuraiElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Samurai/SamuraiHeavy1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Samurai/SamuraiHeavy2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Samurai/SamuraiHeavy3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Samurai/SamuraiLight1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Samurai/SamuraiLight2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Samurai/SamuraiLight3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SandLords/SandElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SandLords/SandHealer1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SandLords/SandHealer2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SandLords/SandMage1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SandLords/SandMage2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SandLords/SandShooter1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SandLords/SandShooter2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SandLords/SandWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SandLords/SandWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SwampLords/SwampElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SwampLords/SwampHealer1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SwampLords/SwampHealer2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SwampLords/SwampMage1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SwampLords/SwampMage2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SwampLords/SwampShooter1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SwampLords/SwampShooter2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SwampLords/SwampWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/SwampLords/SwampWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Thrones/DarkMountain.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Thrones/FreeFolk [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Thrones/GoldLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Thrones/HorseLord.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Thrones/IronIslands.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Thrones/LittleLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Thrones/Mountain [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Thrones/NightsWatch [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Thrones/NorthWarden.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Thrones/RedLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Thrones/SandWarrior.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Vikings/VikingFurArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Vikings/VikingLightArmor1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Vikings/VikingLightArmor2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Vikings/VikingLightArmor3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Vikings/VikingRoughArmor1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Vikings/VikingRoughArmor2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Boots/Vikings/VikingRoughArmor3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/BattleBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/FamilyBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/GoldDragon.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/HornBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/HunterBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/HunterShortBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/MarauderBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/OrcBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/PathFinderBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/RangerBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/RoyalArcherBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/ScoutBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/ScoutShortBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/SniperBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Basic/WitchHunterBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Samurai/SamuraiBow1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Samurai/SamuraiBow2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Samurai/SamuraiBow3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/SandLords/SandShooterBow1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/SandLords/SandShooterBow2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/SwampLords/SwampShooter1Bow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/SwampLords/SwampShooter2Bow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Vikings/VikingIronBow1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Vikings/VikingIronBow2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Vikings/VikingIronBow3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Vikings/VikingLongBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Vikings/VikingShortBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Bow/Vikings/VikingWoodenBow.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Cape/Basic/BatCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Cape/Basic/CotttonCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Cape/Basic/GrandmaCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Cape/Basic/HeroicCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Cape/Basic/HeroicCape2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Cape/Basic/OldCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Cape/Basic/OldCape2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Cape/Basic/RoyalCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Cape/Basic/VampireCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Earrings/Basic/Banan.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Earrings/Basic/GoldenEarring.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Earrings/Basic/Worm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm1H/Basic/FlintPistolTypeA.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm1H/Basic/FlintPistolTypeB.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm1H/Basic/FlintPistolTypeC.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm1H/Basic/RevolverTypeA.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm1H/Basic/RevolverTypeB.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm1H/Basic/RevolverTypeC.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm2H/Basic/OldShotgun.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm2H/Basic/RifleTypeA.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm2H/Basic/RifleTypeB.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm2H/Basic/RifleTypeC.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm2H/Basic/RifleTypeD.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm2H/Basic/RifleTypeE.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Firearm2H/Basic/RifleTypeF.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Glasses/Basic/LibrarianGlasses.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Glasses/Basic/SteampunkGlasses.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/ArielDress [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/AssassinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/BanditArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/BanditLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/BaseballOutfit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/BerserkArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/BishopArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/BlacksmithCostume.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/CardinalArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/CataphractArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/ChainmailLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/ChampionArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Cleric [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/DarkKnight.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Deserter.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/DestroyerArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/DruidArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/DwellerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/FarmerClothes.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/FireAdept.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/FireKnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/FireWarriorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/FireWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/GladiatorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/GreyKnight.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/GuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/HalberdierArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/HeavyArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Hermit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Hunter.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/HunterLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/HunterTunic.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/IceWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/InquisitorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/IronArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/IronPlateArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/KnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/LandsknechtArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/LeatherJacket.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/LeatherLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/LeatherRivetedArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/ManticoreArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/MarauderArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/MercenaryArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Militiaman.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/MinerCostume.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/NecromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/NinjaOutfit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Nomad.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/PaladinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/PathfinderArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/PeasantClothing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/PyromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Rags1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Rags2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Rags3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/RangerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Robe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/RoyalArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/RoyalGuard.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Scout [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/ShamanArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/SiegeArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Slave.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/SniperArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/SpearmanArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/SpikedArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/StormBringerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/ThiefArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/Wanderer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/WarlockArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/WaterAdept.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/WaterWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/WitchArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Basic/WitchHunterArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Christmas/Santa1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Christmas/Santa2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Christmas/SantaHelper.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Knights/CrusaderChainmail [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Knights/EliteGuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Knights/FalconLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Knights/GguardsmenArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Knights/KnightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Samurai/Ninja1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Samurai/Ninja2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Samurai/Ninja3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Samurai/SamuraiElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Samurai/SamuraiHeavy1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Samurai/SamuraiHeavy2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Samurai/SamuraiHeavy3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Samurai/SamuraiLight1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Samurai/SamuraiLight2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Samurai/SamuraiLight3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SandLords/SandElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SandLords/SandHealer1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SandLords/SandHealer2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SandLords/SandMage1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SandLords/SandMage2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SandLords/SandShooter1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SandLords/SandShooter2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SandLords/SandWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SandLords/SandWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SwampLords/SwampElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SwampLords/SwampHealer1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SwampLords/SwampHealer2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SwampLords/SwampMage1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SwampLords/SwampMage2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SwampLords/SwampShooter1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SwampLords/SwampShooter2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SwampLords/SwampWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/SwampLords/SwampWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Thrones/DarkMountain.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Thrones/FreeFolk [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Thrones/GoldLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Thrones/HorseLord.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Thrones/IronIslands.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Thrones/LittleLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Thrones/Mountain [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Thrones/NightsWatch [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Thrones/NorthWarden.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Thrones/RedLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Thrones/SandWarrior.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Vikings/VikingFurArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Vikings/VikingLightArmor1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Vikings/VikingLightArmor2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Vikings/VikingLightArmor3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Vikings/VikingRoughArmor1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Vikings/VikingRoughArmor2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Gloves/Vikings/VikingRoughArmor3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/AdvancedDipperHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/AgileHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/AmateurDipperHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/AmateurDodgeHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/ArcherHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/AssassinHood [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/BaboonMask.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/BerserkHelm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/BishopHat [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/BlacksmithHeadband.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/BowmanHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/CardinalHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/CataphractHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/ChampionHelm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/ClericHood [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/ClothHeadband.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/DeserterBandage [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/DestroyerHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/DruidHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/DwellerHood [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/EnforcedHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/ExpertBowmanHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/ExpertHunterHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/FireAdeptHood.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/FireWizardHood.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/GladiatorHelm1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/GladiatorHelm2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/GuardHelm1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/GuardHelm2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/GuardHelm3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/GypsyHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/HalberdierHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/HalfmoonHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/HawkHelm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/HeavyHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/HermitHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/HermitHood [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/HunterHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/HunterHat1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/HunterHat2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/HunterHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/IceWizardHood.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/InquisitorHat1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/InquisitorHat2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/JesterHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/KnightHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/LandsknechtHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/LeatherCap.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/LeatherHelm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/ManticoreHelmet.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/MarauderHood.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/MasterDodgeHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/MercenaryHelm1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/MercenaryHelm2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/MilitiamanHelmet1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/MilitiamanHelmet2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/MinerHelmet.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/NecromancerHood.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/PaladinHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/PathfinderHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/PathfinderHood.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/PeasantCap.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/RangerHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/RoyalArcherHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/ScoutHelm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/ShamanHelm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/SiegeArcherHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/SlaveHeadband [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/SnperHood.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/SpearmanHelm1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/SpearmanHelm2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/SteelHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/SteelPotHelm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/StrawHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/ThiefHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/VisorKnightHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/WarlockHood.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/WaterWizardHelm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/WitchHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Basic/WitchHunterHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Christmas/SantaHat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Christmas/SantaHelperHat1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Christmas/SantaHelperHat2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Christmas/SantaHelperHat3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Knights/CrusaderHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Knights/EliteKnightHelm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Knights/FalconIronHelm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Knights/GuardHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Knights/SharpHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Knights/WarriorHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Samurai/NinjaHelm1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Samurai/NinjaHelm2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Samurai/NinjaHelm3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Samurai/SamuraiElderHelm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Samurai/SamuraiHelm1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Samurai/SamuraiHelm2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Samurai/SamuraiHelm3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/SandLords/SandElderTurban.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/SandLords/SandHealerHood.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/SandLords/SandShooterTurban.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/SandLords/SandWarriorHelm1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/SandLords/SandWarriorHelm2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/SwampLords/ShamanMask [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/SwampLords/ShamanMask2 [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/SwampLords/ShamanMask3 [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/SwampLords/SwampLordMask1 [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/SwampLords/SwampLordMask2  [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Thrones/DarkMountainHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Thrones/MountainHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Vikings/VikingIronHelm1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Vikings/VikingIronHelm2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Vikings/VikingIronHelm3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Helmet/Vikings/VikingLeatherHelm.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Mask/Basic/BanditMask [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Mask/Basic/CarnivalMask.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Mask/Basic/ClothMask.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Mask/Basic/Mask1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Mask/Basic/Mask2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Mask/Basic/ShamanMask [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Axe/DreadCleaver.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Axe/RunicAxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Axe/SmallAxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Axe/StoneAxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Axe/WoodcutterAxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Dagger/AspenStake.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Dagger/BronzeDagger.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Dagger/HunterKnife [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Dagger/ShortDagger [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Hammer/BlacksmithHammer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Hammer/BoneClub.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Hammer/DarkStoneHammer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Hammer/IronHammer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Hammer/Morgenstern.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Hammer/RustedHammer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Hammer/WarHammer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Hammer/WoodenClub.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Hammer/WoodenMace.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Hammer/WoodenSpikedClub.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/AssassinDagger [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/Bilbo.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/DeserterDagger [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/FamilySword.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/FireWarriorSword1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/FireWarriorSword2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/GuardSword1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/GuardSword2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/InquisitorSword1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/InquisitorSword2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/InquisitorSword3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/InquisitorSword4 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/KnightSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/Machete [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/MagicSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/ManticoreSword.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/MilitiamanShortSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/Morgana.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/RustySword.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/ShortIronKatana [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/ShortSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/SlaveSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/Smallsword.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/Stoccata.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Sword/TrainingSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/BishopWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/CardinalWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/ClericWand1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/ClericWand2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/CursedBone.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/DrownedGoblinHand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/DruidWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/DwellerWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/FireAdeptWand1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/FireAdeptWand2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/FireWizardWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/HardwoodWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/HermitWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/IceWizardWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/MagicWandTypeA.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/MagicWandTypeB.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/MagicWandTypeC.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/MalformedStaff.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/PyromancerWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/ShamanWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/StormBringerWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/WarlockWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/WaterAdeptWand1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/WaterAdeptWand2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/WaterWizardWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Basic/Wand/WitchWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Christmas/Wand/SantaHelperWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Christmas/Wand/SantaWand.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Knights/Sword/BalancedSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Knights/Sword/EliteGuardSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Knights/Sword/EliteKnightSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Knights/Sword/ShortKnightSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Samurai/Sword/Katana1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Samurai/Sword/Katana2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Samurai/Sword/Katana3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Samurai/Sword/Kunai.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Samurai/Sword/Ninjato [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Samurai/Sword/Sai [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SandLords/Staff/SandElderStaff.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SandLords/Staff/SandHealerStaff1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SandLords/Staff/SandHealerStaff2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SandLords/Staff/SandMageStaff1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SandLords/Staff/SandMageStaff2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SandLords/Sword/SandWarriorSword1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SandLords/Sword/SandWarriorSword2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SwampLords/Spear/SwampWarriorSpear.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SwampLords/Staff/ElderStaff.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SwampLords/Staff/SwampHealer1Staff.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SwampLords/Staff/SwampHealer2Staff.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SwampLords/Staff/SwampMage1Staff.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/SwampLords/Staff/SwampMage2Staff.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Thrones/Axe/FreeFolkAxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Thrones/Sword/HorseLordSickle.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Thrones/Sword/IronIslandsSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Thrones/Sword/LionSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Thrones/Sword/LittleLionSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Thrones/Sword/NorthWardenSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Thrones/Sword/WolfSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Vikings/Axe/VikingAxe1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Vikings/Axe/VikingAxe2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Vikings/Axe/VikingAxe3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Vikings/Sword/VikingSword1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Vikings/Sword/VikingSword2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon1H/Vikings/Sword/VikingSword3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Axe/BerserkAxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Axe/BrassPickaxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Axe/BronzePickaxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Axe/CopperPickaxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Axe/DestroyerAxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Axe/IronPickaxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Axe/OldPoleaxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Axe/RustedPickaxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Axe/Scythe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Axe/SteelAxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Axe/SteelPickaxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Axe/WoodcutterPoleaxe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Hammer/BaseballBat.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Hammer/BlackHammer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Hammer/GateCrusher.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Hammer/LongHammer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Hammer/TitanHammer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Hammer/TwoHandedWoodenMace.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Hammer/WarClub.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Spear/CataphractSpear.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Spear/Halberd.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Spear/Harpoon.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Spear/SiegeSpear.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Spear/Spear.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Spear/WoodenStake.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Sword/BroadSword.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Sword/FireKnightSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Sword/HeavySword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Sword/MercenarySword1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Sword/MercenarySword2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Sword/PaladinSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Basic/Sword/Zweihander [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Knights/Sword/TwoHandedSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Samurai/Sword/DarkSword.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Samurai/Sword/SamuraiElderSword.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Samurai/Sword/SamuraiSword1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Samurai/Sword/SamuraiSword2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Samurai/Sword/SamuraiSword2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Samurai/Sword/SamuraiSword3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Samurai/Sword/SamuraiSword3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Samurai/Sword/ShadowSword.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Samurai/Sword/SunriseSword.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Thrones/Axe/SandWarriorHalberd.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Thrones/Sword/MountainSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Vikings/Axe/TwoHandedVikingAxe1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Vikings/Axe/TwoHandedVikingAxe2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Vikings/Axe/TwoHandedVikingAxe3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Vikings/Sword/TwoHandedVikingSword1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Vikings/Sword/TwoHandedVikingSword2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/MeleeWeapon2H/Vikings/Sword/TwoHandedVikingSword3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/ArielDress [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/AssassinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/BanditArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/BanditLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/BaseballOutfit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/BerserkArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/BishopArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/BlacksmithCostume.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/CardinalArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/CataphractArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/ChainmailLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/ChampionArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Cleric [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/DarkKnight.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Deserter.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/DestroyerArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/DruidArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/DwellerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/FarmerClothes.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/FireAdept.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/FireKnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/FireWarriorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/FireWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/GladiatorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/GreyKnight.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/GuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/HalberdierArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/HeavyArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Hermit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Hunter.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/HunterLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/HunterTunic.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/IceWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/InquisitorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/IronArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/IronPlateArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/KnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/LandsknechtArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/LeatherJacket.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/LeatherLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/LeatherRivetedArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/ManticoreArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/MarauderArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/MercenaryArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Militiaman.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/MinerCostume.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/NecromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/NinjaOutfit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Nomad.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/PaladinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/PathfinderArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/PeasantClothing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/PyromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Rags1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Rags2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Rags3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/RangerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Robe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/RoyalArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/RoyalGuard.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Scout [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/ShamanArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/SiegeArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Slave.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/SniperArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/SpearmanArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/SpikedArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/StormBringerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/ThiefArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/Wanderer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/WarlockArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/WaterAdept.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/WaterWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/WitchArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Basic/WitchHunterArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Christmas/Santa1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Christmas/Santa2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Christmas/SantaHelper.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Knights/CrusaderChainmail [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Knights/EliteGuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Knights/FalconLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Knights/GguardsmenArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Knights/KnightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Samurai/Ninja1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Samurai/Ninja2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Samurai/Ninja3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Samurai/SamuraiElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Samurai/SamuraiHeavy1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Samurai/SamuraiHeavy2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Samurai/SamuraiHeavy3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Samurai/SamuraiLight1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Samurai/SamuraiLight2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Samurai/SamuraiLight3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SandLords/SandElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SandLords/SandHealer1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SandLords/SandHealer2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SandLords/SandMage1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SandLords/SandMage2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SandLords/SandShooter1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SandLords/SandShooter2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SandLords/SandWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SandLords/SandWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SwampLords/SwampElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SwampLords/SwampHealer1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SwampLords/SwampHealer2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SwampLords/SwampMage1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SwampLords/SwampMage2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SwampLords/SwampShooter1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SwampLords/SwampShooter2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SwampLords/SwampWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/SwampLords/SwampWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Thrones/DarkMountain.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Thrones/FreeFolk [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Thrones/GoldLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Thrones/HorseLord.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Thrones/IronIslands.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Thrones/LittleLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Thrones/Mountain [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Thrones/NightsWatch [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Thrones/NorthWarden.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Thrones/RedLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Thrones/SandWarrior.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Vikings/VikingFurArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Vikings/VikingLightArmor1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Vikings/VikingLightArmor2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Vikings/VikingLightArmor3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Vikings/VikingRoughArmor1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Vikings/VikingRoughArmor2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Pauldrons/Vikings/VikingRoughArmor3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/AdvancedGladiatorShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/AdvancedKnightShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/BasicIronShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/BottleBomb.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/CardinalBook.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/CataphractShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/ChampionShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/CrusaderShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/DarkKnightShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/FireKnightShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/FireWarriorShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/GladiatorShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/GreyKnightShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/GuardShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/GuardShield1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/GuardShield2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/HermitLamp.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/KiteShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/KnightShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/LandsknechtShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/ManticoreShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/MilitiamanShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/NecromancerShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/OldHeavyShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/SpikedShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/SteelTowerShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/TowerShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/WoodenBuckler.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Basic/WoodenShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Knights/BlueKnightShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Knights/CrusaderShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Knights/SteelShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Knights/WarriorShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Samurai/NinjaShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Samurai/SamuraiShield1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Samurai/SamuraiShield2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Samurai/SamuraiShield3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Thrones/GoldLionShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Thrones/MountainShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Thrones/RedLionShield.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Vikings/IronShield1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Vikings/IronShield2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Vikings/IronShield3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Vikings/WoodenShield1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Vikings/WoodenShield2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Shield/Vikings/WoodenShield3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Bombs/HandBomb.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Bombs/MagicBomb.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Bombs/SpikeBomb.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Currency/Coin.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Currency/Diamond.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Currency/Gems.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Currency/Gold.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Food/Apple.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Food/Brainz.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Food/Cheese.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Food/ChickenLeg.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Food/Grog.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Food/Ham.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Food/Hamburger.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Misc/FireballScroll.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Misc/Flute.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Misc/Lamp.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/Bottle1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/Bottle2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/LargePotion [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/LargePotion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/MediumPotion [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/MediumPotion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/Potion1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/Potion1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/Potion2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/Potion2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/Potion3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/Potion3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/SmallPotion [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/SmallPotion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Potions/WaterBag.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Ring/BronzeEyeRing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Ring/BronzeRing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Ring/DecoratedSilverRing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Ring/ElegantGoldenRing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Ring/GoldenRing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Ring/MagicBronzeRing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Ring/MagicGoldenRing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Ring/MagicSilverRing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Ring/RareSilverRing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Ring/RoyalGoldenRing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Ring/SilverRing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Throwing/Axeorang.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Throwing/Boomerang [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Throwing/Boomerang.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Throwing/SavageBoomerang.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Throwing/ThrowingStar.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Throwing/ThrowingStar2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Supplies/Basic/Throwing/TribalBoomerang.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/ArielDress [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/AssassinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/BanditArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/BanditLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/BaseballOutfit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/BerserkArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/BishopArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/BlacksmithCostume.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/CardinalArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/CataphractArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/ChainmailLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/ChampionArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Cleric [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/DarkKnight.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Deserter.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/DestroyerArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/DruidArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/DwellerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/FarmerClothes.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/FireAdept.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/FireKnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/FireWarriorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/FireWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/GladiatorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/GreyKnight.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/GuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/HalberdierArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/HeavyArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Hermit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Hunter.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/HunterLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/HunterTunic.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/IceWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/InquisitorArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/IronArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/IronPlateArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/KnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/LandsknechtArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/LeatherJacket.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/LeatherLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/LeatherRivetedArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/ManticoreArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/MarauderArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/MercenaryArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Militiaman.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/MinerCostume.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/NecromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/NinjaOutfit.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Nomad.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/PaladinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/PathfinderArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/PeasantClothing.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/PyromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Rags1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Rags2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Rags3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/RangerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Robe.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/RoyalArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/RoyalGuard.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Scout [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/ShamanArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/SiegeArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Slave.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/SniperArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/SpearmanArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/SpikedArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/StormBringerArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/ThiefArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/Wanderer.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/WarlockArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/WaterAdept.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/WaterWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/WitchArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Basic/WitchHunterArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Christmas/Santa1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Christmas/Santa2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Christmas/SantaHelper.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Knights/CrusaderChainmail [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Knights/EliteGuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Knights/FalconLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Knights/GguardsmenArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Knights/KnightArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Samurai/Ninja1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Samurai/Ninja2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Samurai/Ninja3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Samurai/SamuraiElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Samurai/SamuraiHeavy1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Samurai/SamuraiHeavy2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Samurai/SamuraiHeavy3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Samurai/SamuraiLight1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Samurai/SamuraiLight2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Samurai/SamuraiLight3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SandLords/SandElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SandLords/SandHealer1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SandLords/SandHealer2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SandLords/SandMage1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SandLords/SandMage2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SandLords/SandShooter1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SandLords/SandShooter2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SandLords/SandWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SandLords/SandWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SwampLords/SwampElder.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SwampLords/SwampHealer1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SwampLords/SwampHealer2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SwampLords/SwampMage1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SwampLords/SwampMage2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SwampLords/SwampShooter1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SwampLords/SwampShooter2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SwampLords/SwampWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/SwampLords/SwampWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Thrones/DarkMountain.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Thrones/FreeFolk [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Thrones/GoldLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Thrones/HorseLord.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Thrones/IronIslands.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Thrones/LittleLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Thrones/Mountain [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Thrones/NightsWatch [Paint].png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Thrones/NorthWarden.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Thrones/RedLion.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Thrones/SandWarrior.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Vikings/VikingFurArmor.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Vikings/VikingLightArmor1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Vikings/VikingLightArmor2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Vikings/VikingLightArmor3.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Vikings/VikingRoughArmor1.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Vikings/VikingRoughArmor2.png
+Assets/HeroEditor/FantasyHeroes/Icons/Equipment/Vest/Vikings/VikingRoughArmor3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/ArielDress [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/AssassinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/BanditArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/BanditLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/BaseballOutfit.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/BerserkArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/BishopArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/BlacksmithCostume.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/CardinalArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/CataphractArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/ChainmailLightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/ChampionArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Cleric [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/DarkKnight.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Deserter.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/DestroyerArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/DruidArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/DwellerArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/FarmerClothes.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/FireAdept.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/FireKnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/FireWarriorArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/FireWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/GladiatorArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/GreyKnight.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/GuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/HalberdierArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/HeavyArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Hermit.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Hunter.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/HunterLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/HunterTunic.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/IceWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/InquisitorArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/IronArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/IronPlateArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/KnightArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/LandsknechtArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/LeatherJacket.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/LeatherLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/LeatherRivetedArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/ManticoreArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/MarauderArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/MercenaryArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Militiaman.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/MinerCostume.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/NecromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/NinjaOutfit.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Nomad.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/PaladinArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/PathfinderArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/PeasantClothing.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/PyromancerArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Rags1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Rags2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Rags3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/RangerArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Robe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/RoyalArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/RoyalGuard.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Scout [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/ShamanArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/SiegeArcherArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Slave.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/SniperArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/SpearmanArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/SpikedArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/StormBringerArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/ThiefArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/Wanderer.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/WarlockArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/WaterAdept.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/WaterWizardArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/WitchArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Basic/WitchHunterArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Christmas/Santa1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Christmas/Santa2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Christmas/SantaHelper.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Knights/CrusaderChainmail [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Knights/EliteGuardArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Knights/FalconLightArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Knights/GguardsmenArmor [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Knights/KnightArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Samurai/Ninja1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Samurai/Ninja2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Samurai/Ninja3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Samurai/SamuraiElder.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Samurai/SamuraiHeavy1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Samurai/SamuraiHeavy2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Samurai/SamuraiHeavy3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Samurai/SamuraiLight1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Samurai/SamuraiLight2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Samurai/SamuraiLight3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SandLords/SandElder.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SandLords/SandHealer1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SandLords/SandHealer2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SandLords/SandMage1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SandLords/SandMage2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SandLords/SandShooter1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SandLords/SandShooter2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SandLords/SandWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SandLords/SandWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SwampLords/SwampElder.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SwampLords/SwampHealer1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SwampLords/SwampHealer2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SwampLords/SwampMage1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SwampLords/SwampMage2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SwampLords/SwampShooter1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SwampLords/SwampShooter2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SwampLords/SwampWarrior1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/SwampLords/SwampWarrior2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Thrones/DarkMountain.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Thrones/FreeFolk [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Thrones/GoldLion.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Thrones/HorseLord.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Thrones/IronIslands.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Thrones/LittleLion.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Thrones/Mountain [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Thrones/NightsWatch [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Thrones/NorthWarden.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Thrones/RedLion.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Thrones/SandWarrior.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Vikings/VikingFurArmor.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Vikings/VikingLightArmor1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Vikings/VikingLightArmor2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Vikings/VikingLightArmor3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Vikings/VikingRoughArmor1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Vikings/VikingRoughArmor2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Armor/Vikings/VikingRoughArmor3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Back/Basic/ArrowQuiver.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Back/Basic/ArrowQuiver2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Back/Basic/ArrowQuiver3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Back/Basic/ArrowQuiverBig.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/BattleBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/FamilyBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/GoldDragon.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/HornBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/HunterBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/HunterShortBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/MarauderBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/OrcBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/PathFinderBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/RangerBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/RoyalArcherBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/ScoutBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/ScoutShortBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/SniperBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Basic/WitchHunterBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Samurai/SamuraiBow1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Samurai/SamuraiBow2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Samurai/SamuraiBow3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/SandLords/SandShooterBow1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/SandLords/SandShooterBow2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/SwampLords/SwampShooter1Bow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/SwampLords/SwampShooter2Bow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Vikings/VikingIronBow1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Vikings/VikingIronBow2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Vikings/VikingIronBow3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Vikings/VikingLongBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Vikings/VikingShortBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Bow/Vikings/VikingWoodenBow.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Cape/Basic/BatCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Cape/Basic/CotttonCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Cape/Basic/GrandmaCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Cape/Basic/HeroicCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Cape/Basic/HeroicCape2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Cape/Basic/OldCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Cape/Basic/OldCape2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Cape/Basic/RoyalCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Cape/Basic/VampireCape [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Earrings/Basic/Banan.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Earrings/Basic/GoldenEarring.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Earrings/Basic/Worm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm1H/Basic/FlintPistolTypeA.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm1H/Basic/FlintPistolTypeB.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm1H/Basic/FlintPistolTypeC.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm1H/Basic/RevolverTypeA.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm1H/Basic/RevolverTypeB.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm1H/Basic/RevolverTypeC.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm2H/Basic/OldShotgun.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm2H/Basic/RifleTypeA.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm2H/Basic/RifleTypeB.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm2H/Basic/RifleTypeC.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm2H/Basic/RifleTypeD.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm2H/Basic/RifleTypeE.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Firearm2H/Basic/RifleTypeF.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Glasses/Basic/LibrarianGlasses.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Glasses/Basic/SteampunkGlasses.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/AdvancedDipperHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/AgileHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/AmateurDipperHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/AmateurDodgeHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/ArcherHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/AssassinHood [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/BaboonMask.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/BerserkHelm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/BishopHat [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/BlacksmithHeadband.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/BowmanHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/CardinalHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/CataphractHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/ChampionHelm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/ClericHood [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/ClothHeadband.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/DeserterBandage [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/DestroyerHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/DruidHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/DwellerHood [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/EnforcedHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/ExpertBowmanHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/ExpertHunterHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/FireAdeptHood.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/FireWizardHood.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/GladiatorHelm1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/GladiatorHelm2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/GuardHelm1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/GuardHelm2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/GuardHelm3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/GypsyHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/HalberdierHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/HalfmoonHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/HawkHelm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/HeavyHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/HermitHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/HermitHood [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/HunterHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/HunterHat1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/HunterHat2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/HunterHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/IceWizardHood.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/InquisitorHat1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/InquisitorHat2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/JesterHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/KnightHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/LandsknechtHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/LeatherCap.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/LeatherHelm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/ManticoreHelmet.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/MarauderHood.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/MasterDodgeHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/MercenaryHelm1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/MercenaryHelm2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/MilitiamanHelmet1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/MilitiamanHelmet2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/MinerHelmet.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/NecromancerHood.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/PaladinHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/PathfinderHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/PathfinderHood.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/PeasantCap.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/RangerHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/RoyalArcherHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/ScoutHelm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/ShamanHelm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/SiegeArcherHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/SlaveHeadband [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/SnperHood.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/SpearmanHelm1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/SpearmanHelm2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/SteelHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/SteelPotHelm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/StrawHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/ThiefHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/VisorKnightHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/WarlockHood.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/WaterWizardHelm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/WitchHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Basic/WitchHunterHat [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Christmas/SantaHat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Christmas/SantaHelperHat1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Christmas/SantaHelperHat2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Christmas/SantaHelperHat3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Knights/CrusaderHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Knights/EliteKnightHelm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Knights/FalconIronHelm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Knights/GuardHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Knights/SharpHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Knights/WarriorHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Samurai/NinjaHelm1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Samurai/NinjaHelm2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Samurai/NinjaHelm3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Samurai/SamuraiElderHelm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Samurai/SamuraiHelm1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Samurai/SamuraiHelm2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Samurai/SamuraiHelm3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/SandLords/SandElderTurban.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/SandLords/SandHealerHood.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/SandLords/SandShooterTurban.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/SandLords/SandWarriorHelm1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/SandLords/SandWarriorHelm2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/SwampLords/ShamanMask [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/SwampLords/ShamanMask2 [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/SwampLords/ShamanMask3 [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/SwampLords/SwampLordMask1 [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/SwampLords/SwampLordMask2  [FullHair].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Thrones/DarkMountainHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Thrones/MountainHelm [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Vikings/VikingIronHelm1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Vikings/VikingIronHelm2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Vikings/VikingIronHelm3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Helmet/Vikings/VikingLeatherHelm.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Mask/Basic/BanditMask [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Mask/Basic/CarnivalMask.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Mask/Basic/ClothMask.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Mask/Basic/Mask1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Mask/Basic/Mask2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Mask/Basic/ShamanMask [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Axe/DreadCleaver.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Axe/RunicAxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Axe/SmallAxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Axe/StoneAxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Axe/WoodcutterAxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Dagger/AspenStake.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Dagger/BronzeDagger.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Dagger/HunterKnife [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Dagger/ShortDagger [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Hammer/BlacksmithHammer.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Hammer/BoneClub.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Hammer/DarkStoneHammer.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Hammer/IronHammer.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Hammer/Morgenstern.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Hammer/RustedHammer.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Hammer/WarHammer.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Hammer/WoodenClub.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Hammer/WoodenMace.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Hammer/WoodenSpikedClub.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/AssassinDagger [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/Bilbo.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/DeserterDagger [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/FamilySword.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/FireWarriorSword1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/FireWarriorSword2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/GuardSword1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/GuardSword2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/InquisitorSword1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/InquisitorSword2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/InquisitorSword3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/InquisitorSword4 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/KnightSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/Machete [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/MagicSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/ManticoreSword.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/MilitiamanShortSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/Morgana.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/RustySword.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/ShortIronKatana [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/ShortSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/SlaveSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/Smallsword.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/Stoccata.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Sword/TrainingSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/BishopWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/CardinalWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/ClericWand1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/ClericWand2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/CursedBone.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/DrownedGoblinHand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/DruidWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/DwellerWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/FireAdeptWand1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/FireAdeptWand2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/FireWizardWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/HardwoodWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/HermitWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/IceWizardWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/MagicWandTypeA.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/MagicWandTypeB.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/MagicWandTypeC.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/MalformedStaff.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/PyromancerWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/ShamanWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/StormBringerWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/WarlockWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/WaterAdeptWand1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/WaterAdeptWand2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/WaterWizardWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Wand/WitchWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Christmas/Wand/SantaHelperWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Christmas/Wand/SantaWand.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Knights/Sword/BalancedSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Knights/Sword/EliteGuardSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Knights/Sword/EliteKnightSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Knights/Sword/ShortKnightSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Samurai/Sword/Katana1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Samurai/Sword/Katana2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Samurai/Sword/Katana3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Samurai/Sword/Kunai.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Samurai/Sword/Ninjato [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Samurai/Sword/Sai [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SandLords/Staff/SandElderStaff.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SandLords/Staff/SandHealerStaff1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SandLords/Staff/SandHealerStaff2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SandLords/Staff/SandMageStaff1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SandLords/Staff/SandMageStaff2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SandLords/Sword/SandWarriorSword1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SandLords/Sword/SandWarriorSword2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SwampLords/Spear/SwampWarriorSpear.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SwampLords/Staff/ElderStaff.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SwampLords/Staff/SwampHealer1Staff.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SwampLords/Staff/SwampHealer2Staff.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SwampLords/Staff/SwampMage1Staff.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/SwampLords/Staff/SwampMage2Staff.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Thrones/Axe/FreeFolkAxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Thrones/Sword/HorseLordSickle.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Thrones/Sword/IronIslandsSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Thrones/Sword/LionSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Thrones/Sword/LittleLionSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Thrones/Sword/NorthWardenSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Thrones/Sword/WolfSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Vikings/Axe/VikingAxe1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Vikings/Axe/VikingAxe2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Vikings/Axe/VikingAxe3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Vikings/Sword/VikingSword1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Vikings/Sword/VikingSword2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Vikings/Sword/VikingSword3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Axe/BerserkAxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Axe/BrassPickaxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Axe/BronzePickaxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Axe/CopperPickaxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Axe/DestroyerAxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Axe/IronPickaxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Axe/OldPoleaxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Axe/RustedPickaxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Axe/Scythe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Axe/SteelAxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Axe/SteelPickaxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Axe/WoodcutterPoleaxe.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Hammer/BaseballBat.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Hammer/BlackHammer.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Hammer/GateCrusher.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Hammer/LongHammer.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Hammer/TitanHammer.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Hammer/TwoHandedWoodenMace.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Hammer/WarClub.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Spear/CataphractSpear.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Spear/Halberd.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Spear/Harpoon.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Spear/SiegeSpear.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Spear/Spear.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Spear/WoodenStake.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Sword/BroadSword.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Sword/FireKnightSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Sword/HeavySword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Sword/MercenarySword1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Sword/MercenarySword2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Sword/PaladinSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Basic/Sword/Zweihander [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Knights/Sword/TwoHandedSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Samurai/Sword/DarkSword.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Samurai/Sword/SamuraiElderSword.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Samurai/Sword/SamuraiSword1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Samurai/Sword/SamuraiSword2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Samurai/Sword/SamuraiSword2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Samurai/Sword/SamuraiSword3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Samurai/Sword/SamuraiSword3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Samurai/Sword/ShadowSword.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Samurai/Sword/SunriseSword.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Thrones/Axe/SandWarriorHalberd.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Thrones/Sword/MountainSword [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Vikings/Axe/TwoHandedVikingAxe1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Vikings/Axe/TwoHandedVikingAxe2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Vikings/Axe/TwoHandedVikingAxe3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Vikings/Sword/TwoHandedVikingSword1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Vikings/Sword/TwoHandedVikingSword2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/MeleeWeapon2H/Vikings/Sword/TwoHandedVikingSword3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/AdvancedGladiatorShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/AdvancedKnightShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/BasicIronShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/BottleBomb.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/CardinalBook.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/CataphractShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/ChampionShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/CrusaderShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/DarkKnightShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/FireKnightShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/FireWarriorShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/GladiatorShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/GreyKnightShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/GuardShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/GuardShield1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/GuardShield2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/HermitLamp.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/KiteShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/KnightShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/LandsknechtShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/ManticoreShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/MilitiamanShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/NecromancerShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/OldHeavyShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/SpikedShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/SteelTowerShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/TowerShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/WoodenBuckler.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Basic/WoodenShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Knights/BlueKnightShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Knights/CrusaderShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Knights/SteelShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Knights/WarriorShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Samurai/NinjaShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Samurai/SamuraiShield1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Samurai/SamuraiShield2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Samurai/SamuraiShield3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Thrones/GoldLionShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Thrones/MountainShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Thrones/RedLionShield.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Vikings/IronShield1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Vikings/IronShield2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Vikings/IronShield3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Vikings/WoodenShield1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Vikings/WoodenShield2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Shield/Vikings/WoodenShield3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Bombs/HandBomb.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Bombs/MagicBomb.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Bombs/SpikeBomb.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Currency/Coin.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Currency/Diamond.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Currency/Gems.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Currency/Gold.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Food/Apple.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Food/Brainz.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Food/Cheese.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Food/ChickenLeg.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Food/Grog.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Food/Ham.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Food/Hamburger.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Misc/FireballScroll.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Misc/Flute.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Misc/Lamp.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/Bottle1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/Bottle2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/LargePotion [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/LargePotion.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/MediumPotion [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/MediumPotion.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/Potion1 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/Potion1.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/Potion2 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/Potion2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/Potion3 [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/Potion3.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/SmallPotion [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/SmallPotion.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Potions/WaterBag.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Ring/BronzeEyeRing.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Ring/BronzeRing.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Ring/DecoratedSilverRing.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Ring/ElegantGoldenRing.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Ring/GoldenRing.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Ring/MagicBronzeRing.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Ring/MagicGoldenRing.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Ring/MagicSilverRing.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Ring/RareSilverRing.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Ring/RoyalGoldenRing.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Ring/SilverRing.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Throwing/Axeorang.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Throwing/Boomerang [Paint].png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Throwing/Boomerang.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Throwing/SavageBoomerang.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Throwing/ThrowingStar.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Throwing/ThrowingStar2.png
+Assets/HeroEditor/FantasyHeroes/Sprites/Equipment/Supplies/Basic/Throwing/TribalBoomerang.png
+Assets/HeroEditor/FantasyHeroes/TestRoom/Background.png
+Assets/HeroEditor/FantasyHeroes/TestRoom/Scarecrow/Scarecrow.png
+Assets/HeroEditor/InventorySystem/Images/EleganceUI/Button.png
+Assets/HeroEditor/InventorySystem/Images/EleganceUI/ButtonB.png
+Assets/HeroEditor/InventorySystem/Images/EleganceUI/ButtonG.png
+Assets/HeroEditor/InventorySystem/Images/EleganceUI/ButtonR.png
+Assets/HeroEditor/InventorySystem/Images/EleganceUI/Frame.png
+Assets/HeroEditor/InventorySystem/Images/EleganceUI/Panel.png
+Assets/HeroEditor/InventorySystem/Images/EleganceUI/PSD/Button.psd
+Assets/HeroEditor/InventorySystem/Images/EleganceUI/PSD/Frame.psd
+Assets/HeroEditor/InventorySystem/Images/EleganceUI/PSD/Panel.psd
+Assets/HeroEditor/InventorySystem/Images/EleganceUI/Round12.png
+Assets/HeroEditor/InventorySystem/Images/IconEmpty.png
+Assets/HeroEditor/InventorySystem/Images/ItemBackgrounds/Blue.png
+Assets/HeroEditor/InventorySystem/Images/ItemBackgrounds/Brown.png
+Assets/HeroEditor/InventorySystem/Images/ItemBackgrounds/Green.png
+Assets/HeroEditor/InventorySystem/Images/ItemBackgrounds/Grey.png
+Assets/HeroEditor/InventorySystem/Images/ItemBackgrounds/Purple.png
+Assets/HeroEditor/InventorySystem/Images/ItemBackgrounds/Red.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Armor.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Axe.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Back.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Backpack.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Beard.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Belt.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Body.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Boots.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Bow.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Cape.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Crossbow.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/DualSwords.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Ear.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Earrings.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Empty.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Eye.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Eyebrows.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Food.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/FullHair.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Glasses.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Gloves.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Hair.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Head.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Helmet.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Makeup.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Mask.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Material.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Mouth.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Necklace.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Pauldrons.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Pistol.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Potion.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Rifle.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Ring.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Scroll.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Shield.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Sword1H.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Sword2H.png
+Assets/HeroEditor/InventorySystem/Images/ItemTypes/Vest.png

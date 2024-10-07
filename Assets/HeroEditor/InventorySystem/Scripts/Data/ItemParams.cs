@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Assets.HeroEditor.Common.Scripts.Common;
 using Assets.HeroEditor.InventorySystem.Scripts.Enums;
+using UnityEngine;
 namespace Assets.HeroEditor.InventorySystem.Scripts.Data
 {
     /// <summary>
@@ -50,5 +51,51 @@ namespace Assets.HeroEditor.InventorySystem.Scripts.Data
         {
             return Meta.IsEmpty() ? new List<string>() : Serializer.DeserializeList(Meta);
         }
+
+
+        public void DebugDisplay()
+        {
+            // Display basic item information
+            Debug.Log($"Item ID: {Id}");
+            Debug.Log($"Level: {Level}");
+            Debug.Log($"Rarity: {Rarity}");
+            Debug.Log($"Type: {Type}");
+            Debug.Log($"Class: {Class}");
+            Debug.Log($"Price: {Price}");
+            Debug.Log($"Weight: {Weight}");
+
+            // Display tags
+            if (Tags.Any())
+            {
+                Debug.Log($"Tags: {string.Join(", ", Tags.Select(t => t.ToString()))}");
+            }
+            else
+            {
+                Debug.Log("Tags: None");
+            }
+
+            // Display properties
+            if (Properties.Any())
+            {
+                Debug.Log("Properties:");
+                foreach (var property in Properties)
+                {
+                    Debug.Log($"- {property.Id}: {property.Value}"); // Assuming Property has an Id and Value property
+                }
+            }
+            else
+            {
+                Debug.Log("Properties: None");
+            }
+
+            // Display localized names
+            var localizedName = GetLocalizedName("English");
+            Debug.Log($"Localized Name: {localizedName}");
+        }
+
+
     }
+
+
+    
 }

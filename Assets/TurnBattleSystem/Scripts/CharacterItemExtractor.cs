@@ -1,7 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using Assets.HeroEditor.Common.Scripts.CharacterScripts;
+using Assets.HeroEditor.InventorySystem.Scripts;
+using Unity.VisualScripting;
 using UnityEngine;
+using Assets.HeroEditor.InventorySystem.Scripts.Data;
+using Assets.HeroEditor.InventorySystem.Scripts.Elements;
+using UnityEngine.UI;
+using System.Collections;
+using System;
 
 [System.Serializable]
 public class ItemAbility
@@ -17,85 +24,35 @@ public class ItemAbilityList
 {
     public ItemAbility[] items;
 }
-
 public class CharacterItemExtractor : MonoBehaviour
 {
-    private Dictionary<string, ItemAbility> itemAbilities;
+    public InventoryBase inventory;
 
-    // Call this method to load JSON data
-    public void LoadItemData(string jsonFilePath)
+    // Initialize inventory
+    public void Start()
     {
-        // Read JSON from the file
-        string json = File.ReadAllText(jsonFilePath);
-        
-        // Create an instance of ItemAbilityList
-        ItemAbilityList itemAbilityList = JsonUtility.FromJson<ItemAbilityList>(json);
+        // Find the InventoryBase in the scene
+        inventory = FindObjectOfType<InventoryBase>();
 
-        // Populate the dictionary from the item list
-        itemAbilities = new Dictionary<string, ItemAbility>();
-        foreach (var item in itemAbilityList.items)
+        if (inventory == null)
         {
-            // Use only the file name as the key
-            itemAbilities[Path.GetFileName(item.image_path)] = item;
+            Debug.LogError("InventoryBase not found in the scene.");
+            return;
         }
+
+        // Extract and display the item info
+        ExtractItemInfo();
     }
 
-    // Function to extract item descriptions and abilities based on the character's sprites
-    public void ExtractItemInfo(Character character)
+    // Function to extract item names and descriptions based on the player's equipped items
+    public void ExtractItemInfo()
     {
-        // Load item data from JSON
-        LoadItemData("items_data.json"); // Update with your actual path
+        List<string> itemInfoList = new List<string>();
+       // ItemParams itemparam;
+        // Iterate over the equipped items in the inventory
+        Equipment equipement = inventory.Equipment;
 
-        List<ItemAbility> extractedAbilities = new List<ItemAbility>();
-
-        // Check for each sprite in the character
-        if (character.HelmetRenderer.sprite != null)
-        {
-            string spriteName = Path.GetFileName(character.HelmetRenderer.sprite.name);
-            if (itemAbilities.TryGetValue(spriteName, out ItemAbility ability))
-            {
-                extractedAbilities.Add(ability);
-            }
-        }
-
-        if (character.ArmorRenderers != null)
-        {
-            foreach (var armorRenderer in character.ArmorRenderers)
-            {
-                if (armorRenderer.sprite != null)
-                {
-                    string spriteName = Path.GetFileName(armorRenderer.sprite.name);
-                    if (itemAbilities.TryGetValue(spriteName, out ItemAbility ability))
-                    {
-                        extractedAbilities.Add(ability);
-                    }
-                }
-            }
-        }
-
-        if (character.PrimaryMeleeWeaponRenderer.sprite != null)
-        {
-            string spriteName = Path.GetFileName(character.PrimaryMeleeWeaponRenderer.sprite.name);
-            if (itemAbilities.TryGetValue(spriteName, out ItemAbility ability))
-            {
-                extractedAbilities.Add(ability);
-            }
-        }
-
-        // Example for Shield
-        if (character.ShieldRenderer.sprite != null)
-        {
-            string spriteName = Path.GetFileName(character.ShieldRenderer.sprite.name);
-            if (itemAbilities.TryGetValue(spriteName, out ItemAbility ability))
-            {
-                extractedAbilities.Add(ability);
-            }
-        }
-
-        // Log or use the extracted abilities
-        foreach (var item in extractedAbilities)
-        {
-            Debug.Log($"Item: {item.name}, Description: {item.description}, Abilities: {string.Join(", ", item.abilities)}");
-        }
+        equipement.GetEquippedItemsInfo();
     }
 }
+

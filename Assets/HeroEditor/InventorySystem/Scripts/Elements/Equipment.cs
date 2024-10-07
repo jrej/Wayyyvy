@@ -5,6 +5,7 @@ using Assets.HeroEditor.Common.Scripts.CharacterScripts;
 using Assets.HeroEditor.InventorySystem.Scripts.Data;
 using Assets.HeroEditor.InventorySystem.Scripts.Enums;
 using Assets.HeroEditor.InventorySystem.Scripts.Helpers;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Assets.HeroEditor.InventorySystem.Scripts.Elements
@@ -35,6 +36,21 @@ namespace Assets.HeroEditor.InventorySystem.Scripts.Elements
         public int BagSize;
 
         public readonly List<InventoryItem> InventoryItems = new List<InventoryItem>(); 
+
+
+        public string GetEquippedItemsInfo()
+        {
+            var equippedItems = Slots.Select(slot => FindItem(slot)).Where(item => item != null);
+            var info = new System.Text.StringBuilder("Equipped Items:\n");
+
+            foreach (var item in equippedItems)
+            {
+                info.AppendLine($"{item.Params} - {item.Params.ToString()}");
+            }
+
+            return info.ToString();
+        }
+
 
         public void OnValidate()
         {

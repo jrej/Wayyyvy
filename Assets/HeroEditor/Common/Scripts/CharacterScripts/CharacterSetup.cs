@@ -243,6 +243,103 @@ namespace Assets.HeroEditor.Common.Scripts.CharacterScripts
             FullHair = true;
             Initialize();
         }
+        /// <summary>
+/// Display currently equipped equipment for the character.
+/// </summary>
+public void DisplayEquipment()
+{
+    Debug.Log($"Equipment for {this}:");
+
+    // Display armor
+    if (Armor != null && Armor.Count > 0)
+    {
+        Debug.Log("Armor:");
+        foreach (var armorPiece in Armor)
+        {
+            Debug.Log($" - {armorPiece.name}");
+        }
+    }
+    else
+    {
+        Debug.Log("No armor equipped.");
+    }
+
+    // Display weapons
+    if (PrimaryMeleeWeapon != null)
+    {
+        Debug.Log($"Primary Melee Weapon: {PrimaryMeleeWeapon.name}");
+    }
+    else
+    {
+        Debug.Log("No primary melee weapon equipped.");
+    }
+
+    if (SecondaryMeleeWeapon != null)
+    {
+        Debug.Log($"Secondary Melee Weapon: {SecondaryMeleeWeapon.name}");
+    }
+    else
+    {
+        Debug.Log("No secondary melee weapon equipped.");
+    }
+
+    if (Bow != null)
+    {
+        Debug.Log($"Bow: {Bow.First().name}");
+    }
+    else
+    {
+        Debug.Log("No bow equipped.");
+    }
+
+    if (Firearms != null && Firearms.Count > 0)
+    {
+        Debug.Log("Firearms:");
+        foreach (var firearm in Firearms)
+        {
+            Debug.Log($" - {firearm.name}");
+        }
+    }
+    else
+    {
+        Debug.Log("No firearms equipped.");
+    }
+
+    // Display head equipment
+    if (Helmet != null)
+    {
+        Debug.Log($"Helmet: {Helmet.name}");
+    }
+    else
+    {
+        Debug.Log("No helmet equipped.");
+    }
+
+    // Display other equipment
+    if (Cape != null)
+    {
+        Debug.Log($"Cape: {Cape.name}");
+    }
+    if (Back != null)
+    {
+        Debug.Log($"Back: {Back.name}");
+    }
+    if (Mask != null)
+    {
+        Debug.Log($"Mask: {Mask.name}");
+    }
+    if (Glasses != null)
+    {
+        Debug.Log($"Glasses: {Glasses.name}");
+    }
+    if (Earrings != null)
+    {
+        Debug.Log($"Earrings: {Earrings.name}");
+    }
+
+    // Add more equipment displays as necessary
+}
+
 
 		private void SetArmorParts(string part, List<Sprite> armor)
 	    {
