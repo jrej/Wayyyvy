@@ -121,10 +121,11 @@ private List<string> spritePaths = new List<string>();
         // Extract item info for enemy
        // itemExtractor.ExtractItemInfo(enemy);
     }
+    
 // Calculate stats for a character based on equipped items
     private CharacterStats CalculateStats(Character character)
     {
-        CharacterStats stats = new CharacterStats { Name = character.name };
+        CharacterStats stats = new CharacterStats (character.name);
         // Calculation logic here...
         return stats;
     }
@@ -172,12 +173,12 @@ private List<string> spritePaths = new List<string>();
     }
 
     // Perform an attack from one character to another
-    public void PerformAttack(CharacterStats attackerStats , CharacterStats defenderStats)
+    public float PerformAttack(CharacterStats attackerStats , CharacterStats defenderStats)
     {
-        float damage = Math.Max(0, attackerStats.Attack); // Ensure no negative damage
+float damage = Mathf.Max(0, (attackerStats.Attack - defenderStats.Defense / 2f) / 3f);
 
-        defenderStats.HP -= damage - defenderStats.Defense/2 ;
-
+        defenderStats.HP -= damage ;//because now 3 attacks 
+        return damage;
         //Debug.Log($"{attackerStats.Name} attacks {attackerStats.Name} for {damage} damage. {attackerStats.Name} has {attackerStats.HP} life left.");
     }
 
