@@ -1,5 +1,3 @@
-![ezgif-3-8010095887](https://github.com/user-attachments/assets/d7459ed3-fb2d-459b-b1ac-997913e76b9c)
-
 Battle System Game
 
 This project is a Unity-based battle system game that allows players to engage in turn-based combat, featuring character customization, weapon selection, and a dynamic combat environment. The system calculates combat outcomes using character stats derived from equipped gear, providing a strategic layer to the battle experience.
